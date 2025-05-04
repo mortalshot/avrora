@@ -1,0 +1,2216 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная страница</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250505021448" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20250505021448">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" data-scroll="5">
+			<div class="header__container">
+				<div class="header__row">
+					<div class="header__left">
+						<div class="header__menu menu">
+							<button type="button" class="menu__icon icon-menu"><span></span></button>
+							<nav class="menu__body" style="opacity: 0;">
+								<div class="header__search header-search">
+									<form action="#" class="header-search__form">
+										<input autocomplete="off" type="text" name="form[]" placeholder="Название товара или артикул" class="header-search__input">
+
+										<button class="header-search__submit">
+											<svg class="icon">
+												<use xlink:href="img/icons/icons.svg#search"></use>
+											</svg>
+										</button>
+									</form>
+								</div>
+							</nav>
+						</div>
+
+						<div class="header__logo logo">
+							<a href="">
+								<svg class="icon logo__icon logo__icon_desk">
+									<use xlink:href="img/icons/icons.svg#logo_desk"></use>
+								</svg>
+								<svg class="icon logo__icon logo__icon_mobile">
+									<use xlink:href="img/icons/icons.svg#logo_mobile"></use>
+								</svg>
+							</a>
+						</div>
+
+						<div class="header__note">Минимальная сумма заказа <br> <span class="_nowrap">от 100 000 ₽</span></div>
+
+						<a href="" class="header__mobile">
+							<svg class="icon">
+								<use xlink:href="img/icons/icons.svg#phone"></use>
+							</svg>
+						</a>
+					</div>
+
+					<div class="header__center">
+						<div class="header__wishlist header__wishlist_filled">
+							<a href="" class="btn btn_bg-white">Вишлист <span class="wishlist-count">24</span></a>
+						</div>
+					</div>
+
+					<div class="header__right" data-da=".menu__body, 991.98, 2">
+						<div class="header__socials socials">
+							<a href="#" class="socials__item">
+								<svg class="icon">
+									<use xlink:href="img/icons/icons.svg#telegram"></use>
+								</svg>
+							</a>
+							<a href="#" class="socials__item">
+								<svg class="icon">
+									<use xlink:href="img/icons/icons.svg#whatsapp"></use>
+								</svg>
+							</a>
+						</div>
+
+						<div class="header__contacts">
+							<div class="header__contact header-contact">
+								<div class="header-contact__caption copy-item">
+									<a href="mailto:zakaz+705409@avrorastore.ru" class="copy-item__text">zakaz+705409@avrorastore.ru</a>
+									<button type="button" class="copy-item__button" title="Скопировать адрес в буфер обмена">
+										<svg class="icon">
+											<use xlink:href="img/icons/icons.svg#copy"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="header-contact__description">Отвечаем на все письма</div>
+							</div>
+							<div class="header__contact header-contact">
+								<div class="header-contact__caption">
+									<a href="tel:+78005507893">+7 (800) 550-78-93</a>
+								</div>
+								<div class="header-contact__description">Отвечаем в первые 7 секунд</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="header-menu">
+			<div class="header-menu__container">
+				<div class="header-menu__row" data-da=".menu__body, 991.98, 1">
+					<div class="header-menu__left">
+						<div class="header-menu__catalog header-catalog">
+							<button type="button" class="header-catalog__button">Каталог</button>
+							<div class="header-catalog__wrapper" style="opacity: 0;">
+								<div class="header-catalog__heading">
+									<div class="header-catalog__caption">Смотреть все товары</div>
+									<button class="header-catalog__close" type="button">
+										<svg class="icon">
+											<use xlink:href="img/icons/icons.svg#close"></use>
+										</svg>
+									</button>
+								</div>
+
+								<nav class="header-catalog__menu">
+									<ul>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="#">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Ежедневники и блокноты</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Упаковка</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="#">Подарки на 23 февраля</a></li>
+												<li><a href="#">Подарки на 8 марта</a></li>
+												<li><a href="#">Подарки на 9 мая</a></li>
+												<li><a href="#">Подарки военным</a></li>
+												<li><a href="#">Подарки на День защиты детей</a></li>
+												<li><a href="#">Подарки на День медицинского работника</a></li>
+												<li><a href="#">Подарок коллеге</a></li>
+												<li><a href="#">Подарки ко Дню шахтера</a></li>
+												<li><a href="#">Подарки ко Дню нефтяника</a></li>
+												<li><a href="#">Подарки на День строителя</a></li>
+												<li><a href="#">Подарки на День авиации</a></li>
+												<li><a href="#">Подарки на День железнодорожника</a></li>
+												<li><a href="#">Подарки на День знаний</a></li>
+												<li><a href="#">Подарки ко Дню энергетика</a></li>
+												<li><a href="#">Подарки ко Дню электросвязи</a></li>
+												<li><a href="#">Подарки морякам</a></li>
+												<li><a href="#">Подарки автомобилисту</a></li>
+												<li><a href="#">Подарки банковскому работнику</a></li>
+												<li><a href="#">Подарки для всех</a></li>
+												<li><a href="#">Аврора рекомендует 23/8</a></li>
+												<li><a href="#">Подарки на День металлурга</a></li>
+												<li><a href="#">Подарки на День полиции</a></li>
+												<li><a href="#">Подарки на День России</a></li>
+												<li><a href="#">Подарки на День учителя</a></li>
+												<li><a href="#">Подарки на День химика</a></li>
+												<li><a href="#">Подарки на День юриста</a></li>
+												<li><a href="#">Подарки на юбилей компании</a></li>
+												<li><a href="#">Подарки начальнику</a></li>
+												<li><a href="#">Подарки системным администраторам</a></li>
+												<li><a href="#">Теплые подарки</a></li>
+												<li><a href="#">Интерьерные подарки</a></li>
+												<li><a href="#">Упакуем как надо</a></li>
+											</ul>
+
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Футболки</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Одежда</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Посуда</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Сумки и рюкзаки</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Зонты</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Электроника</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Ручки</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Подарочные наборы</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Товары для дома</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Подарки для отдыха</span>
+											</a>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Корпоративные подарки</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Подарки к праздникам</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Флешки</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Пледы и подушки</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Часы</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Промо сувениры</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Офисные сувениры</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Аксессуары</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Новогодние подарки</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Велкомпаки</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Коллекции ЭКО</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Тубусы</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Блокноты и кубарики</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Календари 2025</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Пакеты подарочные</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+
+						<div class="header-menu__nav">
+							<ul>
+								<li><a href="">Услуги</a></li>
+								<li><a href="">Портфолио</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="header-menu__right">
+						<div class="header-menu__nav">
+							<ul>
+								<li><a href="">Принт и кастомизация</a></li>
+								<li><a href="">Условия сотрудничества</a></li>
+								<li><a href="">Команда</a></li>
+								<li><a href="">Работа</a></li>
+								<li><a href="">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<main class="page">
+			<section class="homebanner">
+				<div class="homebanner__container">
+					<div class="homebanner__slider swiper swiper_shadow">
+						<div class="homebanner__wrapper swiper-wrapper">
+							<div class="homebanner__slide swiper-slide banner-slide _card">
+								<div class="banner-slide__body">
+									<h2 class="banner-slide__title">
+										Создаём уникальный мерч и&nbsp;бизнес-подарки <br> <span style="color: #BEBEBE;">для компаний и&nbsp;корпораций</span>
+									</h2>
+									<div class="banner-slide__subtitle">Разрабатываем концепции на&nbsp;основе tone-voice вашего бренда, предлагаем готовые решения наилучшим образом олицетворяющие ваш бренд</div>
+									<div class="banner-slide__button">
+										<a href="" class="btn btn_big btn_bg-accent">Узнать подробнее</a>
+										<div class="banner-slide__note">Минимальная сумма заказа - <span class="_nowrap"><b>100 000 ₽</b></span></div>
+									</div>
+								</div>
+
+								<div class="banner-slide__image">
+									<picture>
+										<source srcset="img/home-banner/home-banner1_desk.webp" media="(min-width: 767.98px)">
+										<img src="img/home-banner/home-banner1_mob.webp" alt="" loading="lazy">
+										<div class="swiper-lazy-preloader"></div>
+									</picture>
+								</div>
+							</div>
+
+							<div class="homebanner__slide swiper-slide banner-slide _card">
+								<div class="banner-slide__body">
+									<div class="banner-slide__title">
+										Создаём уникальный мерч и&nbsp;бизнес-подарки <br> <span style="color: #BEBEBE;">для компаний и&nbsp;корпораций</span>
+									</div>
+									<div class="banner-slide__subtitle">Базовая корпоративная продукция на&nbsp;все случаи жизни компании</div>
+									<div class="banner-slide__button">
+										<a href="" class="btn btn_big btn_bg-accent">Узнать подробнее</a>
+										<div class="banner-slide__note">Минимальная сумма заказа - <span class="_nowrap"><b>100 000 ₽</b></span></div>
+									</div>
+								</div>
+
+								<div class="banner-slide__image">
+									<picture>
+										<source srcset="img/home-banner/home-banner2_desk.webp" media="(min-width: 767.98px)">
+										<img src="img/home-banner/home-banner2_mob.webp" alt="" loading="lazy">
+										<div class="swiper-lazy-preloader"></div>
+									</picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ecosystem">
+				<div class="ecosystem__container">
+					<div data-spollers="767.98, max" class="ecosystem__heading spoller-heading _card _heading">
+						<details class="spoller-heading__item">
+							<summary class="spoller-heading__title ecosystem__title">
+								<h2>Экосистема Avrora Store</h2>
+							</summary>
+							<div class="spoller-heading__body ecosystem__body">
+								<div class="ecosystem__subtitle">Доверьтесь нашим экспертам в&nbsp;дизайне и&nbsp;кастомизации мерча! Мы&nbsp;разработаем уникальные концепции с&nbsp;нуля и&nbsp;быстро реализуем ваши идеи без лишних хлопот. Прозрачные условия сотрудничества и&nbsp;понятные цены&nbsp;&mdash; гарантируем, что любой проект будет выполнен в&nbsp;сжатые сроки.</div>
+							</div>
+						</details>
+					</div>
+
+					<div class="ecosystem__cards">
+						<a href="#" class="ecosystem__card _card ecosystem-card">
+							<div class="ecosystem-card__title">Дизайн и&nbsp;концепции</div>
+							<div class="ecosystem-card__subtitle">Разрабатываем дизайн проекты для компаний и&nbsp;корпораций</div>
+						</a>
+						<a href="#" class="ecosystem__card _card ecosystem-card">
+							<div class="ecosystem-card__title">Мерч со&nbsp;склада РФ&nbsp;и&nbsp;ЕС</div>
+							<div class="ecosystem-card__subtitle">Широкий выбор продукции их&nbsp;России, Европы и&nbsp;Азиии. Доставка подарков точно в&nbsp;срок по&nbsp;всей России и&nbsp;СНГ.</div>
+						</a>
+						<a href="#" class="ecosystem__card _card ecosystem-card">
+							<div class="ecosystem-card__title">Принт и&nbsp;кастомизация</div>
+							<div class="ecosystem-card__subtitle">3D-шелкография и&nbsp;уникальные технологии печати для реализации WOW-идей в&nbsp;брендировании промо-одежды и&nbsp;сувенирной продукции</div>
+						</a>
+						<a href="#" class="ecosystem__card _card ecosystem-card">
+							<div class="ecosystem-card__title">Avrora <br> Fashion</div>
+							<div class="ecosystem-card__subtitle">Ваши заказы находятся под контролем персонального менеджера и&nbsp;реализуются командой профессионалов</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="packsolutions">
+				<div class="packsolutions__container">
+					<div data-spollers="991.98, max" class="packsolutions__heading _heading spoller-heading _card">
+						<details class="spoller-heading__item">
+							<summary class="spoller-heading__title ecosystem__title">
+								<h2>Пакетные решения <span class="d-md-none">в&nbsp;мерче</span></h2>
+							</summary>
+							<div class="spoller-heading__body ecosystem__body">
+								<div class="ecosystem__subtitle">Мы&nbsp;предлагаем самые востребованные решения на&nbsp;рынке мерча, чтобы вы&nbsp;могли сосредоточиться на&nbsp;самом важном&nbsp;&mdash; своем бизнесе. Забудьте о&nbsp;поиске идей и&nbsp;технических сложностях! Мы&nbsp;заботимся о&nbsp;персонализации и&nbsp;кастомизации вашего мерча и&nbsp;бизнес-подарков.</div>
+							</div>
+						</details>
+					</div>
+
+					<div class="packsolutions__cards">
+						<div class="packsolutions__card pack-card _card">
+							<div class="pack-card__image _bg">
+								<picture>
+									<source srcset="img/packsolutions/packsolutions1_desk.webp" media="(min-width: 1649.98px)">
+									<img src="img/packsolutions/packsolutions1_mob.webp" alt="" loading="lazy">
+								</picture>
+							</div>
+							<div class="pack-card__body">
+								<a href="#" class="pack-card__caption">Велкомпаки</a>
+								<div class="pack-card__subtitle">Стартовый набор для комфортной работы новых сотрудников</div>
+								<div class="pack-card__button">
+									<a href="" class="btn hover-icon-btn">
+										<span class="hover-icon-btn__text">Подробнее</span>
+										<svg class="hover-icon-btn__icon icon">
+											<use xlink:href="img/icons/icons.svg#link-arrow"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="packsolutions__card pack-card _card">
+							<div class="pack-card__image _bg">
+								<picture>
+									<source srcset="img/packsolutions/packsolutions2_desk.webp" media="(min-width: 1649.98px)">
+									<img src="img/packsolutions/packsolutions2_mob.webp" alt="" loading="lazy">
+								</picture>
+							</div>
+							<div class="pack-card__body">
+								<a href="#" class="pack-card__caption">Мерч для компаний</a>
+								<div class="pack-card__subtitle">Базовая корпоративная продукция на все случаи жизни компании</div>
+								<div class="pack-card__button">
+									<a href="" class="btn hover-icon-btn">
+										<span class="hover-icon-btn__text">Подробнее</span>
+										<svg class="hover-icon-btn__icon icon">
+											<use xlink:href="img/icons/icons.svg#link-arrow"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="packsolutions__card pack-card _card">
+							<div class="pack-card__image _bg">
+								<picture>
+									<source srcset="img/packsolutions/packsolutions3_desk.webp" media="(min-width: 1649.98px)">
+									<img src="img/packsolutions/packsolutions3_mob.webp" alt="" loading="lazy">
+								</picture>
+							</div>
+							<div class="pack-card__body">
+								<a href="#" class="pack-card__caption">Мерч для HR задач</a>
+								<div class="pack-card__subtitle">Продукция для бизнес-мероприятий</div>
+								<div class="pack-card__button">
+									<a href="" class="btn hover-icon-btn">
+										<span class="hover-icon-btn__text">Подробнее</span>
+										<svg class="hover-icon-btn__icon icon">
+											<use xlink:href="img/icons/icons.svg#link-arrow"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="packsolutions__card pack-card _card">
+							<div class="pack-card__image _bg">
+								<picture>
+									<source srcset="img/packsolutions/packsolutions4_desk.webp" media="(min-width: 1649.98px)">
+									<img src="img/packsolutions/packsolutions4_mob.webp" alt="" loading="lazy">
+								</picture>
+							</div>
+							<div class="pack-card__body">
+								<a href="#" class="pack-card__caption">Мерчшопы</a>
+								<div class="pack-card__subtitle">Создание уникальных коллекций мерча и&nbsp;тематических дропов</div>
+								<div class="pack-card__button">
+									<a href="" class="btn hover-icon-btn">
+										<span class="hover-icon-btn__text">Подробнее</span>
+										<svg class="hover-icon-btn__icon icon">
+											<use xlink:href="img/icons/icons.svg#link-arrow"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="packsolutions__more">
+						<a href="#" class="btn btn_big btn_bg-white">Смотреть ещё</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="cases">
+				<div class="cases__container">
+					<div class="cases__heading _heading">
+						<h2 class="cases__title">Реализованные кейсы</h2>
+					</div>
+
+					<div class="cases__inner _card">
+						<div class="cases__slider swiper">
+							<div class="swiper-arrow swiper-arrow_prev">
+								<svg class="icon">
+									<use xlink:href="img/icons/icons.svg#swiper-arrow"></use>
+								</svg>
+							</div>
+
+							<div class="cases__wrapper swiper-wrapper">
+								<div class="cases__slide swiper-slide">
+									<a href="#" class="cases__logo _bg">
+										<img src="img/cases/case1-logo.svg" alt="" loading="lazy">
+										<div class="swiper-lazy-preloader"></div>
+									</a>
+
+									<div class="cases__gallery">
+										<div class="template1 cases-gap">
+											<div class="template1__left cases-gap">
+												<div class="template1__top cases-gap">
+													<div class="template1__card cases__card _card" style="flex-basis: 45.2%;">
+														<div class="cases__card-bg _bg">
+															<img src="img/cases/case1-image1.webp" alt="" loading="lazy">
+															<div class="swiper-lazy-preloader"></div>
+														</div>
+													</div>
+													<div class="template1__card cases__card _card" style="flex-grow: 1;">
+														<div class="cases__card-bg _bg">
+															<img src="img/cases/case1-image2.webp" alt="" loading="lazy">
+															<div class="swiper-lazy-preloader"></div>
+														</div>
+													</div>
+												</div>
+												<div class="template1__bottom cases-gap">
+													<div class="template1__card cases__card _card" style="flex-grow: 1;">
+														<div class="cases__card-bg _bg">
+															<img src="img/cases/case1-image3.webp" alt="" loading="lazy">
+															<div class="swiper-lazy-preloader"></div>
+														</div>
+													</div>
+													<div class="template1__card cases__card _card" style="flex-basis: 61%;">
+														<div class="template1__text _content">
+															<p>Цель проекта&nbsp;&mdash; создать уникальный мерч, который не&nbsp;просто дополняет повседневную работу, но&nbsp;и&nbsp;помогает сделать офисное пространство уютнее и&nbsp;комфортнее.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="template1__right cases-gap">
+												<div class="template1__card cases__card _card" style="flex-basis: 42.5%;">
+													<div class="cases__card-bg _bg">
+														<img src="img/cases/case1-image4.webp" alt="" loading="lazy">
+														<div class="swiper-lazy-preloader"></div>
+													</div>
+												</div>
+												<div class="template1__card cases__card _card" style="flex-grow: 1;">
+													<div class="cases__card-bg _bg">
+														<img src="img/cases/case1-image5.webp" alt="" loading="lazy">
+														<div class="swiper-lazy-preloader"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="cases__slide swiper-slide">
+									<a href="#" class="cases__logo _bg">
+										<img src="img/cases/case2-logo.webp" alt="" loading="lazy">
+										<div class="swiper-lazy-preloader"></div>
+									</a>
+
+									<div class="cases__gallery">
+										<div class="template2 cases-gap">
+											<div class="template2__left">
+												<div class="template2__card cases__card _card">
+													<div class="cases__card-bg _bg">
+														<img src="img/cases/case2-image1.webp" alt="" loading="lazy">
+														<div class="swiper-lazy-preloader"></div>
+													</div>
+												</div>
+											</div>
+
+											<div class="template2__right cases-gap">
+												<div class="template2__top cases-gap">
+													<div class="template2__card cases__card _card">
+														<div class="cases__card-bg _bg">
+															<img src="img/cases/case2-image2.webp" alt="" loading="lazy">
+															<div class="swiper-lazy-preloader"></div>
+														</div>
+													</div>
+													<div class="template2__card cases__card _card">
+														<div class="cases__card-bg _bg">
+															<img src="img/cases/case2-image3.webp" alt="" loading="lazy">
+															<div class="swiper-lazy-preloader"></div>
+														</div>
+													</div>
+												</div>
+
+												<div class="template2__bottom cases-gap">
+													<div class="template2__card cases__card _card">
+														<div class="cases__card-bg _bg">
+															<img src="img/cases/case2-image4.webp" alt="" loading="lazy">
+															<div class="swiper-lazy-preloader"></div>
+														</div>
+													</div>
+
+													<div class="template2__card cases__card _card">
+														<div class="cases__card-bg _bg">
+															<img src="img/cases/case2-image5.webp" alt="" loading="lazy">
+															<div class="swiper-lazy-preloader"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-arrow swiper-arrow_next">
+								<svg class="icon">
+									<use xlink:href="img/icons/icons.svg#swiper-arrow"></use>
+								</svg>
+							</div>
+
+							<div class="swiper-scrollbar"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="widget-cases">
+				<div class="widget-cases__container">
+					<div class="widget-cases__slider swiper swiper_shadow">
+						<div class="widget-cases__wrapper swiper-wrapper">
+							<div class="widget-cases__slide swiper-slide case-card _card">
+								<div class="case-card__preview _bg _card">
+									<img src="img/cases/case2-image1.webp" alt="" loading="lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+
+								<div class="case-card__body">
+									<div class="case-card__title">«Марибо» Далеко-далеко, за словесными.</div>
+									<div class="case-card__subtitle">Создали подарочный набор для компании «Марибо»</div>
+									<a href="#" class="case-card__link circle-link">
+										<svg class="icon">
+											<use xlink:href="img/icons/icons.svg#link-arrow2"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="widget-cases__slide swiper-slide case-card _card">
+								<div class="case-card__preview _bg _card">
+									<img src="img/cases/case2-image2.webp" alt="" loading="lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+
+								<div class="case-card__body">
+									<div class="case-card__title">«Марибо»</div>
+									<div class="case-card__subtitle">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</div>
+									<a href="#" class="case-card__link circle-link">
+										<svg class="icon">
+											<use xlink:href="img/icons/icons.svg#link-arrow2"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="widget-cases__slide swiper-slide case-card _card">
+								<div class="case-card__preview _bg _card">
+									<img src="img/cases/case1-image3.webp" alt="" loading="lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+
+								<div class="case-card__body">
+									<div class="case-card__title">«Марибо»</div>
+									<div class="case-card__subtitle">Создали подарочный набор для компании «Марибо»</div>
+									<a href="#" class="case-card__link circle-link">
+										<svg class="icon">
+											<use xlink:href="img/icons/icons.svg#link-arrow2"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="widget-cases__slide swiper-slide case-card _card">
+								<div class="case-card__preview _bg _card">
+									<img src="img/cases/case1-image4.webp" alt="" loading="lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+
+								<div class="case-card__body">
+									<div class="case-card__title">«Марибо»</div>
+									<div class="case-card__subtitle">Создали подарочный набор для компании «Марибо»</div>
+									<a href="#" class="case-card__link circle-link">
+										<svg class="icon">
+											<use xlink:href="img/icons/icons.svg#link-arrow2"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="widget-cases__slide swiper-slide case-card _card">
+								<div class="case-card__preview _bg _card">
+									<img src="img/cases/case1-image5.webp" alt="" loading="lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+
+								<div class="case-card__body">
+									<div class="case-card__title">«Марибо»</div>
+									<div class="case-card__subtitle">Создали подарочный набор для компании «Марибо»</div>
+									<a href="#" class="case-card__link circle-link">
+										<svg class="icon">
+											<use xlink:href="img/icons/icons.svg#link-arrow2"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-scrollbar"></div>
+					</div>
+
+					<div class="widget-cases__button">
+						<a href="" class="btn btn_big btn_bg-white">Все кейсы</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="request">
+				<div class="request__container">
+					<div class="request__card _card">
+						<div class="request__inner">
+							<div class="request__heading">
+								<h2 class="request__title">Не&nbsp;знаете с&nbsp;чего начать?</h2>
+								<div class="request__subtitle">Отправьте запрос нашим специалистам.</div>
+							</div>
+
+							<form action="#" class="request__form">
+								<div class="form-item">
+									<label for="request-phone" class="label">Ваш контакт</label>
+									<input id="request-phone" type="text" name="request-phone" placeholder="+7 (___) ___ __-__" class="input input_phone">
+								</div>
+								<div class="form-submit">
+									<button type="submit" class="btn btn_large btn_bg-accent">Заказать звонок</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="widget-category">
+				<div class="widget-category__container">
+					<div class="widget-category__heading _heading">
+						<h2 class="widget-category__title">Категории товаров</h2>
+					</div>
+
+					<div class="widget-category__items">
+						<div class="widget-category__item category-item">
+							<div class="category-item__wrapper _card">
+								<a href="#" class="category-item__name _card">
+									<div class="category-item__icon _bg"> <img src="img/icons/category1-icon.svg" alt="" loading="lazy"> </div>
+									<span>Ежедневники и блокноты</span>
+								</a>
+
+								<div class="category-item__body _card">
+									<ul>
+										<li><a href="/biznes-bloknoty/">Бизнес-блокноты</a></li>
+										<li><a href="/bloknoty/">Блокноты</a></li>
+										<li><a href="/ezhednevniki/">Ежедневники</a></li>
+										<li><a href="/ezhenedelniki/">Еженедельники</a></li>
+										<li><a href="/nabory-s-ezhednevnikami/">Наборы с ежедневниками</a></li>
+										<li><a href="/organayzery/">Органайзеры</a></li>
+										<li><a href="/originalnye-ezhednevniki/">Оригинальные ежедневники</a></li>
+										<li><a href="/planingi/">Планинги</a></li>
+										<li><a href="/upakovka-dlya-ezhednevnikov/">Упаковка для ежедневников</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="widget-category__item category-item">
+							<div class="category-item__wrapper _card">
+								<a href="#" class="category-item__name _card">
+									<div class="category-item__icon _bg"> <img src="img/icons/category1-icon.svg" alt="" loading="lazy"> </div>
+									<span>Упаковка</span>
+								</a>
+
+								<div class="category-item__body _card">
+									<ul>
+										<li><a href="/bumaga-upakovochnaya12/">Бумага упаковочная</a></li>
+										<li><a href="/bumazhnaya-upakovka/">Бумажная упаковка</a></li>
+										<li><a href="/bumazhnye-pakety/">Бумажные пакеты</a></li>
+										<li><a href="/zhestyanaya-upakovka/">Жестяная упаковка</a></li>
+										<li><a href="/korobki-s-logotipom/">Коробки с логотипом</a></li>
+										<li><a href="/meshochki/">Мешочки подарочные</a></li>
+										<li><a href="/napolniteli-dlya-upakovki/">Наполнители для упаковки</a></li>
+										<li><a href="/podarochnaya-upakovka/">Подарочная упаковка</a></li>
+										<li><a href="/podarochnye-korobki/">Подарочные коробки</a></li>
+										<li><a href="/podarochnye-pakety/">Подарочные пакеты</a></li>
+										<li><a href="/upakovka-dlya-novogodnih-podarkov/">Упаковка для новогодних подарков</a></li>
+										<li><a href="/futlyary/">Футляры</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="widget-category__item category-item">
+							<div class="category-item__wrapper _card">
+								<a href="#" class="category-item__name _card">
+									<div class="category-item__icon _bg"> <img src="img/icons/category1-icon.svg" alt="" loading="lazy"> </div>
+									<span>Футболки</span>
+								</a>
+
+								<div class="category-item__body _card">
+									<ul>
+										<li><a href="/detskie-futbolki/">Детские футболки</a></li>
+										<li><a href="/zhenskie-futbolki/">Женские футболки</a></li>
+										<li><a href="/muzhskie-futbolki/">Мужские футболки</a></li>
+										<li><a href="/futbolki-dlya-promo/">Футболки для промо</a></li>
+										<li><a href="/futbolki-polo/">Футболки поло</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="widget-category__item category-item">
+							<div class="category-item__wrapper _card">
+								<a href="#" class="category-item__name _card">
+									<div class="category-item__icon _bg"> <img src="img/icons/category1-icon.svg" alt="" loading="lazy"> </div>
+									<span>Одежда</span>
+								</a>
+
+								<div class="category-item__body _card">
+									<ul>
+										<li><a href="/tolstovki/">Толстовки</a></li>
+										<li><a href="/vetrovki/">Ветровки и Дождевики</a></li>
+										<li><a href="/zhilety/">Жилеты</a></li>
+										<li><a href="/pidzhaki-i-zhakety/">Пиджаки и Жакеты</a></li>
+										<li><a href="/kurtki/">Куртки</a></li>
+										<li><a href="/ofisnye-rubashki/">Офисные рубашки</a></li>
+										<li><a href="/sportivnaya-forma/">Спортивная форма</a></li>
+										<li><a href="/shapki-i-sharfy/">Шапки и шарфы</a></li>
+										<li><a href="/perchatki-i-varezhki/">Перчатки и варежки</a></li>
+										<li><a href="/dzhempery/">Джемперы</a></li>
+										<li><a href="/vyazannye-komplekty/">Вязанные комплекты</a></li>
+										<li><a href="/elementy-kastomizatsii/">Элементы кастомизации</a></li>
+										<li><a href="/shlyapy/">Шляпы</a></li>
+										<li><a href="/kepki-i-beysbolki/">Кепки, бейсболки и панамы</a></li>
+										<li><a href="/bryuki-i-shorty/">Брюки и шорты</a></li>
+										<li><a href="/detskaya-odezhda/">Детская одежда</a></li>
+										<li><a href="/mayki/">Майки</a></li>
+										<li><a href="/noski/">Носки</a></li>
+										<li><a href="/obuv/">Обувь</a></li>
+										<li><a href="/palantiny/">Платки и палантины</a></li>
+										<li><a href="/reflective-vests/">Светоотражающие жилеты</a></li>
+										<li><a href="/svitshoty/">Свитшоты</a></li>
+										<li><a href="/sportivnye-kostyumy/">Спортивные костюмы</a></li>
+										<li><a href="/uniforma-/">Униформа и спецодежда</a></li>
+										<li><a href="/fartuki/">Фартуки</a></li>
+										<li><a href="/halaty/">Халаты</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="widget-category__item category-item">
+							<div class="category-item__wrapper _card">
+								<a href="#" class="category-item__name _card">
+									<div class="category-item__icon _bg"> <img src="img/icons/category1-icon.svg" alt="" loading="lazy"> </div>
+									<span>Посуда</span>
+								</a>
+
+								<div class="category-item__body _card">
+									<ul>
+										<li><a href="/bokaly/">Бокалы</a></li>
+										<li><a href="/butylki/">Бутылки для воды</a></li>
+										<li><a href="/kofery/">Коферы</a></li>
+										<li><a href="/kruzhki/">Кружки</a></li>
+										<li><a href="/posuda-kuhonnye-prisposobleniya/">Кухонная утварь</a></li>
+										<li><a href="/konteynery/">Ланчбоксы</a></li>
+										<li><a href="/nabory-posudy/">Наборы посуды</a></li>
+										<li><a href="/nozhi/">Ножи</a></li>
+										<li><a href="/posuda12/">Посуда</a></li>
+										<li><a href="/stakany/">Стаканы</a></li>
+										<li><a href="/stolovye-pribory/">Столовые приборы</a></li>
+										<li><a href="/termostakany/">Термосы и термокружки</a></li>
+										<li><a href="/upakovka-dlya-posudy/">Упаковка для посуды</a></li>
+										<li><a href="/chayniki/">Чайники</a></li>
+										<li><a href="/chaynye-i-kofeynye-pary/">Чайные и кофейные пары</a></li>
+										<li><a href="/elitnaya-posuda/">Элитная посуда</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="widget-category__item category-item">
+							<div class="category-item__wrapper _card">
+								<a href="#" class="category-item__name _card">
+									<div class="category-item__icon _bg"> <img src="img/icons/category1-icon.svg" alt="" loading="lazy"> </div>
+									<span>Сумки и рюкзаки</span>
+								</a>
+
+								<div class="category-item__body _card">
+									<ul>
+										<li><a href="/dorozhnye-sumki/">Дорожные сумки</a></li>
+										<li><a href="/nesessery-i-kosmetichki/">Несессеры и косметички</a></li>
+										<li><a href="/papka/">Папки и сумки для конференций</a></li>
+										<li><a href="/portfeli/">Портфели</a></li>
+										<li><a href="/poyasnye-sumki/">Поясные сумки</a></li>
+										<li><a href="/ryukzaki/">Рюкзаки</a></li>
+										<li><a href="/sportivnye-sumki/">Спортивные сумки</a></li>
+										<li><a href="/sumki-kholodilnik/">Сумки - холодильник</a></li>
+										<li><a href="/sumki-dlya-dokumentov/">Сумки для документов</a></li>
+										<li><a href="/sumki-dlya-noutbuka/">Сумки для ноутбука</a></li>
+										<li><a href="/sumki-dlya-piknika/">Сумки для пикника</a></li>
+										<li><a href="/chemodany/">Чемоданы</a></li>
+										<li><a href="/sumki-dlya-pokupok/">Шоперы</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="widget-category__item category-item">
+							<div class="category-item__wrapper _card">
+								<a href="#" class="category-item__name _card">
+									<div class="category-item__icon _bg"> <img src="img/icons/category1-icon.svg" alt="" loading="lazy"> </div>
+									<span>Зонты</span>
+								</a>
+
+								<div class="category-item__body _card">
+									<ul>
+										<li><a href="/zhenskie-zonty/">Женские зонты</a></li>
+										<li><a href="/zonty-trosti/">Зонты-трости</a></li>
+										<li><a href="/muzhskie-zonty/">Мужские зонты</a></li>
+										<li><a href="/neobychnye-i-originalnye-zonty/">Необычные и оригинальные зонты</a></li>
+										<li><a href="/plyazhnye-zonty/">Пляжные зонты</a></li>
+										<li><a href="/skladnye-zonty/">Складные зонты</a></li>
+										<li><a href="/elitnye-zonty/">Элитные зонты</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="widget-category__item category-item">
+							<div class="category-item__wrapper _card">
+								<a href="#" class="category-item__name _card">
+									<div class="category-item__icon _bg"> <img src="img/icons/category1-icon.svg" alt="" loading="lazy"> </div>
+									<span>Электроника</span>
+								</a>
+
+								<div class="category-item__body _card">
+									<ul>
+										<li><a href="/gadzhety-dlya-avto/">Автогаджеты</a></li>
+										<li><a href="/elektronika-aksessuary/">Аксессуары для гаджетов</a></li>
+										<li><a href="/bytovaya-tekhnika/">Бытовая техника</a></li>
+										<li><a href="/vneshnie-zhestkie-diski/">Внешние жесткие диски</a></li>
+										<li><a href="/derzhateli-dlya-telefonov/">Держатели для телефонов</a></li>
+										<li><a href="/zaryadnye-ustroystva/">Зарядные устройства</a></li>
+										<li><a href="/zaryadnye-ustroystva-na-2200-mah/">Зарядные устройства до 4000 mAh</a></li>
+										<li><a href="/kompyuternye-i-mobilnye-aksessuary/">Компьютерные и мобильные аксессуары</a></li>
+										<li><a href="/lampy-i-svetilniki/">Лампы и светильники</a></li>
+										<li><a href="/naushniki/">Наушники</a></li>
+										<li><a href="/portativnye-kolonki/">Портативные колонки</a></li>
+										<li><a href="/stilusy-ruchki/">Ручки стилусы</a></li>
+										<li><a href="/setevye-zaryadnye-ustroystva/">Сетевые зарядные устройства</a></li>
+										<li><a href="/elektronika-smart-braslety/">Смарт-браслеты</a></li>
+										<li><a href="/top-50-gadzhetoa-2023/">ТОП 50 гаджетов 2023</a></li>
+										<li><a href="/uvlazhniteli-/">Увлажнители</a></li>
+										<li><a href="/umnye-gadzhety/">Умные гаджеты</a></li>
+										<li><a href="/umnyy-dom/">Умный дом</a></li>
+										<li><a href="/universalnye-akkumulyatory/">Универсальные аккумуляторы</a></li>
+										<li><a href="/ustroystva-khraneniya/">Устройства хранения и Хабы</a></li>
+										<li><a href="/elektronnye-knigi/">Электронные книги</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="widget-category__item category-item">
+							<div class="category-item__wrapper _card">
+								<a href="#" class="category-item__name _card">
+									<div class="category-item__icon _bg"> <img src="img/icons/category1-icon.svg" alt="" loading="lazy"> </div>
+									<span>Ручки</span>
+								</a>
+
+								<div class="category-item__body _card">
+									<ul>
+										<li><a href="/zhenskie-zonty/">Женские зонты</a></li>
+										<li><a href="/zonty-trosti/">Зонты-трости</a></li>
+										<li><a href="/muzhskie-zonty/">Мужские зонты</a></li>
+										<li><a href="/neobychnye-i-originalnye-zonty/">Необычные и оригинальные зонты</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="widget-category__item category-item">
+							<div class="category-item__wrapper _card">
+								<a href="#" class="category-item__name _card">
+									<div class="category-item__icon _bg"> <img src="img/icons/category1-icon.svg" alt="" loading="lazy"> </div>
+									<span>Ежедневники и блокноты</span>
+								</a>
+
+								<div class="category-item__body _card">
+									<ul>
+										<li><a href="/biznes-bloknoty/">Бизнес-блокноты</a></li>
+										<li><a href="/bloknoty/">Блокноты</a></li>
+										<li><a href="/ezhednevniki/">Ежедневники</a></li>
+										<li><a href="/ezhenedelniki/">Еженедельники</a></li>
+										<li><a href="/nabory-s-ezhednevnikami/">Наборы с ежедневниками</a></li>
+										<li><a href="/organayzery/">Органайзеры</a></li>
+										<li><a href="/originalnye-ezhednevniki/">Оригинальные ежедневники</a></li>
+										<li><a href="/planingi/">Планинги</a></li>
+										<li><a href="/upakovka-dlya-ezhednevnikov/">Упаковка для ежедневников</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="widget-category__item category-item">
+							<div class="category-item__wrapper _card">
+								<a href="#" class="category-item__name _card">
+									<div class="category-item__icon _bg"> <img src="img/icons/category1-icon.svg" alt="" loading="lazy"> </div>
+									<span>Упаковка</span>
+								</a>
+
+								<div class="category-item__body _card">
+									<ul>
+										<li><a href="/bumaga-upakovochnaya12/">Бумага упаковочная</a></li>
+										<li><a href="/bumazhnaya-upakovka/">Бумажная упаковка</a></li>
+										<li><a href="/bumazhnye-pakety/">Бумажные пакеты</a></li>
+										<li><a href="/zhestyanaya-upakovka/">Жестяная упаковка</a></li>
+										<li><a href="/korobki-s-logotipom/">Коробки с логотипом</a></li>
+										<li><a href="/meshochki/">Мешочки подарочные</a></li>
+										<li><a href="/napolniteli-dlya-upakovki/">Наполнители для упаковки</a></li>
+										<li><a href="/podarochnaya-upakovka/">Подарочная упаковка</a></li>
+										<li><a href="/podarochnye-korobki/">Подарочные коробки</a></li>
+										<li><a href="/podarochnye-pakety/">Подарочные пакеты</a></li>
+										<li><a href="/upakovka-dlya-novogodnih-podarkov/">Упаковка для новогодних подарков</a></li>
+										<li><a href="/futlyary/">Футляры</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="widget-category__item category-item">
+							<div class="category-item__wrapper _card">
+								<a href="#" class="category-item__name _card">
+									<div class="category-item__icon _bg"> <img src="img/icons/category1-icon.svg" alt="" loading="lazy"> </div>
+									<span>Футболки</span>
+								</a>
+
+								<div class="category-item__body _card">
+									<ul>
+										<li><a href="/detskie-futbolki/">Детские футболки</a></li>
+										<li><a href="/zhenskie-futbolki/">Женские футболки</a></li>
+										<li><a href="/muzhskie-futbolki/">Мужские футболки</a></li>
+										<li><a href="/futbolki-dlya-promo/">Футболки для промо</a></li>
+										<li><a href="/futbolki-polo/">Футболки поло</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="widget-category__item category-item">
+							<div class="category-item__wrapper _card">
+								<a href="#" class="category-item__name _card">
+									<div class="category-item__icon _bg"> <img src="img/icons/category1-icon.svg" alt="" loading="lazy"> </div>
+									<span>Одежда</span>
+								</a>
+
+								<div class="category-item__body _card">
+									<ul>
+										<li><a href="/tolstovki/">Толстовки</a></li>
+										<li><a href="/vetrovki/">Ветровки и Дождевики</a></li>
+										<li><a href="/zhilety/">Жилеты</a></li>
+										<li><a href="/pidzhaki-i-zhakety/">Пиджаки и Жакеты</a></li>
+										<li><a href="/kurtki/">Куртки</a></li>
+										<li><a href="/ofisnye-rubashki/">Офисные рубашки</a></li>
+										<li><a href="/sportivnaya-forma/">Спортивная форма</a></li>
+										<li><a href="/shapki-i-sharfy/">Шапки и шарфы</a></li>
+										<li><a href="/perchatki-i-varezhki/">Перчатки и варежки</a></li>
+										<li><a href="/dzhempery/">Джемперы</a></li>
+										<li><a href="/vyazannye-komplekty/">Вязанные комплекты</a></li>
+										<li><a href="/elementy-kastomizatsii/">Элементы кастомизации</a></li>
+										<li><a href="/shlyapy/">Шляпы</a></li>
+										<li><a href="/kepki-i-beysbolki/">Кепки, бейсболки и панамы</a></li>
+										<li><a href="/bryuki-i-shorty/">Брюки и шорты</a></li>
+										<li><a href="/detskaya-odezhda/">Детская одежда</a></li>
+										<li><a href="/mayki/">Майки</a></li>
+										<li><a href="/noski/">Носки</a></li>
+										<li><a href="/obuv/">Обувь</a></li>
+										<li><a href="/palantiny/">Платки и палантины</a></li>
+										<li><a href="/reflective-vests/">Светоотражающие жилеты</a></li>
+										<li><a href="/svitshoty/">Свитшоты</a></li>
+										<li><a href="/sportivnye-kostyumy/">Спортивные костюмы</a></li>
+										<li><a href="/uniforma-/">Униформа и спецодежда</a></li>
+										<li><a href="/fartuki/">Фартуки</a></li>
+										<li><a href="/halaty/">Халаты</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="widget-category__item category-item">
+							<div class="category-item__wrapper _card">
+								<a href="#" class="category-item__name _card">
+									<div class="category-item__icon _bg"> <img src="img/icons/category1-icon.svg" alt="" loading="lazy"> </div>
+									<span>Посуда</span>
+								</a>
+
+								<div class="category-item__body _card">
+									<ul>
+										<li><a href="/bokaly/">Бокалы</a></li>
+										<li><a href="/butylki/">Бутылки для воды</a></li>
+										<li><a href="/kofery/">Коферы</a></li>
+										<li><a href="/kruzhki/">Кружки</a></li>
+										<li><a href="/posuda-kuhonnye-prisposobleniya/">Кухонная утварь</a></li>
+										<li><a href="/konteynery/">Ланчбоксы</a></li>
+										<li><a href="/nabory-posudy/">Наборы посуды</a></li>
+										<li><a href="/nozhi/">Ножи</a></li>
+										<li><a href="/posuda12/">Посуда</a></li>
+										<li><a href="/stakany/">Стаканы</a></li>
+										<li><a href="/stolovye-pribory/">Столовые приборы</a></li>
+										<li><a href="/termostakany/">Термосы и термокружки</a></li>
+										<li><a href="/upakovka-dlya-posudy/">Упаковка для посуды</a></li>
+										<li><a href="/chayniki/">Чайники</a></li>
+										<li><a href="/chaynye-i-kofeynye-pary/">Чайные и кофейные пары</a></li>
+										<li><a href="/elitnaya-posuda/">Элитная посуда</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="widget-category__item category-item">
+							<div class="category-item__wrapper _card">
+								<a href="#" class="category-item__name _card">
+									<div class="category-item__icon _bg"> <img src="img/icons/category1-icon.svg" alt="" loading="lazy"> </div>
+									<span>Сумки и рюкзаки</span>
+								</a>
+
+								<div class="category-item__body _card">
+									<ul>
+										<li><a href="/dorozhnye-sumki/">Дорожные сумки</a></li>
+										<li><a href="/nesessery-i-kosmetichki/">Несессеры и косметички</a></li>
+										<li><a href="/papka/">Папки и сумки для конференций</a></li>
+										<li><a href="/portfeli/">Портфели</a></li>
+										<li><a href="/poyasnye-sumki/">Поясные сумки</a></li>
+										<li><a href="/ryukzaki/">Рюкзаки</a></li>
+										<li><a href="/sportivnye-sumki/">Спортивные сумки</a></li>
+										<li><a href="/sumki-kholodilnik/">Сумки - холодильник</a></li>
+										<li><a href="/sumki-dlya-dokumentov/">Сумки для документов</a></li>
+										<li><a href="/sumki-dlya-noutbuka/">Сумки для ноутбука</a></li>
+										<li><a href="/sumki-dlya-piknika/">Сумки для пикника</a></li>
+										<li><a href="/chemodany/">Чемоданы</a></li>
+										<li><a href="/sumki-dlya-pokupok/">Шоперы</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="widget-category__item category-item">
+							<div class="category-item__wrapper _card">
+								<a href="#" class="category-item__name _card">
+									<div class="category-item__icon _bg"> <img src="img/icons/category1-icon.svg" alt="" loading="lazy"> </div>
+									<span>Зонты</span>
+								</a>
+
+								<div class="category-item__body _card">
+									<ul>
+										<li><a href="/zhenskie-zonty/">Женские зонты</a></li>
+										<li><a href="/zonty-trosti/">Зонты-трости</a></li>
+										<li><a href="/muzhskie-zonty/">Мужские зонты</a></li>
+										<li><a href="/neobychnye-i-originalnye-zonty/">Необычные и оригинальные зонты</a></li>
+										<li><a href="/plyazhnye-zonty/">Пляжные зонты</a></li>
+										<li><a href="/skladnye-zonty/">Складные зонты</a></li>
+										<li><a href="/elitnye-zonty/">Элитные зонты</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="widget-category__item category-item">
+							<div class="category-item__wrapper _card">
+								<a href="#" class="category-item__name _card">
+									<div class="category-item__icon _bg"> <img src="img/icons/category1-icon.svg" alt="" loading="lazy"> </div>
+									<span>Электроника</span>
+								</a>
+
+								<div class="category-item__body _card">
+									<ul>
+										<li><a href="/gadzhety-dlya-avto/">Автогаджеты</a></li>
+										<li><a href="/elektronika-aksessuary/">Аксессуары для гаджетов</a></li>
+										<li><a href="/bytovaya-tekhnika/">Бытовая техника</a></li>
+										<li><a href="/vneshnie-zhestkie-diski/">Внешние жесткие диски</a></li>
+										<li><a href="/derzhateli-dlya-telefonov/">Держатели для телефонов</a></li>
+										<li><a href="/zaryadnye-ustroystva/">Зарядные устройства</a></li>
+										<li><a href="/zaryadnye-ustroystva-na-2200-mah/">Зарядные устройства до 4000 mAh</a></li>
+										<li><a href="/kompyuternye-i-mobilnye-aksessuary/">Компьютерные и мобильные аксессуары</a></li>
+										<li><a href="/lampy-i-svetilniki/">Лампы и светильники</a></li>
+										<li><a href="/naushniki/">Наушники</a></li>
+										<li><a href="/portativnye-kolonki/">Портативные колонки</a></li>
+										<li><a href="/stilusy-ruchki/">Ручки стилусы</a></li>
+										<li><a href="/setevye-zaryadnye-ustroystva/">Сетевые зарядные устройства</a></li>
+										<li><a href="/elektronika-smart-braslety/">Смарт-браслеты</a></li>
+										<li><a href="/top-50-gadzhetoa-2023/">ТОП 50 гаджетов 2023</a></li>
+										<li><a href="/uvlazhniteli-/">Увлажнители</a></li>
+										<li><a href="/umnye-gadzhety/">Умные гаджеты</a></li>
+										<li><a href="/umnyy-dom/">Умный дом</a></li>
+										<li><a href="/universalnye-akkumulyatory/">Универсальные аккумуляторы</a></li>
+										<li><a href="/ustroystva-khraneniya/">Устройства хранения и Хабы</a></li>
+										<li><a href="/elektronnye-knigi/">Электронные книги</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="widget-category__item category-item">
+							<div class="category-item__wrapper _card">
+								<a href="#" class="category-item__name _card">
+									<div class="category-item__icon _bg"> <img src="img/icons/category1-icon.svg" alt="" loading="lazy"> </div>
+									<span>Ручки</span>
+								</a>
+
+								<div class="category-item__body _card">
+									<ul>
+										<li><a href="/zhenskie-zonty/">Женские зонты</a></li>
+										<li><a href="/zonty-trosti/">Зонты-трости</a></li>
+										<li><a href="/muzhskie-zonty/">Мужские зонты</a></li>
+										<li><a href="/neobychnye-i-originalnye-zonty/">Необычные и оригинальные зонты</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="widget-category__item category-item">
+							<div class="category-item__wrapper _card">
+								<a href="#" class="category-item__name _card">
+									<div class="category-item__icon _bg"> <img src="img/icons/category1-icon.svg" alt="" loading="lazy"> </div>
+									<span>Ежедневники и блокноты</span>
+								</a>
+
+								<div class="category-item__body _card">
+									<ul>
+										<li><a href="/biznes-bloknoty/">Бизнес-блокноты</a></li>
+										<li><a href="/bloknoty/">Блокноты</a></li>
+										<li><a href="/ezhednevniki/">Ежедневники</a></li>
+										<li><a href="/ezhenedelniki/">Еженедельники</a></li>
+										<li><a href="/nabory-s-ezhednevnikami/">Наборы с ежедневниками</a></li>
+										<li><a href="/organayzery/">Органайзеры</a></li>
+										<li><a href="/originalnye-ezhednevniki/">Оригинальные ежедневники</a></li>
+										<li><a href="/planingi/">Планинги</a></li>
+										<li><a href="/upakovka-dlya-ezhednevnikov/">Упаковка для ежедневников</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="widget-category__item category-item">
+							<div class="category-item__wrapper _card">
+								<a href="#" class="category-item__name _card">
+									<div class="category-item__icon _bg"> <img src="img/icons/category1-icon.svg" alt="" loading="lazy"> </div>
+									<span>Упаковка</span>
+								</a>
+
+								<div class="category-item__body _card">
+									<ul>
+										<li><a href="/bumaga-upakovochnaya12/">Бумага упаковочная</a></li>
+										<li><a href="/bumazhnaya-upakovka/">Бумажная упаковка</a></li>
+										<li><a href="/bumazhnye-pakety/">Бумажные пакеты</a></li>
+										<li><a href="/zhestyanaya-upakovka/">Жестяная упаковка</a></li>
+										<li><a href="/korobki-s-logotipom/">Коробки с логотипом</a></li>
+										<li><a href="/meshochki/">Мешочки подарочные</a></li>
+										<li><a href="/napolniteli-dlya-upakovki/">Наполнители для упаковки</a></li>
+										<li><a href="/podarochnaya-upakovka/">Подарочная упаковка</a></li>
+										<li><a href="/podarochnye-korobki/">Подарочные коробки</a></li>
+										<li><a href="/podarochnye-pakety/">Подарочные пакеты</a></li>
+										<li><a href="/upakovka-dlya-novogodnih-podarkov/">Упаковка для новогодних подарков</a></li>
+										<li><a href="/futlyary/">Футляры</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="widget-category__item category-item">
+							<div class="category-item__wrapper _card">
+								<a href="#" class="category-item__name _card">
+									<div class="category-item__icon _bg"> <img src="img/icons/category1-icon.svg" alt="" loading="lazy"> </div>
+									<span>Футболки</span>
+								</a>
+
+								<div class="category-item__body _card">
+									<ul>
+										<li><a href="/detskie-futbolki/">Детские футболки</a></li>
+										<li><a href="/zhenskie-futbolki/">Женские футболки</a></li>
+										<li><a href="/muzhskie-futbolki/">Мужские футболки</a></li>
+										<li><a href="/futbolki-dlya-promo/">Футболки для промо</a></li>
+										<li><a href="/futbolki-polo/">Футболки поло</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="widget-category__button">
+						<button type="button" class="btn btn_bg-white">
+							<span>Смотреть ещё</span>
+							<span>Скрыть</span>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="steps">
+				<div class="steps__container">
+					<div class="steps__heading _heading">
+						<h2 class="steps__title">Как всё работает?</h2>
+					</div>
+
+					<div data-tabs="991.98" data-tabs-animate="800" class="steps__tabs tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="submit" class="tabs__title _card _tab-active"><span class="steps__step">1</span> Внимательно слушаем все ваши пожелания </button>
+							<button type="submit" class="tabs__title _card"><span class="steps__step">2</span> Разрабатываем и визуализируем концепцию</button>
+							<button type="submit" class="tabs__title _card"><span class="steps__step">3</span> Согласовываем макеты и заключаем договор</button>
+							<button type="submit" class="tabs__title _card"><span class="steps__step">4</span> Реализуем и отправляем заказ</button>
+							<button type="submit" class="tabs__title _card"><span class="steps__step">5</span> Получаем восхищенные отзывы</button>
+						</nav>
+						<div data-tabs-body class="tabs__content _card">
+							<div class="tabs__body">
+								<div class="steps__body">
+									<h2 class="steps__caption">Бриф</h2>
+									<div class="steps__text _content">
+										<p>Мы&nbsp;задаём вопросы о&nbsp;ваших целях, аудитории и&nbsp;ожиданиях, чтобы создать не&nbsp;просто продукт, а&nbsp;инструмент, который будет работать на&nbsp;вас.</p>
+										<p>Почему это важно? Потому что чем больше мы&nbsp;знаем о&nbsp;вашей задаче, тем точнее можем предложить решение, которое не&nbsp;просто понравится, но&nbsp;и&nbsp;будет полезным.</p>
+									</div>
+									<div class="steps__button">
+										<a href="" class="btn btn_bg-white btn_big">Заполнить бриф</a>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="steps__body">
+									<h2 class="steps__caption">Бриф</h2>
+									<div class="steps__text _content">
+										<p>Мы&nbsp;задаём вопросы о&nbsp;ваших целях, аудитории и&nbsp;ожиданиях, чтобы создать не&nbsp;просто продукт, а&nbsp;инструмент, который будет работать на&nbsp;вас.</p>
+									</div>
+									<div class="steps__button">
+										<a href="" class="btn btn_bg-white btn_big">Заполнить бриф</a>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="steps__body">
+									<h2 class="steps__caption">Бриф</h2>
+									<div class="steps__text _content">
+										<p>Мы&nbsp;задаём вопросы о&nbsp;ваших целях, аудитории и&nbsp;ожиданиях, чтобы создать не&nbsp;просто продукт, а&nbsp;инструмент, который будет работать на&nbsp;вас.</p>
+										<p>Почему это важно? Потому что чем больше мы&nbsp;знаем о&nbsp;вашей задаче, тем точнее можем предложить решение, которое не&nbsp;просто понравится, но&nbsp;и&nbsp;будет полезным.</p>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="steps__body">
+									<h2 class="steps__caption">Бриф</h2>
+									<div class="steps__text _content">
+										<p>Мы&nbsp;задаём вопросы о&nbsp;ваших целях, аудитории и&nbsp;ожиданиях, чтобы создать не&nbsp;просто продукт, а&nbsp;инструмент, который будет работать на&nbsp;вас.</p>
+										<p>Почему это важно? Потому что чем больше мы&nbsp;знаем о&nbsp;вашей задаче, тем точнее можем предложить решение, которое не&nbsp;просто понравится, но&nbsp;и&nbsp;будет полезным.</p>
+									</div>
+									<div class="steps__button">
+										<a href="" class="btn btn_bg-white btn_big">Заполнить бриф</a>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="steps__body">
+									<h2 class="steps__caption">Бриф</h2>
+									<div class="steps__text _content">
+										<p>Мы&nbsp;задаём вопросы о&nbsp;ваших целях, аудитории и&nbsp;ожиданиях, чтобы создать не&nbsp;просто продукт, а&nbsp;инструмент, который будет работать на&nbsp;вас.</p>
+										<p>Почему это важно? Потому что чем больше мы&nbsp;знаем о&nbsp;вашей задаче, тем точнее можем предложить решение, которое не&nbsp;просто понравится, но&nbsp;и&nbsp;будет полезным.</p>
+										<p>Мы&nbsp;задаём вопросы о&nbsp;ваших целях, аудитории и&nbsp;ожиданиях, чтобы создать не&nbsp;просто продукт, а&nbsp;инструмент, который будет работать на&nbsp;вас.</p>
+										<p>Почему это важно? Потому что чем больше мы&nbsp;знаем о&nbsp;вашей задаче, тем точнее можем предложить решение, которое не&nbsp;просто понравится, но&nbsp;и&nbsp;будет полезным.</p>
+										<p>Мы&nbsp;задаём вопросы о&nbsp;ваших целях, аудитории и&nbsp;ожиданиях, чтобы создать не&nbsp;просто продукт, а&nbsp;инструмент, который будет работать на&nbsp;вас.</p>
+										<p>Почему это важно? Потому что чем больше мы&nbsp;знаем о&nbsp;вашей задаче, тем точнее можем предложить решение, которое не&nbsp;просто понравится, но&nbsp;и&nbsp;будет полезным.</p>
+									</div>
+									<div class="steps__button">
+										<a href="" class="btn btn_bg-white btn_big">Заполнить бриф</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="request2">
+						<div class="request2__card _card">
+							<div class="request2__inner">
+								<div class="request2__heading">
+									<h2 class="request2__title">Свяжемся с&nbsp;Вами так, как Вам удобно</h2>
+
+									<div class="request2__socials socials" data-da=".request2__form, 767.98, last">
+										<a href="#" class="socials__item shake-animation">
+											<svg class="icon">
+												<use xlink:href="img/icons/icons.svg#phone"></use>
+											</svg>
+										</a>
+										<a href="#" class="socials__item shake-animation">
+											<svg class="icon">
+												<use xlink:href="img/icons/icons.svg#telegram"></use>
+											</svg>
+										</a>
+										<a href="#" class="socials__item shake-animation">
+											<svg class="icon">
+												<use xlink:href="img/icons/icons.svg#whatsapp"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+
+								<form action="#" class="request2__form">
+									<div class="request2__row">
+										<div class="form-item">
+											<label for="request2-name" class="label">Ваше имя или как к Вам обращаться?</label>
+											<input id="request2-name" type="text" name="request2-name" placeholder="Имя" class="input">
+										</div>
+										<div class="form-item">
+											<label for="request2-phone" class="label">Ваш контакт</label>
+											<input id="request2-phone" type="text" name="request2-phone" placeholder="+7 (___) ___ __-__" class="input input_phone">
+										</div>
+										<div class="form-submit">
+											<button type="submit" class="btn btn_big btn_bg-accent">Обсудить проект</button>
+										</div>
+									</div>
+									<div class="form-item" data-da=".request2__row, 767.98,2">
+										<div class="checkbox">
+											<input id="request2-privacy" class="checkbox__input" type="checkbox" value="Соглашение на обработку персональных данных" name="request2-privacy">
+											<label for="request2-privacy" class="checkbox__label"><span class="checkbox__text">Соглашение на обработку персональных данных</span></label>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="seo">
+				<div class="seo__container">
+					<div data-spollers="767.98, max" class="seo__spollers spollers spoller-heading">
+						<details class="spoller-heading__item seo__grid">
+							<summary class="spoller-heading__title seo__title">
+								<h2>Условия работы</h2>
+							</summary>
+							<div class="seo__card _card">
+								<div class="_content">
+									<h2>Заголовок с сеошным текстом</h2>
+									<h3>Минимальный заказ</h3>
+									<p>Изготовление футболок с&nbsp;логотипом на&nbsp;заказ&nbsp;&mdash; популярный способ развития бизнеса. AVRORAstore предлагает печать и&nbsp;вышивку многоцветных изображений любого формата на&nbsp;текстильной и&nbsp;другой сувенирной продукции. Для создания универсальных футболок с&nbsp;логотипом на&nbsp;заказ мы&nbsp;применяем современные технологии прямой и&nbsp;трафаретной печати, а&nbsp;также сублимацию, шелкографию, вышивку логотипов и&nbsp;добавление элементов кастомизации на&nbsp;одежду. Вы&nbsp;можете заказать футболки с&nbsp;логотипом по&nbsp;цене от&nbsp;производителя на&nbsp;нашем сайте. Гарантия качества и&nbsp;износостойкости изображений даже после многократных стирок.</p>
+									<h3>Этапы брендирования </h3>
+									<p>Изготовление футболок с&nbsp;логотипом на&nbsp;заказ&nbsp;&mdash; популярный способ развития бизнеса. AVRORAstore предлагает печать и&nbsp;вышивку многоцветных изображений любого формата на&nbsp;текстильной и&nbsp;другой сувенирной продукции. Для создания универсальных футболок с&nbsp;логотипом на&nbsp;заказ мы&nbsp;применяем современные технологии прямой и&nbsp;трафаретной печати, а&nbsp;также сублимацию, шелкографию, вышивку логотипов и&nbsp;добавление элементов кастомизации на&nbsp;одежду.</p>
+								</div>
+							</div>
+						</details>
+					</div>
+				</div>
+			</section>
+
+			<section class="faq">
+				<div class="faq__container">
+					<div class="faq__heading _heading">
+						<h2 class="faq__title">Часто задаваемые вопросы</h2>
+						<div class="faq__button" data-da=".faq__grid, 767.98">
+							<a href="" class="btn btn_bg-white btn_big">Задать вопрос</a>
+						</div>
+					</div>
+
+					<div class="faq__grid">
+						<div data-spollers class="faq__spollers spollers">
+							<details class="spollers__item _card">
+								<summary class="spollers__title">Можете прислать прайс? <span></span></summary>
+								<div class="spollers__body _content">
+									Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. О пояс пунктуация буквенных напоивший силуэт, текстов предупредила! Пор своего дорогу от всех текстами взобравшись то.
+								</div>
+							</details>
+							<details class="spollers__item _card">
+								<summary class="spollers__title">Какой срок изготовления? <span></span></summary>
+								<div class="spollers__body _content">
+									Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. О пояс пунктуация буквенных напоивший силуэт, текстов предупредила! Пор своего дорогу от всех текстами взобравшись то.
+								</div>
+							</details>
+							<details class="spollers__item _card">
+								<summary class="spollers__title">У меня нет дизайна, как быть? <span></span></summary>
+								<div class="spollers__body _content">
+									Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. О пояс пунктуация буквенных напоивший силуэт, текстов предупредила! Пор своего дорогу от всех текстами взобравшись то.
+								</div>
+							</details>
+						</div>
+
+						<div data-spollers class="faq__spollers spollers">
+							<details class="spollers__item _card">
+								<summary class="spollers__title">Сколько будет стоить нанесение? <span></span></summary>
+								<div class="spollers__body _content">
+									Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. О пояс пунктуация буквенных напоивший силуэт, текстов предупредила! Пор своего дорогу от всех текстами взобравшись то.
+								</div>
+							</details>
+							<details class="spollers__item _card">
+								<summary class="spollers__title">Вы «это» делаете?<span></span></summary>
+								<div class="spollers__body _content">
+									Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. О пояс пунктуация буквенных напоивший силуэт, текстов предупредила! Пор своего дорогу от всех текстами взобравшись то.
+								</div>
+							</details>
+							<details class="spollers__item _card">
+								<summary class="spollers__title">Можете прислать прайс?<span></span></summary>
+								<div class="spollers__body _content">
+									Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. О пояс пунктуация буквенных напоивший силуэт, текстов предупредила! Пор своего дорогу от всех текстами взобравшись то.
+								</div>
+							</details>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div class="footer-request">
+			<div class="footer-request__container">
+				<div class="footer-request__row">
+					<div class="footer-request__left">
+						<div class="footer-request__contacts">
+							<div class="footer-request-contact">
+								<a href="tel:+78005507893" class="footer-request-contact__link _nowrap text-link">+7 (800) 550-78-93</a>
+								<div class="footer-request-contact__note">С 10:00 до 18:30 по МСК</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer-request__center">
+						<div class="footer-request__title">Не нашли подходящий товар?</div>
+						<div class="footer-request__subtitle">Отправьте запрос нашим специалистам. <br> Мы отвечаем на все запросы в течении 15 минут </div>
+					</div>
+
+					<div class="footer-request__right">
+						<div class="footer-request__button">
+							<button type="button" class="btn btn_big btn_bg-accent">
+								<span>Отправить заявку</span>
+								<svg class="icon">
+									<use xlink:href="img/icons/icons.svg#email"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__inner">
+					<div class="footer__grid">
+						<div class="footer__top">
+							<div class="footer__left">
+								<div class="footer__caption">Помощь покупателям</div>
+								<nav class="footer__menu">
+									<ul>
+										<li><a href="" class="text-link">Бренды</a></li>
+										<li><a href="" class="text-link">О компании</a></li>
+										<li><a href="" class="text-link">Как сделать заказ</a></li>
+										<li><a href="" class="text-link">Доставка и оплата</a></li>
+										<li><a href="" class="text-link">Контакты</a></li>
+										<li><a href="" class="text-link">Требования к макетам</a></li>
+									</ul>
+								</nav>
+							</div>
+
+							<div class="footer__center">
+								<div class="footer__caption">Контакты</div>
+
+								<div class="footer__offices">
+									<div class="office">
+										<div class="office__main">
+											<div class="office__name">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#location"></use>
+												</svg>
+												<span>Офис в Москве</span>
+											</div>
+
+											<div class="office__address">1-я ул. Ямского Поля, д.&nbsp;1, корп.&nbsp;1, комплекс SLAVA</div>
+
+											<div class="office__contacts">
+												<a href="tel:+74959759804" class="office__contact text-link">+7 (495) 975-98-04</a>
+											</div>
+
+											<div class="office__schedule">Время работы: 10:00&ndash;18:30, <br> Сб, вс&nbsp;&mdash; выходной</div>
+
+											<div class="office__text">Все заявки принятые в&nbsp;нерабочее время обрабатываются утром в&nbsp;первую очередь. Отвечаем на&nbsp;все обращения</div>
+										</div>
+
+										<div class="office__footer">
+											<div class="office__link">
+												<a href="" class="text-link">Как проехать</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="office">
+										<div class="office__main">
+											<div class="office__name">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#location"></use>
+												</svg>
+												<span>Офис в&nbsp;Санкт-Петербурге</span>
+											</div>
+
+											<div class="office__address">196084, Санкт-Петербург, ул. Киевская, д.&nbsp;6&nbsp;БЦ Киевская&nbsp;6, офис 102</div>
+
+											<div class="office__contacts">
+												<a href="tel:+74959759804" class="office__contact text-link">+7 (812) 640 07 81</a>
+											</div>
+
+											<div class="office__schedule">Время работы: 10:00&ndash;18:30, <br> Сб, вс&nbsp;&mdash; выходной</div>
+
+											<div class="office__text">Все заявки принятые в&nbsp;нерабочее время обрабатываются утром в&nbsp;первую очередь. Отвечаем на&nbsp;все обращения</div>
+										</div>
+
+										<div class="office__footer">
+											<div class="office__link">
+												<a href="" class="text-link">Как проехать</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="footer__right">
+								<div class="footer__socials" data-da=".footer__bottom, 991.98, 0">
+									<div class="footer__caption">Мы в социальных сетях</div>
+									<div class="socials">
+										<a href="#" class="socials__item shake-animation">
+											<svg class="icon">
+												<use xlink:href="img/icons/icons.svg#vk"></use>
+											</svg>
+										</a>
+										<a href="#" class="socials__item shake-animation">
+											<svg class="icon">
+												<use xlink:href="img/icons/icons.svg#telegram2"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+
+								<div class="footer__info _content">
+									<p>Индивидуальный предприниматель: <br> Самохвалов Игорь Вениаминович</p>
+									<p>Юридический адрес: 192131,Санкт-Петербург г., пр-т Обуховской Обороны, д.195, Лит&nbsp;А, кв.776</p>
+									<p>Юридический адрес: 192131,Санкт-Петербург г., пр-т Обуховской Обороны, д.195, Лит&nbsp;А, кв.776</p>
+									<p>ИНН: 732503311710</p>
+									<p>Телефон: +7 (812) 640-07-81</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="footer__bottom">
+							<div class="footer__privacy">Оставляя заявки на нашем сайте, Вы соглашаетесь с <a href="" class="text-link">политикой конфиденциальности</a></div>
+							<div class="footer__sout">
+								<a href="" class="text-link">Сводные данные о результатах проведения СОУТ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="floating-menu" data-lp>
+			<nav class="floating-menu__nav">
+				<ul>
+					<li class="d-md-none"><a href="#" class="link-hover"><span>Главная</span></a></li>
+					<li>
+						<a href="#" class="link-hover _active">
+							<div class="floating-menu__icon">
+								<svg class="icon">
+									<use xlink:href="img/icons/icons.svg#catalog"></use>
+								</svg>
+							</div>
+							<span>Каталог</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link-hover">
+							<div class="floating-menu__icon">
+								<svg class="icon">
+									<use xlink:href="img/icons/icons.svg#services"></use>
+								</svg>
+							</div>
+							<span>Услуги</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link-hover">
+							<div class="floating-menu__icon">
+								<svg class="icon">
+									<use xlink:href="img/icons/icons.svg#portfolio"></use>
+								</svg>
+							</div>
+							<span>Портфолио</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link-hover">
+							<div class="floating-menu__icon">
+								<svg class="icon">
+									<use xlink:href="img/icons/icons.svg#basket"></use>
+								</svg>
+								<div class="floating-menu__amount">24</div>
+							</div>
+							<span>Вишлист</span>
+						</a>
+					</li>
+					<li class="d-md-none">
+						<a href="#" data-goto=".wrapper" class="floating-menu__up">
+							<svg class="icon">
+								<use xlink:href="img/icons/icons.svg#link-arrow"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250505021448"></script>
+	<script src="js/app.min.js?_v=20250505021448"></script>
+</body>
+
+</html>
