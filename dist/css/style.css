@@ -1608,7 +1608,7 @@ video {
   position: relative
 }
 .banner-slide_small {
-  min-height: initial
+  min-height: initial!important
 }
 .banner-slide_small .checkbox__label {
   padding-left: 1.5rem;
