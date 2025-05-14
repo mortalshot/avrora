@@ -6,8 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250505114539" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20250505114539">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250514182956" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20250514182956">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -20,13 +20,17 @@
 				<div class="header__row">
 					<div class="header__left">
 						<div class="header__menu menu">
-							<button type="button" class="menu__icon icon-menu"><span></span></button>
+							<button type="button" class="menu__icon js-icon-menu">
+								<div class="icon-menu">
+									<span></span>
+								</div>
+							</button>
 							<nav class="menu__body" style="opacity: 0;">
-								<div class="header__search header-search">
-									<form action="#" class="header-search__form">
-										<input autocomplete="off" type="text" name="form[]" placeholder="Название товара или артикул" class="header-search__input">
+								<div class="header__search search">
+									<form action="#" class="search__form">
+										<input autocomplete="off" type="text" name="form[]" placeholder="Название товара или артикул" class="search__input">
 
-										<button class="header-search__submit">
+										<button class="search__submit">
 											<svg class="icon">
 												<use xlink:href="img/icons/icons.svg#search"></use>
 											</svg>
@@ -37,7 +41,7 @@
 						</div>
 
 						<div class="header__logo logo">
-							<a href="">
+							<a href="home.html">
 								<svg class="icon logo__icon logo__icon_desk">
 									<use xlink:href="img/icons/icons.svg#logo_desk"></use>
 								</svg>
@@ -80,7 +84,7 @@
 							<div class="header__contact header-contact">
 								<div class="header-contact__caption copy-item">
 									<a href="mailto:zakaz+705409@avrorastore.ru" class="copy-item__text">zakaz+705409@avrorastore.ru</a>
-									<button type="button" class="copy-item__button" title="Скопировать адрес в буфер обмена">
+									<button type="button" class="copy-item__button js-copy-button" title="Скопировать адрес в буфер обмена" data-text="Адрес электронной почты скопирован в буфер обмена">
 										<svg class="icon">
 											<use xlink:href="img/icons/icons.svg#copy"></use>
 										</svg>
@@ -802,10 +806,12 @@
 						<div class="homebanner__wrapper swiper-wrapper">
 							<div class="homebanner__slide swiper-slide banner-slide _card">
 								<div class="banner-slide__body">
-									<h2 class="banner-slide__title">
+									<h1 class="banner-slide__title">
 										Создаём уникальный мерч и&nbsp;бизнес-подарки <br> <span style="color: #BEBEBE;">для компаний и&nbsp;корпораций</span>
-									</h2>
-									<div class="banner-slide__subtitle">Разрабатываем концепции на&nbsp;основе tone-voice вашего бренда, предлагаем готовые решения наилучшим образом олицетворяющие ваш бренд</div>
+									</h1>
+									<div class="banner-slide__subtitle _content">
+										<p>Разрабатываем концепции на&nbsp;основе tone-voice вашего бренда, предлагаем готовые решения наилучшим образом олицетворяющие ваш бренд</p>
+									</div>
 									<div class="banner-slide__button">
 										<a href="" class="btn btn_big btn_bg-accent">Узнать подробнее</a>
 										<div class="banner-slide__note">Минимальная сумма заказа - <span class="_nowrap"><b>100 000 ₽</b></span></div>
@@ -814,7 +820,7 @@
 
 								<div class="banner-slide__image">
 									<picture>
-										<source srcset="img/home-banner/home-banner1_desk.webp" media="(min-width: 767.98px)">
+										<source srcset="img/home-banner/home-banner1_desk.webp" media="(min-width: 991.98px)">
 										<img src="img/home-banner/home-banner1_mob.webp" alt="" loading="lazy">
 										<div class="swiper-lazy-preloader"></div>
 									</picture>
@@ -823,9 +829,44 @@
 
 							<div class="homebanner__slide swiper-slide banner-slide _card">
 								<div class="banner-slide__body">
-									<div class="banner-slide__title">
-										Создаём уникальный мерч и&nbsp;бизнес-подарки <br> <span style="color: #BEBEBE;">для компаний и&nbsp;корпораций</span>
+									<h1 class="banner-slide__title" style="color: #0055FF;"> Футболки с&nbsp;логотипом </h1>
+									<div class="banner-slide__subtitle _content">
+										<p>Корпоративные футболки с&nbsp;нанесением логотипа в&nbsp;Москве от&nbsp;AVRORAstore.</p>
+										<p>Мы&nbsp;создаём стильную и&nbsp;оригинальную фирменную продукцию с&nbsp;печатью любых принтов и&nbsp;изображений. Разработка дизайна от&nbsp;специалистов AVRORAstore или работа по&nbsp;вашим эскизам.</p>
+										<p>Оптовые партии печати футболок с&nbsp;логотипом от&nbsp;35&nbsp;000&nbsp;рублей.</p>
 									</div>
+
+									<form action="#" class="banner-slide__form banner-form">
+										<div class="banner-form__row">
+											<div class="form-item">
+												<label for="banner-phone" class="label">Ваш контакт</label>
+												<input id="banner-phone" type="text" name="banner-phone" placeholder="+7 (___) ___ __-__" class="input input_phone" data-required data-validate required>
+											</div>
+
+											<div class="form-submit">
+												<button type="submit" class="btn btn_bg-accent">Обсудить проект</button>
+											</div>
+										</div>
+										<div class="form-privacy">
+											Нажимая на&nbsp;кнопку &laquo;Обсудить проект&raquo;, <br> вы&nbsp;соглашетесь на&nbsp;<a href="#">обработку персональных данных</a>
+										</div>
+									</form>
+								</div>
+
+								<div class="banner-slide__image">
+									<picture>
+										<source srcset="img/home-banner/home-banner1_desk.webp" media="(min-width: 991.98px)">
+										<img src="img/home-banner/home-banner1_mob.webp" alt="" loading="lazy">
+										<div class="swiper-lazy-preloader"></div>
+									</picture>
+								</div>
+							</div>
+
+							<div class="homebanner__slide swiper-slide banner-slide _card">
+								<div class="banner-slide__body">
+									<h1 class="banner-slide__title">
+										Создаём уникальный мерч и&nbsp;бизнес-подарки <br> <span style="color: #BEBEBE;">для компаний и&nbsp;корпораций</span>
+									</h1>
 									<div class="banner-slide__subtitle">Базовая корпоративная продукция на&nbsp;все случаи жизни компании</div>
 									<div class="banner-slide__button">
 										<a href="" class="btn btn_big btn_bg-accent">Узнать подробнее</a>
@@ -1007,26 +1048,26 @@
 										<div class="template1 cases-gap">
 											<div class="template1__left cases-gap">
 												<div class="template1__top cases-gap">
-													<div class="template1__card cases__card _card" style="flex-basis: 45.2%;">
+													<a href="#" class="template1__card cases__card _card" style="flex-basis: 45.2%;">
 														<div class="cases__card-bg _bg">
 															<img src="img/cases/case1-image1.webp" alt="" loading="lazy">
 															<div class="swiper-lazy-preloader"></div>
 														</div>
-													</div>
-													<div class="template1__card cases__card _card" style="flex-grow: 1;">
+													</a>
+													<a href="#" class="template1__card cases__card _card" style="flex-grow: 1;">
 														<div class="cases__card-bg _bg">
 															<img src="img/cases/case1-image2.webp" alt="" loading="lazy">
 															<div class="swiper-lazy-preloader"></div>
 														</div>
-													</div>
+													</a>
 												</div>
 												<div class="template1__bottom cases-gap">
-													<div class="template1__card cases__card _card" style="flex-grow: 1;">
+													<a href="#" class="template1__card cases__card _card" style="flex-grow: 1;">
 														<div class="cases__card-bg _bg">
 															<img src="img/cases/case1-image3.webp" alt="" loading="lazy">
 															<div class="swiper-lazy-preloader"></div>
 														</div>
-													</div>
+													</a>
 													<div class="template1__card cases__card _card" style="flex-basis: 61%;">
 														<div class="template1__text _content">
 															<p>Цель проекта&nbsp;&mdash; создать уникальный мерч, который не&nbsp;просто дополняет повседневную работу, но&nbsp;и&nbsp;помогает сделать офисное пространство уютнее и&nbsp;комфортнее.</p>
@@ -1035,18 +1076,18 @@
 												</div>
 											</div>
 											<div class="template1__right cases-gap">
-												<div class="template1__card cases__card _card" style="flex-basis: 42.5%;">
+												<a href="#" class="template1__card cases__card _card" style="flex-basis: 42.5%;">
 													<div class="cases__card-bg _bg">
 														<img src="img/cases/case1-image4.webp" alt="" loading="lazy">
 														<div class="swiper-lazy-preloader"></div>
 													</div>
-												</div>
-												<div class="template1__card cases__card _card" style="flex-grow: 1;">
+												</a>
+												<a href="#" class="template1__card cases__card _card" style="flex-grow: 1;">
 													<div class="cases__card-bg _bg">
 														<img src="img/cases/case1-image5.webp" alt="" loading="lazy">
 														<div class="swiper-lazy-preloader"></div>
 													</div>
-												</div>
+												</a>
 											</div>
 										</div>
 									</div>
@@ -1061,44 +1102,44 @@
 									<div class="cases__gallery">
 										<div class="template2 cases-gap">
 											<div class="template2__left">
-												<div class="template2__card cases__card _card">
+												<a href="#" class="template2__card cases__card _card">
 													<div class="cases__card-bg _bg">
 														<img src="img/cases/case2-image1.webp" alt="" loading="lazy">
 														<div class="swiper-lazy-preloader"></div>
 													</div>
-												</div>
+												</a>
 											</div>
 
 											<div class="template2__right cases-gap">
 												<div class="template2__top cases-gap">
-													<div class="template2__card cases__card _card">
+													<a href="#" class="template2__card cases__card _card">
 														<div class="cases__card-bg _bg">
 															<img src="img/cases/case2-image2.webp" alt="" loading="lazy">
 															<div class="swiper-lazy-preloader"></div>
 														</div>
-													</div>
-													<div class="template2__card cases__card _card">
+													</a>
+													<a href="#" class="template2__card cases__card _card">
 														<div class="cases__card-bg _bg">
 															<img src="img/cases/case2-image3.webp" alt="" loading="lazy">
 															<div class="swiper-lazy-preloader"></div>
 														</div>
-													</div>
+													</a>
 												</div>
 
 												<div class="template2__bottom cases-gap">
-													<div class="template2__card cases__card _card">
+													<a href="#" class="template2__card cases__card _card">
 														<div class="cases__card-bg _bg">
 															<img src="img/cases/case2-image4.webp" alt="" loading="lazy">
 															<div class="swiper-lazy-preloader"></div>
 														</div>
-													</div>
+													</a>
 
-													<div class="template2__card cases__card _card">
+													<a href="#" class="template2__card cases__card _card">
 														<div class="cases__card-bg _bg">
 															<img src="img/cases/case2-image5.webp" alt="" loading="lazy">
 															<div class="swiper-lazy-preloader"></div>
 														</div>
-													</div>
+													</a>
 												</div>
 											</div>
 										</div>
@@ -1225,7 +1266,7 @@
 							<form action="#" class="request__form">
 								<div class="form-item">
 									<label for="request-phone" class="label">Ваш контакт</label>
-									<input id="request-phone" type="text" name="request-phone" placeholder="+7 (___) ___ __-__" class="input input_phone">
+									<input id="request-phone" type="text" name="request-phone" placeholder="+7 (___) ___ __-__" class="input input_phone" data-required data-validate required>
 								</div>
 								<div class="form-submit">
 									<button type="submit" class="btn btn_large btn_bg-accent">Заказать звонок</button>
@@ -1236,7 +1277,7 @@
 				</div>
 			</section>
 
-			<section class="widget-category">
+			<section class="widget-category ">
 				<div class="widget-category__container">
 					<div class="widget-category__heading _heading">
 						<h2 class="widget-category__title">Категории товаров</h2>
@@ -1790,7 +1831,7 @@
 						</div>
 					</div>
 
-					<div class="widget-category__button">
+					<div class="widget-category__button js-category-button">
 						<button type="button" class="btn btn_bg-white">
 							<span>Смотреть ещё</span>
 							<span>Скрыть</span>
@@ -1798,6 +1839,7 @@
 					</div>
 				</div>
 			</section>
+
 
 			<section class="steps">
 				<div class="steps__container">
@@ -1876,54 +1918,56 @@
 							</div>
 						</div>
 					</div>
+				</div>
+			</section>
 
-					<div class="request2">
-						<div class="request2__card _card">
-							<div class="request2__inner">
-								<div class="request2__heading">
-									<h2 class="request2__title">Свяжемся с&nbsp;Вами так, как Вам удобно</h2>
+			<section class="request2">
+				<div class="request2__container">
+					<div class="request2__card _card">
+						<div class="request2__inner">
+							<div class="request2__heading">
+								<h2 class="request2__title">Свяжемся с&nbsp;Вами так, как Вам удобно</h2>
 
-									<div class="request2__socials socials" data-da=".request2__form, 767.98, last">
-										<a href="#" class="socials__item shake-animation">
-											<svg class="icon">
-												<use xlink:href="img/icons/icons.svg#phone"></use>
-											</svg>
-										</a>
-										<a href="#" class="socials__item shake-animation">
-											<svg class="icon">
-												<use xlink:href="img/icons/icons.svg#telegram"></use>
-											</svg>
-										</a>
-										<a href="#" class="socials__item shake-animation">
-											<svg class="icon">
-												<use xlink:href="img/icons/icons.svg#whatsapp"></use>
-											</svg>
-										</a>
+								<div class="request2__socials socials" data-da=".request2__form, 767.98, last">
+									<a href="#" class="socials__item shake-animation">
+										<svg class="icon">
+											<use xlink:href="img/icons/icons.svg#phone"></use>
+										</svg>
+									</a>
+									<a href="#" class="socials__item shake-animation">
+										<svg class="icon">
+											<use xlink:href="img/icons/icons.svg#telegram"></use>
+										</svg>
+									</a>
+									<a href="#" class="socials__item shake-animation">
+										<svg class="icon">
+											<use xlink:href="img/icons/icons.svg#whatsapp"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+
+							<form action="#" class="request2__form">
+								<div class="request2__row">
+									<div class="form-item">
+										<label for="request2-name" class="label">Ваше имя или как к Вам обращаться?</label>
+										<input id="request2-name" type="text" name="request2-name" placeholder="Имя" class="input">
+									</div>
+									<div class="form-item">
+										<label for="request2-phone" class="label">Ваш контакт</label>
+										<input id="request2-phone" type="text" name="request2-phone" placeholder="+7 (___) ___ __-__" class="input input_phone" data-required data-validate required>
+									</div>
+									<div class="form-submit">
+										<button type="submit" class="btn btn_big btn_bg-accent">Обсудить проект</button>
 									</div>
 								</div>
-
-								<form action="#" class="request2__form">
-									<div class="request2__row">
-										<div class="form-item">
-											<label for="request2-name" class="label">Ваше имя или как к Вам обращаться?</label>
-											<input id="request2-name" type="text" name="request2-name" placeholder="Имя" class="input">
-										</div>
-										<div class="form-item">
-											<label for="request2-phone" class="label">Ваш контакт</label>
-											<input id="request2-phone" type="text" name="request2-phone" placeholder="+7 (___) ___ __-__" class="input input_phone">
-										</div>
-										<div class="form-submit">
-											<button type="submit" class="btn btn_big btn_bg-accent">Обсудить проект</button>
-										</div>
+								<div class="form-item" data-da=".request2__row, 767.98,2">
+									<div class="checkbox">
+										<input id="request2-privacy" class="checkbox__input" type="checkbox" value="Соглашение на обработку персональных данных" name="request2-privacy">
+										<label for="request2-privacy" class="checkbox__label"><span class="checkbox__text">Соглашение на обработку персональных данных</span></label>
 									</div>
-									<div class="form-item" data-da=".request2__row, 767.98,2">
-										<div class="checkbox">
-											<input id="request2-privacy" class="checkbox__input" type="checkbox" value="Соглашение на обработку персональных данных" name="request2-privacy">
-											<label for="request2-privacy" class="checkbox__label"><span class="checkbox__text">Соглашение на обработку персональных данных</span></label>
-										</div>
-									</div>
-								</form>
-							</div>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -1949,6 +1993,7 @@
 					</div>
 				</div>
 			</section>
+
 
 			<section class="faq">
 				<div class="faq__container">
@@ -2153,22 +2198,22 @@
 			</div>
 		</footer>
 
-		<div class="floating-menu" data-lp>
+		<div class="floating-menu" data-lp style="opacity: 0;">
 			<nav class="floating-menu__nav">
 				<ul>
-					<li class="d-md-none"><a href="#" class="link-hover"><span>Главная</span></a></li>
+					<li class="d-md-none"><a href="home.html" class="floating-menu__link link-hover"><span>Главная</span></a></li>
 					<li>
-						<a href="#" class="link-hover _active">
+						<div class="floating-menu__link _active">
 							<div class="floating-menu__icon">
 								<svg class="icon">
 									<use xlink:href="img/icons/icons.svg#catalog"></use>
 								</svg>
 							</div>
 							<span>Каталог</span>
-						</a>
+						</div>
 					</li>
 					<li>
-						<a href="#" class="link-hover">
+						<a href="#" class="floating-menu__link link-hover">
 							<div class="floating-menu__icon">
 								<svg class="icon">
 									<use xlink:href="img/icons/icons.svg#services"></use>
@@ -2178,7 +2223,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#" class="link-hover">
+						<a href="#" class="floating-menu__link link-hover">
 							<div class="floating-menu__icon">
 								<svg class="icon">
 									<use xlink:href="img/icons/icons.svg#portfolio"></use>
@@ -2188,7 +2233,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#" class="link-hover">
+						<a href="#" class="floating-menu__link link-hover">
 							<div class="floating-menu__icon">
 								<svg class="icon">
 									<use xlink:href="img/icons/icons.svg#basket"></use>
@@ -2208,9 +2253,70 @@
 				</ul>
 			</nav>
 		</div>
+
+		<div class="modals">
+			<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Popup content
+			</div>
+		</div>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250505114539"></script>
-	<script src="js/app.min.js?_v=20250505114539"></script>
+</div> -->
+
+			<div id="popup-request" aria-hidden="true" class="popup">
+				<div class="popup__wrapper">
+					<div class="popup__content _card">
+						<button data-close type="button" class="popup__close">
+							<svg class="icon">
+								<use xlink:href="img/icons/icons.svg#close"></use>
+							</svg>
+						</button>
+						<div class="popup__text">
+							<div class="popup__title">Оставьте контакты&nbsp;&mdash; мы&nbsp;напишем вам в&nbsp;течение 1&nbsp;часа, чтобы обсудить детали</div>
+							<form action="#" class="popup__form">
+								<div class="form-item">
+									<input type="text" name="popup-request-name" placeholder="Имя" class="input">
+								</div>
+								<div class="form-item">
+									<input type="email" name="popup-request-email" placeholder="Email" class="input" data-required data-validate required>
+								</div>
+								<div class="form-item">
+									<input type="text" name="popup-request-teleg" placeholder="Telegram" class="input">
+								</div>
+								<div class="form-submit">
+									<button type="button" class="btn btn_big btn_bg-accent" data-popup="#thanks">Оставить заявку</button>
+									<div class="form-privacy">Нажимая кнопку &laquo;оставить заявку&raquo;, вы&nbsp;соглашаетесь на&nbsp;<a href="">обработку персональных данных</a></div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="thanks" aria-hidden="true" class="popup popup_thanks">
+				<div class="popup__wrapper">
+					<div class="popup__content _card">
+						<div class="popup__text">
+							<div class="thanks">
+								<div class="thanks__title">Успех!</div>
+								<div class="thanks__subtitle">Ваша заявка отправлена. Скоро свяжемся с&nbsp;вами для обсуждения деталей.</div>
+								<div class="thanks__button">
+									<button type="button" class="btn btn_big btn_bg-accent" data-close>Закрыть</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250514182956"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20250514182956"></script>
+	<script src="js/app.min.js?_v=20250514182956"></script>
 </body>
 
 </html>

@@ -1,0 +1,1855 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Страница продукта</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250514182956" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20250514182956">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" data-scroll="5">
+			<div class="header__container">
+				<div class="header__row">
+					<div class="header__left">
+						<div class="header__menu menu">
+							<button type="button" class="menu__icon js-icon-menu">
+								<div class="icon-menu">
+									<span></span>
+								</div>
+							</button>
+							<nav class="menu__body" style="opacity: 0;">
+								<div class="header__search search">
+									<form action="#" class="search__form">
+										<input autocomplete="off" type="text" name="form[]" placeholder="Название товара или артикул" class="search__input">
+
+										<button class="search__submit">
+											<svg class="icon">
+												<use xlink:href="img/icons/icons.svg#search"></use>
+											</svg>
+										</button>
+									</form>
+								</div>
+							</nav>
+						</div>
+
+						<div class="header__logo logo">
+							<a href="home.html">
+								<svg class="icon logo__icon logo__icon_desk">
+									<use xlink:href="img/icons/icons.svg#logo_desk"></use>
+								</svg>
+								<svg class="icon logo__icon logo__icon_mobile">
+									<use xlink:href="img/icons/icons.svg#logo_mobile"></use>
+								</svg>
+							</a>
+						</div>
+
+						<div class="header__note">Минимальная сумма заказа <br> <span class="_nowrap">от 100 000 ₽</span></div>
+
+						<a href="" class="header__mobile">
+							<svg class="icon">
+								<use xlink:href="img/icons/icons.svg#phone"></use>
+							</svg>
+						</a>
+					</div>
+
+					<div class="header__center">
+						<div class="header__wishlist header__wishlist_filled">
+							<a href="" class="btn btn_bg-white">Вишлист <span class="wishlist-count">24</span></a>
+						</div>
+					</div>
+
+					<div class="header__right" data-da=".menu__body, 991.98, 2">
+						<div class="header__socials socials">
+							<a href="#" class="socials__item">
+								<svg class="icon">
+									<use xlink:href="img/icons/icons.svg#telegram"></use>
+								</svg>
+							</a>
+							<a href="#" class="socials__item">
+								<svg class="icon">
+									<use xlink:href="img/icons/icons.svg#whatsapp"></use>
+								</svg>
+							</a>
+						</div>
+
+						<div class="header__contacts">
+							<div class="header__contact header-contact">
+								<div class="header-contact__caption copy-item">
+									<a href="mailto:zakaz+705409@avrorastore.ru" class="copy-item__text">zakaz+705409@avrorastore.ru</a>
+									<button type="button" class="copy-item__button js-copy-button" title="Скопировать адрес в буфер обмена" data-text="Адрес электронной почты скопирован в буфер обмена">
+										<svg class="icon">
+											<use xlink:href="img/icons/icons.svg#copy"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="header-contact__description">Отвечаем на все письма</div>
+							</div>
+							<div class="header__contact header-contact">
+								<div class="header-contact__caption">
+									<a href="tel:+78005507893">+7 (800) 550-78-93</a>
+								</div>
+								<div class="header-contact__description">Отвечаем в первые 7 секунд</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="header-menu">
+			<div class="header-menu__container">
+				<div class="header-menu__row" data-da=".menu__body, 991.98, 1">
+					<div class="header-menu__left">
+						<div class="header-menu__catalog header-catalog">
+							<button type="button" class="header-catalog__button">Каталог</button>
+							<div class="header-catalog__wrapper" style="opacity: 0;">
+								<div class="header-catalog__heading">
+									<div class="header-catalog__caption">Смотреть все товары</div>
+									<button class="header-catalog__close" type="button">
+										<svg class="icon">
+											<use xlink:href="img/icons/icons.svg#close"></use>
+										</svg>
+									</button>
+								</div>
+
+								<nav class="header-catalog__menu">
+									<ul>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="#">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Ежедневники и блокноты</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Упаковка</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="#">Подарки на 23 февраля</a></li>
+												<li><a href="#">Подарки на 8 марта</a></li>
+												<li><a href="#">Подарки на 9 мая</a></li>
+												<li><a href="#">Подарки военным</a></li>
+												<li><a href="#">Подарки на День защиты детей</a></li>
+												<li><a href="#">Подарки на День медицинского работника</a></li>
+												<li><a href="#">Подарок коллеге</a></li>
+												<li><a href="#">Подарки ко Дню шахтера</a></li>
+												<li><a href="#">Подарки ко Дню нефтяника</a></li>
+												<li><a href="#">Подарки на День строителя</a></li>
+												<li><a href="#">Подарки на День авиации</a></li>
+												<li><a href="#">Подарки на День железнодорожника</a></li>
+												<li><a href="#">Подарки на День знаний</a></li>
+												<li><a href="#">Подарки ко Дню энергетика</a></li>
+												<li><a href="#">Подарки ко Дню электросвязи</a></li>
+												<li><a href="#">Подарки морякам</a></li>
+												<li><a href="#">Подарки автомобилисту</a></li>
+												<li><a href="#">Подарки банковскому работнику</a></li>
+												<li><a href="#">Подарки для всех</a></li>
+												<li><a href="#">Аврора рекомендует 23/8</a></li>
+												<li><a href="#">Подарки на День металлурга</a></li>
+												<li><a href="#">Подарки на День полиции</a></li>
+												<li><a href="#">Подарки на День России</a></li>
+												<li><a href="#">Подарки на День учителя</a></li>
+												<li><a href="#">Подарки на День химика</a></li>
+												<li><a href="#">Подарки на День юриста</a></li>
+												<li><a href="#">Подарки на юбилей компании</a></li>
+												<li><a href="#">Подарки начальнику</a></li>
+												<li><a href="#">Подарки системным администраторам</a></li>
+												<li><a href="#">Теплые подарки</a></li>
+												<li><a href="#">Интерьерные подарки</a></li>
+												<li><a href="#">Упакуем как надо</a></li>
+											</ul>
+
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Футболки</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Одежда</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Посуда</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Сумки и рюкзаки</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Зонты</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Электроника</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Ручки</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Подарочные наборы</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Товары для дома</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Подарки для отдыха</span>
+											</a>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Корпоративные подарки</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Подарки к праздникам</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Флешки</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Пледы и подушки</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Часы</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Промо сувениры</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Офисные сувениры</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Аксессуары</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Новогодние подарки</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Велкомпаки</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Коллекции ЭКО</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Тубусы</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Блокноты и кубарики</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Календари 2025</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+										<li class="header-catalog__item header-catalog__item_has-children">
+											<a href="">
+												<img src="img/icons/t-shirt.svg" alt="" loading="lazy">
+												<span>Пакеты подарочные</span>
+											</a>
+
+											<button class="header-catalog__arrow">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#select"></use>
+												</svg>
+											</button>
+
+											<ul class="header-catalog__sub-list">
+												<li><a href="">Бизнес-блокноты</a></li>
+												<li><a href="">Блокноты</a></li>
+												<li><a href="">Ежедневники</a></li>
+												<li><a href="">Еженедельники</a></li>
+												<li><a href="">Наборы с ежедневниками</a></li>
+												<li><a href="">Органайзеры</a></li>
+												<li><a href="">Оригинальные ежедневники</a></li>
+												<li><a href="">Планинги</a></li>
+												<li><a href="">Упакова для ежедневников</a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+
+						<div class="header-menu__nav">
+							<ul>
+								<li><a href="">Услуги</a></li>
+								<li><a href="">Портфолио</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="header-menu__right">
+						<div class="header-menu__nav">
+							<ul>
+								<li><a href="">Принт и кастомизация</a></li>
+								<li><a href="">Условия сотрудничества</a></li>
+								<li><a href="">Команда</a></li>
+								<li><a href="">Работа</a></li>
+								<li><a href="">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<main class="page">
+			<div class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<div class="breadcrumbs__wrapper">
+						<div class="breadcrumbs__nav site-breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+							<span class="site-breadcrumbs__link link-hover" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+								<a href="" itemprop="item">
+									<span itemprop="name">Главная</span>
+								</a>
+							</span>
+							<span class="site-breadcrumbs__separator">
+								<svg class="icon">
+									<use xlink:href="img/icons/icons.svg#link-arrow"></use>
+								</svg>
+							</span>
+							<span class="site-breadcrumbs__link link-hover" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+								<a href="" itemprop="item">
+									<span itemprop="name">Каталог</span>
+								</a>
+							</span>
+							<span class="site-breadcrumbs__separator">
+								<svg class="icon">
+									<use xlink:href="img/icons/icons.svg#link-arrow"></use>
+								</svg>
+							</span>
+							<span class="site-breadcrumbs__link link-hover" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+								<a href="" itemprop="item">
+									<span itemprop="name">Футболки с логотипом</span>
+								</a>
+							</span>
+							<span class="site-breadcrumbs__separator">
+								<svg class="icon">
+									<use xlink:href="img/icons/icons.svg#link-arrow"></use>
+								</svg>
+							</span>
+							<span class="site-breadcrumbs__title">Футболка оверсайз RUST</span>
+						</div>
+
+						<div class="breadcrumbs__search search">
+							<form action="#" class="search__form">
+								<input autocomplete="off" type="text" name="form[]" placeholder="Название товара или артикул" class="search__input">
+
+								<button class="search__submit">
+									<svg class="icon">
+										<use xlink:href="img/icons/icons.svg#search"></use>
+									</svg>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="single-product">
+				<div class="single-product__container">
+					<div class="single-product__top">
+						<div class="single-product__gallery">
+							<div class="product-gallery">
+								<div class="product-gallery__main swiper">
+									<div class="product-gallery__wrapper swiper-wrapper" data-gallery="">
+										<div data-src="https://avrorastore.ru/upload/resize_cache/iblock/254/635_635_1/emjhu6961xq1dta4sjm48hiu3ee1p5f7.webp" class="product-gallery__image _bg swiper-slide">
+											<img src="https://avrorastore.ru/upload/resize_cache/iblock/254/635_635_1/emjhu6961xq1dta4sjm48hiu3ee1p5f7.webp" alt="" loading="lazy">
+											<div class="swiper-lazy-preloader"></div>
+										</div>
+										<div data-src="https://avrorastore.ru/upload/iblock/da8/rh4nh1i489hbbuqbsvhdl70f5s2tsx9e.webp" class="product-gallery__image _bg swiper-slide">
+											<img src="https://avrorastore.ru/upload/iblock/da8/rh4nh1i489hbbuqbsvhdl70f5s2tsx9e.webp" alt="" loading="lazy">
+											<div class="swiper-lazy-preloader"></div>
+										</div>
+										<div data-src="https://avrorastore.ru/upload/resize_cache/iblock/b9b/635_635_1/kmbyfa593ehltpi63lo8gp3utda635nm.webp" class="product-gallery__image _bg swiper-slide">
+											<img src="https://avrorastore.ru/upload/resize_cache/iblock/b9b/635_635_1/kmbyfa593ehltpi63lo8gp3utda635nm.webp" alt="" loading="lazy">
+											<div class="swiper-lazy-preloader"></div>
+										</div>
+										<div data-src="https://avrorastore.ru/upload/resize_cache/iblock/927/635_635_1/cuh4pg1wnq0idmf1yn712atzll0v4zt4.webp" class="product-gallery__image _bg swiper-slide">
+											<img src="https://avrorastore.ru/upload/resize_cache/iblock/927/635_635_1/cuh4pg1wnq0idmf1yn712atzll0v4zt4.webp" alt="" loading="lazy">
+											<div class="swiper-lazy-preloader"></div>
+										</div>
+										<div data-src="https://avrorastore.ru/upload/resize_cache/iblock/ab0/635_635_1/yrkfbtwu2nkom7ko44u7tefn8lwcz3tu.webp" class="product-gallery__image _bg swiper-slide">
+											<img src="https://avrorastore.ru/upload/resize_cache/iblock/ab0/635_635_1/yrkfbtwu2nkom7ko44u7tefn8lwcz3tu.webp" alt="" loading="lazy">
+											<div class="swiper-lazy-preloader"></div>
+										</div>
+										<div data-src="https://avrorastore.ru/upload/resize_cache/iblock/6f9/635_635_1/q1t6nr5esg961hd8rybpn5ighmoc8e5h.webp" class="product-gallery__image _bg swiper-slide">
+											<img src="https://avrorastore.ru/upload/resize_cache/iblock/6f9/635_635_1/q1t6nr5esg961hd8rybpn5ighmoc8e5h.webp" alt="" loading="lazy">
+											<div class="swiper-lazy-preloader"></div>
+										</div>
+										<div data-src="https://avrorastore.ru/upload/resize_cache/iblock/e93/635_635_1/cdvy1pqg2634kxl4fzgt8wotcl4nb2pb.webp" class="product-gallery__image _bg swiper-slide">
+											<img src="https://avrorastore.ru/upload/resize_cache/iblock/e93/635_635_1/cdvy1pqg2634kxl4fzgt8wotcl4nb2pb.webp" alt="" loading="lazy">
+											<div class="swiper-lazy-preloader"></div>
+										</div>
+										<div data-src="https://avrorastore.ru/upload/resize_cache/iblock/254/635_635_1/emjhu6961xq1dta4sjm48hiu3ee1p5f7.webp" class="product-gallery__image _bg swiper-slide">
+											<img src="https://avrorastore.ru/upload/resize_cache/iblock/254/635_635_1/emjhu6961xq1dta4sjm48hiu3ee1p5f7.webp" alt="" loading="lazy">
+											<div class="swiper-lazy-preloader"></div>
+										</div>
+									</div>
+
+									<div class="product-card__labels">
+										<div class="product-card__label product-card__label_sale">СКИДКА</div>
+									</div>
+									<div class="product-gallery__chestnyiznak"></div>
+								</div>
+
+								<div class="product-gallery__thumbs">
+									<div class="swiper-arrow swiper-arrow_prev">
+										<svg class="icon">
+											<use xlink:href="img/icons/icons.svg#swiper-arrow"></use>
+										</svg>
+									</div>
+
+									<div class="swiper">
+										<div class="product-gallery__wrapper swiper-wrapper">
+											<div class="product-gallery__thumb _bg swiper-slide">
+												<img src="https://avrorastore.ru/upload/resize_cache/iblock/254/635_635_1/emjhu6961xq1dta4sjm48hiu3ee1p5f7.webp" alt="" loading="lazy">
+												<div class="swiper-lazy-preloader"></div>
+											</div>
+											<div class="product-gallery__thumb _bg swiper-slide">
+												<img src="https://avrorastore.ru/upload/iblock/da8/rh4nh1i489hbbuqbsvhdl70f5s2tsx9e.webp" alt="" loading="lazy">
+												<div class="swiper-lazy-preloader"></div>
+											</div>
+											<div class="product-gallery__thumb _bg swiper-slide">
+												<img src="https://avrorastore.ru/upload/resize_cache/iblock/b9b/635_635_1/kmbyfa593ehltpi63lo8gp3utda635nm.webp" alt="" loading="lazy">
+												<div class="swiper-lazy-preloader"></div>
+											</div>
+											<div class="product-gallery__thumb _bg swiper-slide">
+												<img src="https://avrorastore.ru/upload/resize_cache/iblock/927/635_635_1/cuh4pg1wnq0idmf1yn712atzll0v4zt4.webp" alt="" loading="lazy">
+												<div class="swiper-lazy-preloader"></div>
+											</div>
+											<div class="product-gallery__thumb _bg swiper-slide">
+												<img src="https://avrorastore.ru/upload/resize_cache/iblock/ab0/635_635_1/yrkfbtwu2nkom7ko44u7tefn8lwcz3tu.webp" alt="" loading="lazy">
+												<div class="swiper-lazy-preloader"></div>
+											</div>
+											<div class="product-gallery__thumb _bg swiper-slide">
+												<img src="https://avrorastore.ru/upload/resize_cache/iblock/6f9/635_635_1/q1t6nr5esg961hd8rybpn5ighmoc8e5h.webp" alt="" loading="lazy">
+												<div class="swiper-lazy-preloader"></div>
+											</div>
+											<div class="product-gallery__thumb _bg swiper-slide">
+												<img src="https://avrorastore.ru/upload/resize_cache/iblock/e93/635_635_1/cdvy1pqg2634kxl4fzgt8wotcl4nb2pb.webp" alt="" loading="lazy">
+												<div class="swiper-lazy-preloader"></div>
+											</div>
+											<div class="product-gallery__thumb _bg swiper-slide">
+												<img src="https://avrorastore.ru/upload/resize_cache/iblock/254/635_635_1/emjhu6961xq1dta4sjm48hiu3ee1p5f7.webp" alt="" loading="lazy">
+												<div class="swiper-lazy-preloader"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="swiper-arrow swiper-arrow_next">
+										<svg class="icon">
+											<use xlink:href="img/icons/icons.svg#swiper-arrow"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="single-product__main">
+							<h1 class="single-product__title" data-da=".single-product__top, 991.98, 0">Рубашка поло мужская с&nbsp;контрастной отделкой PRACTICE 270 чёрная</h1>
+
+							<div class="single-product__art copy-item">
+								<button type="button" class="copy-item__button js-copy-button" title="Скопировать артикул в буфер обмена" data-text="">
+									<span class="copy-item__text">E-23051.04.100</span>
+									<svg class="icon">
+										<use xlink:href="img/icons/icons.svg#copy"></use>
+									</svg>
+								</button>
+							</div>
+
+							<div class="single-product__options">
+								<div class="single-product__caption">Варианты товара:</div>
+
+								<ul>
+									<li> <a href="#" class="_bg"> <img src="img/products/product1-opt1.webp" alt="" loading="lazy"> </a> </li>
+									<li> <a href="#" class="_bg"> <img src="img/products/product1-opt1.webp" alt="" loading="lazy"> </a> </li>
+									<li> <a href="#" class="_bg"> <img src="img/products/product1-opt1.webp" alt="" loading="lazy"> </a> </li>
+									<li> <a href="#" class="_bg"> <img src="img/products/product1-opt1.webp" alt="" loading="lazy"> </a> </li>
+									<li> <a href="#" class="_bg"> <img src="img/products/product1-opt1.webp" alt="" loading="lazy"> </a> </li>
+									<li> <a href="#" class="_bg"> <img src="img/products/product1-opt1.webp" alt="" loading="lazy"> </a> </li>
+									<li> <a href="#" class="_bg"> <img src="img/products/product1-opt1.webp" alt="" loading="lazy"> </a> </li>
+									<li> <a href="#" class="_bg"> <img src="img/products/product1-opt1.webp" alt="" loading="lazy"> </a> </li>
+									<li> <a href="#" class="_bg"> <img src="img/products/product1-opt1.webp" alt="" loading="lazy"> </a> </li>
+									<li> <a href="#" class="_bg"> <img src="img/products/product1-opt1.webp" alt="" loading="lazy"> </a> </li>
+									<li> <a href="#" class="_bg"> <img src="img/products/product1-opt1.webp" alt="" loading="lazy"> </a> </li>
+									<li> <a href="#" class="_bg"> <img src="img/products/product1-opt1.webp" alt="" loading="lazy"> </a> </li>
+									<li> <a href="#" class="_bg"> <img src="img/products/product1-opt1.webp" alt="" loading="lazy"> </a> </li>
+									<li> <a href="#" class="_bg"> <img src="img/products/product1-opt1.webp" alt="" loading="lazy"> </a> </li>
+									<li> <a href="#" class="_bg"> <img src="img/products/product1-opt1.webp" alt="" loading="lazy"> </a> </li>
+									<li> <a href="#" class="_bg"> <img src="img/products/product1-opt1.webp" alt="" loading="lazy"> </a> </li>
+									<li> <a href="#" class="_bg"> <img src="img/products/product1-opt1.webp" alt="" loading="lazy"> </a> </li>
+									<li> <a href="#" class="_bg"> <img src="img/products/product1-opt1.webp" alt="" loading="lazy"> </a> </li>
+									<li> <a href="#" class="_bg"> <img src="img/products/product1-opt1.webp" alt="" loading="lazy"> </a> </li>
+									<li> <a href="#" class="_bg"> <img src="img/products/product1-opt1.webp" alt="" loading="lazy"> </a> </li>
+								</ul>
+							</div>
+
+							<div class="single-product__size">
+								<div class="single-product__row">
+									<div class="single-product__caption mb-0">Размеры:</div>
+
+									<div class="single-product__table-button">
+										<button type="button" class="link-underline">Таблица размеров</button>
+									</div>
+								</div>
+
+								<div data-tabs class="tabs">
+									<nav data-tabs-titles class="tabs__navigation">
+										<button type="submit" class="tabs__title _tab-active">В наличии</button>
+										<button type="submit" class="tabs__title">Под заказ <span>Склад Европы</span></button>
+									</nav>
+									<div data-tabs-body class="tabs__content">
+										<div class="tabs__body _content">
+											<div class="table">
+												<table>
+													<thead>
+														<tr>
+															<th style="width: 33.333%;">Размер</th>
+															<th style="width: 33.333%;">В наличии, шт.</th>
+															<th style="width: 33.333%;">Тираж</th>
+														</tr>
+													</thead>
+
+													<tbody>
+														<tr>
+															<td>XS</td>
+															<td>999</td>
+															<td>
+																<div data-quantity class="quantity">
+																	<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+																	<div class="quantity__input">
+																		<input data-quantity-value data-quantity-min=0 data-quantity-max=999 type="text" name="XS" value="0">
+																	</div>
+																	<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>S</td>
+															<td>999</td>
+															<td>
+																<div data-quantity class="quantity">
+																	<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+																	<div class="quantity__input">
+																		<input data-quantity-value data-quantity-min=0 data-quantity-max=999 type="text" name="S" value="0">
+																	</div>
+																	<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>M</td>
+															<td>999</td>
+															<td>
+																<div data-quantity class="quantity">
+																	<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+																	<div class="quantity__input">
+																		<input data-quantity-value data-quantity-min=0 data-quantity-max=999 type="text" name="M" value="0">
+																	</div>
+																	<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>L</td>
+															<td>999</td>
+															<td>
+																<div data-quantity class="quantity">
+																	<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+																	<div class="quantity__input">
+																		<input data-quantity-value data-quantity-min=0 data-quantity-max=999 type="text" name="L" value="0">
+																	</div>
+																	<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>XL</td>
+															<td>999</td>
+															<td>
+																<div data-quantity class="quantity">
+																	<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+																	<div class="quantity__input">
+																		<input data-quantity-value data-quantity-min=0 data-quantity-max=999 type="text" name="XL" value="0">
+																	</div>
+																	<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>2XL</td>
+															<td>999</td>
+															<td>
+																<div data-quantity class="quantity">
+																	<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+																	<div class="quantity__input">
+																		<input data-quantity-value data-quantity-min=0 data-quantity-max=999 type="text" name="2XL" value="0">
+																	</div>
+																	<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>3XL</td>
+															<td>999</td>
+															<td>
+																<div data-quantity class="quantity">
+																	<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+																	<div class="quantity__input">
+																		<input data-quantity-value data-quantity-min=0 data-quantity-max=999 type="text" name="3XL" value="0">
+																	</div>
+																	<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>4XL</td>
+															<td>999</td>
+															<td>
+																<div data-quantity class="quantity">
+																	<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+																	<div class="quantity__input">
+																		<input data-quantity-value data-quantity-min=0 data-quantity-max=999 type="text" name="4XL" value="0">
+																	</div>
+																	<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="tabs__body">
+											2 Lorem ipsum door sit amet consectetur adipisicing elit. Inventore odio exercitationem, excepturi similique nulla, voluptatem reprehenderit neque a minima eaque tenetur? Quos fugit voluptate enim quo sed, minima error molestias!
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="single-product__price">
+								<div class="single-product__caption">Цена за единицу:</div>
+
+								<div class="price">
+									<span>1 535 ₽</span>
+									<span class="price__old">1 555 ₽</span>
+								</div>
+							</div>
+
+							<div class="single-product__total">
+								<div class="single-product__caption mb-0">Итоговая сумма:</div>
+
+								<div class="price">
+									<span>15 350 ₽</span>
+									<span class="price__old">15 550 ₽</span>
+								</div>
+							</div>
+
+							<div class="single-product__actions">
+								<div class="single-product__button">
+									<button type="button" class="btn btn_big btn_bg-accent">Добавить в вишлист</button>
+								</div>
+								<div class="single-product__button">
+									<button type="button" class="btn btn_big btn_bg-white">Запросить образец</button>
+								</div>
+							</div>
+
+							<div class="single-product__note">
+								<div class="single-product__note-icon">
+									<img src="img/icons/alert.svg" alt="" loading="lazy">
+								</div>
+								<span>Товар поставляется только партнёрам — участникам «Честный знак»</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="single-product__bottom">
+						<div data-tabs class="tabs">
+							<nav data-tabs-titles class="tabs__navigation">
+								<button type="submit" class="tabs__title _card _tab-active">О товаре</button>
+								<button type="submit" class="tabs__title _card">Доставка</button>
+								<button type="submit" class="tabs__title _card">Оплата</button>
+							</nav>
+							<div data-tabs-body class="tabs__content">
+								<div class="tabs__body">
+									<div class="single-product__about product-about">
+										<div class="product-about__table _card _content">
+											<div class="table">
+												<table>
+													<tbody>
+														<tr>
+															<td>Бренд</td>
+															<td>Portobello Трикотаж</td>
+														</tr>
+														<tr>
+															<td>Артикул</td>
+															<td>
+																<div class="copy-item">
+																	<button type="button" class="copy-item__button js-copy-button" title="Скопировать артикул в буфер обмена" data-text="">
+																		<span class="copy-item__text">E-23051.04.100</span>
+																		<svg class="icon">
+																			<use xlink:href="img/icons/icons.svg#copy"></use>
+																		</svg>
+																	</button>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>Размер</td>
+															<td>250/20/300</td>
+														</tr>
+														<tr>
+															<td>Цвет</td>
+															<td>БЕЛЫЙ</td>
+														</tr>
+														<tr>
+															<td>Коллекция</td>
+															<td>RUST</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+
+										<div class="single-product__text _card _content">
+											<p>Стильная футболка oversize свободного силуэта из&nbsp;плотной хлопковой ткани, которая приятна к&nbsp;телу и&nbsp;легка в&nbsp;уходе, не&nbsp;растягивается, не&nbsp;выцветает и&nbsp;не&nbsp;деформируется после стирки. Базовая вещь для повседневного стиля. Комфорт в&nbsp;каждом движении. Благодаря правильным пропорциям, футболка хорошо садится на&nbsp;разные типы фигур.</p>
+											<p>В&nbsp;кибермаркете AvroraSTORE вы&nbsp;можете заказать &laquo;Футболка оверсайз RUST, белый, размер&nbsp;L&raquo; с&nbsp;нанесением логотипа вашей компании по&nbsp;цене от&nbsp;1&nbsp;535&nbsp;₽ с&nbsp;доставкой по&nbsp;Москве.</p>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__body">
+									<div class="single-product__text _card _content">
+										<p>В&nbsp;Москве и&nbsp;Санкт-Петербурге мы&nbsp;выполняем доставку заказов и&nbsp;образцов силами собственной Службы доставки.</p>
+										<p>Если вы&nbsp;находитесь в&nbsp;другом регионе, вы&nbsp;можете воспользоваться услугами наших партнеров.</p>
+										<p><b>В&nbsp;Москве</b> в&nbsp;пределах МКАД доставка бесплатная, в&nbsp;случае если сумма заказа более 25&nbsp;000&nbsp;руб. Стоимость доставки в&nbsp;прочих случаях&nbsp;&mdash; 950&nbsp;руб. За&nbsp;пределами МКАД стоимость доставки рассчитывается индивидуально;</p>
+										<p><b>В&nbsp;Санкт-Петербурге </b> в&nbsp;пределах КАД доставка бесплатная, в&nbsp;случае если сумма заказа более 25&nbsp;000&nbsp;руб. Стоимость доставки в&nbsp;прочих случаях&nbsp;&mdash; 950&nbsp;руб. За&nbsp;пределами КАД стоимость доставки рассчитывается индивидуально;</p>
+										<p><b>Для регионов</b> доставка бесплатная до&nbsp;транспортной компании в&nbsp;пределах КАД или МКАД, в&nbsp;случае если сумма заказа более 20&nbsp;000&nbsp;руб. Стоимость доставки в&nbsp;прочих случаях&nbsp;&mdash; 950&nbsp;руб.</p>
+										<p>Стильная футболка oversize свободного силуэта из&nbsp;плотной хлопковой ткани, которая приятна к&nbsp;телу и&nbsp;легка в&nbsp;уходе, не&nbsp;растягивается, не&nbsp;выцветает и&nbsp;не&nbsp;деформируется после стирки. Базовая вещь для повседневного стиля. Комфорт в&nbsp;каждом движении. Благодаря правильным пропорциям, футболка хорошо садится на&nbsp;разные типы фигур.</p>
+										<p>В&nbsp;кибермаркете AvroraSTORE вы&nbsp;можете заказать &laquo;Футболка оверсайз RUST, белый, размер&nbsp;L&raquo; с&nbsp;нанесением логотипа вашей компании по&nbsp;цене от&nbsp;1&nbsp;535&nbsp;₽ с&nbsp;доставкой по&nbsp;Москве.</p>
+									</div>
+								</div>
+								<div class="tabs__body">
+									<div class="single-product__text _card _content">
+										<p>Способы оплаты:</p>
+										<p>Безналичный расчет по&nbsp;реквизитам, указанным на&nbsp;нашем сайте в&nbsp;разделе <a href="/company/requisites/" target="_blank"><span>Реквизиты</span></a> (укажите в&nbsp;назначении платежа платежного поручения номер и&nbsp;дату вашего заказа). Данный способ оплаты рекомендуется при отсутствии в&nbsp;вашем заказе услуги по&nbsp;персонализации продукции;</p>
+										<p>Безналичный расчет на&nbsp;основании выставленного счета и&nbsp;оформленного договора на&nbsp;поставку товара и&nbsp;услуги по&nbsp;персонализации продукции.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="single-product__detail">
+							<button type="button" class="btn btn_big btn_bg-accent">Запросить коммерческое предложение</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="cases">
+				<div class="cases__container">
+					<div class="cases__heading _heading">
+						<h2 class="cases__title">примеры товаров с&nbsp;нанесением</h2>
+					</div>
+
+					<div class="cases__inner _card">
+						<div class="cases__slider swiper">
+							<div class="swiper-arrow swiper-arrow_prev">
+								<svg class="icon">
+									<use xlink:href="img/icons/icons.svg#swiper-arrow"></use>
+								</svg>
+							</div>
+
+							<div class="cases__wrapper swiper-wrapper">
+								<div class="cases__slide swiper-slide">
+									<a href="#" class="cases__logo _bg">
+										<img src="img/cases/case1-logo.svg" alt="" loading="lazy">
+										<div class="swiper-lazy-preloader"></div>
+									</a>
+
+									<div class="cases__gallery">
+										<div class="template1 cases-gap">
+											<div class="template1__left cases-gap">
+												<div class="template1__top cases-gap">
+													<a href="#" class="template1__card cases__card _card" style="flex-basis: 45.2%;">
+														<div class="cases__card-bg _bg">
+															<img src="img/cases/case1-image1.webp" alt="" loading="lazy">
+															<div class="swiper-lazy-preloader"></div>
+														</div>
+													</a>
+													<a href="#" class="template1__card cases__card _card" style="flex-grow: 1;">
+														<div class="cases__card-bg _bg">
+															<img src="img/cases/case1-image2.webp" alt="" loading="lazy">
+															<div class="swiper-lazy-preloader"></div>
+														</div>
+													</a>
+												</div>
+												<div class="template1__bottom cases-gap">
+													<a href="#" class="template1__card cases__card _card" style="flex-grow: 1;">
+														<div class="cases__card-bg _bg">
+															<img src="img/cases/case1-image3.webp" alt="" loading="lazy">
+															<div class="swiper-lazy-preloader"></div>
+														</div>
+													</a>
+													<div class="template1__card cases__card _card" style="flex-basis: 61%;">
+														<div class="template1__text _content">
+															<p>Цель проекта&nbsp;&mdash; создать уникальный мерч, который не&nbsp;просто дополняет повседневную работу, но&nbsp;и&nbsp;помогает сделать офисное пространство уютнее и&nbsp;комфортнее.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="template1__right cases-gap">
+												<a href="#" class="template1__card cases__card _card" style="flex-basis: 42.5%;">
+													<div class="cases__card-bg _bg">
+														<img src="img/cases/case1-image4.webp" alt="" loading="lazy">
+														<div class="swiper-lazy-preloader"></div>
+													</div>
+												</a>
+												<a href="#" class="template1__card cases__card _card" style="flex-grow: 1;">
+													<div class="cases__card-bg _bg">
+														<img src="img/cases/case1-image5.webp" alt="" loading="lazy">
+														<div class="swiper-lazy-preloader"></div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="cases__slide swiper-slide">
+									<a href="#" class="cases__logo _bg">
+										<img src="img/cases/case2-logo.webp" alt="" loading="lazy">
+										<div class="swiper-lazy-preloader"></div>
+									</a>
+
+									<div class="cases__gallery">
+										<div class="template2 cases-gap">
+											<div class="template2__left">
+												<a href="#" class="template2__card cases__card _card">
+													<div class="cases__card-bg _bg">
+														<img src="img/cases/case2-image1.webp" alt="" loading="lazy">
+														<div class="swiper-lazy-preloader"></div>
+													</div>
+												</a>
+											</div>
+
+											<div class="template2__right cases-gap">
+												<div class="template2__top cases-gap">
+													<a href="#" class="template2__card cases__card _card">
+														<div class="cases__card-bg _bg">
+															<img src="img/cases/case2-image2.webp" alt="" loading="lazy">
+															<div class="swiper-lazy-preloader"></div>
+														</div>
+													</a>
+													<a href="#" class="template2__card cases__card _card">
+														<div class="cases__card-bg _bg">
+															<img src="img/cases/case2-image3.webp" alt="" loading="lazy">
+															<div class="swiper-lazy-preloader"></div>
+														</div>
+													</a>
+												</div>
+
+												<div class="template2__bottom cases-gap">
+													<a href="#" class="template2__card cases__card _card">
+														<div class="cases__card-bg _bg">
+															<img src="img/cases/case2-image4.webp" alt="" loading="lazy">
+															<div class="swiper-lazy-preloader"></div>
+														</div>
+													</a>
+
+													<a href="#" class="template2__card cases__card _card">
+														<div class="cases__card-bg _bg">
+															<img src="img/cases/case2-image5.webp" alt="" loading="lazy">
+															<div class="swiper-lazy-preloader"></div>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-arrow swiper-arrow_next">
+								<svg class="icon">
+									<use xlink:href="img/icons/icons.svg#swiper-arrow"></use>
+								</svg>
+							</div>
+
+							<div class="swiper-scrollbar"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="widget-cases">
+				<div class="widget-cases__container">
+					<div class="widget-cases__slider swiper swiper_shadow">
+						<div class="widget-cases__wrapper swiper-wrapper">
+							<div class="widget-cases__slide swiper-slide case-card _card">
+								<div class="case-card__preview _bg _card">
+									<img src="img/cases/case2-image1.webp" alt="" loading="lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+
+								<div class="case-card__body">
+									<div class="case-card__title">«Марибо» Далеко-далеко, за словесными.</div>
+									<div class="case-card__subtitle">Создали подарочный набор для компании «Марибо»</div>
+									<a href="#" class="case-card__link circle-link">
+										<svg class="icon">
+											<use xlink:href="img/icons/icons.svg#link-arrow2"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="widget-cases__slide swiper-slide case-card _card">
+								<div class="case-card__preview _bg _card">
+									<img src="img/cases/case2-image2.webp" alt="" loading="lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+
+								<div class="case-card__body">
+									<div class="case-card__title">«Марибо»</div>
+									<div class="case-card__subtitle">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</div>
+									<a href="#" class="case-card__link circle-link">
+										<svg class="icon">
+											<use xlink:href="img/icons/icons.svg#link-arrow2"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="widget-cases__slide swiper-slide case-card _card">
+								<div class="case-card__preview _bg _card">
+									<img src="img/cases/case1-image3.webp" alt="" loading="lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+
+								<div class="case-card__body">
+									<div class="case-card__title">«Марибо»</div>
+									<div class="case-card__subtitle">Создали подарочный набор для компании «Марибо»</div>
+									<a href="#" class="case-card__link circle-link">
+										<svg class="icon">
+											<use xlink:href="img/icons/icons.svg#link-arrow2"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="widget-cases__slide swiper-slide case-card _card">
+								<div class="case-card__preview _bg _card">
+									<img src="img/cases/case1-image4.webp" alt="" loading="lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+
+								<div class="case-card__body">
+									<div class="case-card__title">«Марибо»</div>
+									<div class="case-card__subtitle">Создали подарочный набор для компании «Марибо»</div>
+									<a href="#" class="case-card__link circle-link">
+										<svg class="icon">
+											<use xlink:href="img/icons/icons.svg#link-arrow2"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="widget-cases__slide swiper-slide case-card _card">
+								<div class="case-card__preview _bg _card">
+									<img src="img/cases/case1-image5.webp" alt="" loading="lazy">
+									<div class="swiper-lazy-preloader"></div>
+								</div>
+
+								<div class="case-card__body">
+									<div class="case-card__title">«Марибо»</div>
+									<div class="case-card__subtitle">Создали подарочный набор для компании «Марибо»</div>
+									<a href="#" class="case-card__link circle-link">
+										<svg class="icon">
+											<use xlink:href="img/icons/icons.svg#link-arrow2"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-scrollbar"></div>
+					</div>
+
+					<div class="widget-cases__button">
+						<a href="" class="btn btn_big btn_bg-white">Все кейсы</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="request">
+				<div class="request__container">
+					<div class="request__card _card">
+						<div class="request__inner">
+							<div class="request__heading">
+								<h2 class="request__title">Не&nbsp;знаете с&nbsp;чего начать?</h2>
+								<div class="request__subtitle">Отправьте запрос нашим специалистам.</div>
+							</div>
+
+							<form action="#" class="request__form">
+								<div class="form-item">
+									<label for="request-phone" class="label">Ваш контакт</label>
+									<input id="request-phone" type="text" name="request-phone" placeholder="+7 (___) ___ __-__" class="input input_phone" data-required data-validate required>
+								</div>
+								<div class="form-submit">
+									<button type="submit" class="btn btn_large btn_bg-accent">Заказать звонок</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="seo">
+				<div class="seo__container">
+					<div data-spollers="767.98, max" class="seo__spollers spollers spoller-heading">
+						<details class="spoller-heading__item seo__grid">
+							<summary class="spoller-heading__title seo__title">
+								<h2>Условия работы</h2>
+							</summary>
+							<div class="seo__card _card">
+								<div class="_content">
+									<h2>Заголовок с сеошным текстом</h2>
+									<h3>Минимальный заказ</h3>
+									<p>Изготовление футболок с&nbsp;логотипом на&nbsp;заказ&nbsp;&mdash; популярный способ развития бизнеса. AVRORAstore предлагает печать и&nbsp;вышивку многоцветных изображений любого формата на&nbsp;текстильной и&nbsp;другой сувенирной продукции. Для создания универсальных футболок с&nbsp;логотипом на&nbsp;заказ мы&nbsp;применяем современные технологии прямой и&nbsp;трафаретной печати, а&nbsp;также сублимацию, шелкографию, вышивку логотипов и&nbsp;добавление элементов кастомизации на&nbsp;одежду. Вы&nbsp;можете заказать футболки с&nbsp;логотипом по&nbsp;цене от&nbsp;производителя на&nbsp;нашем сайте. Гарантия качества и&nbsp;износостойкости изображений даже после многократных стирок.</p>
+									<h3>Этапы брендирования </h3>
+									<p>Изготовление футболок с&nbsp;логотипом на&nbsp;заказ&nbsp;&mdash; популярный способ развития бизнеса. AVRORAstore предлагает печать и&nbsp;вышивку многоцветных изображений любого формата на&nbsp;текстильной и&nbsp;другой сувенирной продукции. Для создания универсальных футболок с&nbsp;логотипом на&nbsp;заказ мы&nbsp;применяем современные технологии прямой и&nbsp;трафаретной печати, а&nbsp;также сублимацию, шелкографию, вышивку логотипов и&nbsp;добавление элементов кастомизации на&nbsp;одежду.</p>
+								</div>
+							</div>
+						</details>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="faq">
+				<div class="faq__container">
+					<div class="faq__heading _heading">
+						<h2 class="faq__title">Часто задаваемые вопросы</h2>
+						<div class="faq__button" data-da=".faq__grid, 767.98">
+							<a href="" class="btn btn_bg-white btn_big">Задать вопрос</a>
+						</div>
+					</div>
+
+					<div class="faq__grid">
+						<div data-spollers class="faq__spollers spollers">
+							<details class="spollers__item _card">
+								<summary class="spollers__title">Можете прислать прайс? <span></span></summary>
+								<div class="spollers__body _content">
+									Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. О пояс пунктуация буквенных напоивший силуэт, текстов предупредила! Пор своего дорогу от всех текстами взобравшись то.
+								</div>
+							</details>
+							<details class="spollers__item _card">
+								<summary class="spollers__title">Какой срок изготовления? <span></span></summary>
+								<div class="spollers__body _content">
+									Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. О пояс пунктуация буквенных напоивший силуэт, текстов предупредила! Пор своего дорогу от всех текстами взобравшись то.
+								</div>
+							</details>
+							<details class="spollers__item _card">
+								<summary class="spollers__title">У меня нет дизайна, как быть? <span></span></summary>
+								<div class="spollers__body _content">
+									Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. О пояс пунктуация буквенных напоивший силуэт, текстов предупредила! Пор своего дорогу от всех текстами взобравшись то.
+								</div>
+							</details>
+						</div>
+
+						<div data-spollers class="faq__spollers spollers">
+							<details class="spollers__item _card">
+								<summary class="spollers__title">Сколько будет стоить нанесение? <span></span></summary>
+								<div class="spollers__body _content">
+									Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. О пояс пунктуация буквенных напоивший силуэт, текстов предупредила! Пор своего дорогу от всех текстами взобравшись то.
+								</div>
+							</details>
+							<details class="spollers__item _card">
+								<summary class="spollers__title">Вы «это» делаете?<span></span></summary>
+								<div class="spollers__body _content">
+									Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. О пояс пунктуация буквенных напоивший силуэт, текстов предупредила! Пор своего дорогу от всех текстами взобравшись то.
+								</div>
+							</details>
+							<details class="spollers__item _card">
+								<summary class="spollers__title">Можете прислать прайс?<span></span></summary>
+								<div class="spollers__body _content">
+									Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. О пояс пунктуация буквенных напоивший силуэт, текстов предупредила! Пор своего дорогу от всех текстами взобравшись то.
+								</div>
+							</details>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div class="footer-request">
+			<div class="footer-request__container">
+				<div class="footer-request__row">
+					<div class="footer-request__left">
+						<div class="footer-request__contacts">
+							<div class="footer-request-contact">
+								<a href="tel:+78005507893" class="footer-request-contact__link _nowrap text-link">+7 (800) 550-78-93</a>
+								<div class="footer-request-contact__note">С 10:00 до 18:30 по МСК</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer-request__center">
+						<div class="footer-request__title">Не нашли подходящий товар?</div>
+						<div class="footer-request__subtitle">Отправьте запрос нашим специалистам. <br> Мы отвечаем на все запросы в течении 15 минут </div>
+					</div>
+
+					<div class="footer-request__right">
+						<div class="footer-request__button">
+							<button type="button" class="btn btn_big btn_bg-accent">
+								<span>Отправить заявку</span>
+								<svg class="icon">
+									<use xlink:href="img/icons/icons.svg#email"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__inner">
+					<div class="footer__grid">
+						<div class="footer__top">
+							<div class="footer__left">
+								<div class="footer__caption">Помощь покупателям</div>
+								<nav class="footer__menu">
+									<ul>
+										<li><a href="" class="text-link">Бренды</a></li>
+										<li><a href="" class="text-link">О компании</a></li>
+										<li><a href="" class="text-link">Как сделать заказ</a></li>
+										<li><a href="" class="text-link">Доставка и оплата</a></li>
+										<li><a href="" class="text-link">Контакты</a></li>
+										<li><a href="" class="text-link">Требования к макетам</a></li>
+									</ul>
+								</nav>
+							</div>
+
+							<div class="footer__center">
+								<div class="footer__caption">Контакты</div>
+
+								<div class="footer__offices">
+									<div class="office">
+										<div class="office__main">
+											<div class="office__name">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#location"></use>
+												</svg>
+												<span>Офис в Москве</span>
+											</div>
+
+											<div class="office__address">1-я ул. Ямского Поля, д.&nbsp;1, корп.&nbsp;1, комплекс SLAVA</div>
+
+											<div class="office__contacts">
+												<a href="tel:+74959759804" class="office__contact text-link">+7 (495) 975-98-04</a>
+											</div>
+
+											<div class="office__schedule">Время работы: 10:00&ndash;18:30, <br> Сб, вс&nbsp;&mdash; выходной</div>
+
+											<div class="office__text">Все заявки принятые в&nbsp;нерабочее время обрабатываются утром в&nbsp;первую очередь. Отвечаем на&nbsp;все обращения</div>
+										</div>
+
+										<div class="office__footer">
+											<div class="office__link">
+												<a href="" class="text-link">Как проехать</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="office">
+										<div class="office__main">
+											<div class="office__name">
+												<svg class="icon">
+													<use xlink:href="img/icons/icons.svg#location"></use>
+												</svg>
+												<span>Офис в&nbsp;Санкт-Петербурге</span>
+											</div>
+
+											<div class="office__address">196084, Санкт-Петербург, ул. Киевская, д.&nbsp;6&nbsp;БЦ Киевская&nbsp;6, офис 102</div>
+
+											<div class="office__contacts">
+												<a href="tel:+74959759804" class="office__contact text-link">+7 (812) 640 07 81</a>
+											</div>
+
+											<div class="office__schedule">Время работы: 10:00&ndash;18:30, <br> Сб, вс&nbsp;&mdash; выходной</div>
+
+											<div class="office__text">Все заявки принятые в&nbsp;нерабочее время обрабатываются утром в&nbsp;первую очередь. Отвечаем на&nbsp;все обращения</div>
+										</div>
+
+										<div class="office__footer">
+											<div class="office__link">
+												<a href="" class="text-link">Как проехать</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="footer__right">
+								<div class="footer__socials" data-da=".footer__bottom, 991.98, 0">
+									<div class="footer__caption">Мы в социальных сетях</div>
+									<div class="socials">
+										<a href="#" class="socials__item shake-animation">
+											<svg class="icon">
+												<use xlink:href="img/icons/icons.svg#vk"></use>
+											</svg>
+										</a>
+										<a href="#" class="socials__item shake-animation">
+											<svg class="icon">
+												<use xlink:href="img/icons/icons.svg#telegram2"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+
+								<div class="footer__info _content">
+									<p>Индивидуальный предприниматель: <br> Самохвалов Игорь Вениаминович</p>
+									<p>Юридический адрес: 192131,Санкт-Петербург г., пр-т Обуховской Обороны, д.195, Лит&nbsp;А, кв.776</p>
+									<p>Юридический адрес: 192131,Санкт-Петербург г., пр-т Обуховской Обороны, д.195, Лит&nbsp;А, кв.776</p>
+									<p>ИНН: 732503311710</p>
+									<p>Телефон: +7 (812) 640-07-81</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="footer__bottom">
+							<div class="footer__privacy">Оставляя заявки на нашем сайте, Вы соглашаетесь с <a href="" class="text-link">политикой конфиденциальности</a></div>
+							<div class="footer__sout">
+								<a href="" class="text-link">Сводные данные о результатах проведения СОУТ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="floating-menu" data-lp style="opacity: 0;">
+			<nav class="floating-menu__nav">
+				<ul>
+					<li class="d-md-none"><a href="home.html" class="floating-menu__link link-hover"><span>Главная</span></a></li>
+					<li>
+						<div class="floating-menu__link _active">
+							<div class="floating-menu__icon">
+								<svg class="icon">
+									<use xlink:href="img/icons/icons.svg#catalog"></use>
+								</svg>
+							</div>
+							<span>Каталог</span>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="floating-menu__link link-hover">
+							<div class="floating-menu__icon">
+								<svg class="icon">
+									<use xlink:href="img/icons/icons.svg#services"></use>
+								</svg>
+							</div>
+							<span>Услуги</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="floating-menu__link link-hover">
+							<div class="floating-menu__icon">
+								<svg class="icon">
+									<use xlink:href="img/icons/icons.svg#portfolio"></use>
+								</svg>
+							</div>
+							<span>Портфолио</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="floating-menu__link link-hover">
+							<div class="floating-menu__icon">
+								<svg class="icon">
+									<use xlink:href="img/icons/icons.svg#basket"></use>
+								</svg>
+								<div class="floating-menu__amount">24</div>
+							</div>
+							<span>Вишлист</span>
+						</a>
+					</li>
+					<li class="d-md-none">
+						<a href="#" data-goto=".wrapper" class="floating-menu__up">
+							<svg class="icon">
+								<use xlink:href="img/icons/icons.svg#link-arrow"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="modals">
+			<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Popup content
+			</div>
+		</div>
+	</div>
+</div> -->
+
+			<div id="popup-request" aria-hidden="true" class="popup">
+				<div class="popup__wrapper">
+					<div class="popup__content _card">
+						<button data-close type="button" class="popup__close">
+							<svg class="icon">
+								<use xlink:href="img/icons/icons.svg#close"></use>
+							</svg>
+						</button>
+						<div class="popup__text">
+							<div class="popup__title">Оставьте контакты&nbsp;&mdash; мы&nbsp;напишем вам в&nbsp;течение 1&nbsp;часа, чтобы обсудить детали</div>
+							<form action="#" class="popup__form">
+								<div class="form-item">
+									<input type="text" name="popup-request-name" placeholder="Имя" class="input">
+								</div>
+								<div class="form-item">
+									<input type="email" name="popup-request-email" placeholder="Email" class="input" data-required data-validate required>
+								</div>
+								<div class="form-item">
+									<input type="text" name="popup-request-teleg" placeholder="Telegram" class="input">
+								</div>
+								<div class="form-submit">
+									<button type="button" class="btn btn_big btn_bg-accent" data-popup="#thanks">Оставить заявку</button>
+									<div class="form-privacy">Нажимая кнопку &laquo;оставить заявку&raquo;, вы&nbsp;соглашаетесь на&nbsp;<a href="">обработку персональных данных</a></div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="thanks" aria-hidden="true" class="popup popup_thanks">
+				<div class="popup__wrapper">
+					<div class="popup__content _card">
+						<div class="popup__text">
+							<div class="thanks">
+								<div class="thanks__title">Успех!</div>
+								<div class="thanks__subtitle">Ваша заявка отправлена. Скоро свяжемся с&nbsp;вами для обсуждения деталей.</div>
+								<div class="thanks__button">
+									<button type="button" class="btn btn_big btn_bg-accent" data-close>Закрыть</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250514182956"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20250514182956"></script>
+	<script src="js/app.min.js?_v=20250514182956"></script>
+</body>
+
+</html>
