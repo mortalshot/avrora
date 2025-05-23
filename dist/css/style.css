@@ -5858,6 +5858,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .faq__spollers .spollers__body {
     font-size: 1.25rem
   }
+  .faq__spollers .spollers__body {
+    padding-left: 2.5rem
+  }
+  .faq__spollers .spollers__body {
+    padding-right: 2.5rem
+  }
   .promosphere__caption {
     font-size: 5.75rem
   }
@@ -6542,12 +6548,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .faq__spollers .spollers__title {
     font-size: 1.5rem
-  }
-  .faq__spollers .spollers__body {
-    padding-left: 2.5rem
-  }
-  .faq__spollers .spollers__body {
-    padding-right: 2.5rem
   }
   .faq__spollers .spollers__body {
     padding-bottom: 2rem
@@ -7581,12 +7581,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .seo__card {
     padding-bottom: 1.5rem
-  }
-  .faq__spollers .spollers__body {
-    padding-left: 1.5rem
-  }
-  .faq__spollers .spollers__body {
-    padding-right: 1.5rem
   }
   .faq__spollers .spollers__body {
     padding-bottom: 1.25rem
@@ -9284,6 +9278,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .faq__spollers .spollers__body {
     font-size: .8125rem
   }
+  .faq__spollers .spollers__body {
+    padding-left: .75rem
+  }
+  .faq__spollers .spollers__body {
+    padding-right: .75rem
+  }
   .catalog__filter-button {
     font-size: .75rem
   }
@@ -10027,12 +10027,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     padding-bottom: clamp(1.5rem ,-.0075987842rem + 2.4316109422vw ,2.5rem)
   }
   .faq__spollers .spollers__body {
-    padding-left: clamp(1.5rem ,-.0075987842rem + 2.4316109422vw ,2.5rem)
-  }
-  .faq__spollers .spollers__body {
-    padding-right: clamp(1.5rem ,-.0075987842rem + 2.4316109422vw ,2.5rem)
-  }
-  .faq__spollers .spollers__body {
     padding-bottom: clamp(1.25rem ,.1193009119rem + 1.8237082067vw ,2rem)
   }
   .catalog__selected-filters {
@@ -10558,6 +10552,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .faq__spollers .spollers__body {
     font-size: clamp(1rem ,.623100304rem + .6079027356vw ,1.25rem)
   }
+  .faq__spollers .spollers__body {
+    padding-left: clamp(1.5rem ,-.0075987842rem + 2.4316109422vw ,2.5rem)
+  }
+  .faq__spollers .spollers__body {
+    padding-right: clamp(1.5rem ,-.0075987842rem + 2.4316109422vw ,2.5rem)
+  }
   .promosphere__caption {
     font-size: clamp(3.34375rem ,-.2839095745rem + 5.8510638298vw ,5.75rem)
   }
@@ -10924,6 +10924,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .faq__spollers .spollers__body {
     font-size: 1rem
   }
+  .faq__spollers .spollers__body {
+    padding-left: 1.5rem
+  }
+  .faq__spollers .spollers__body {
+    padding-right: 1.5rem
+  }
   .promosphere__caption {
     font-size: 3.34375rem
   }
@@ -11138,6 +11144,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .faq__spollers .spollers__body {
     font-size: 1rem
+  }
+  .faq__spollers .spollers__body {
+    padding-left: 1.5rem
+  }
+  .faq__spollers .spollers__body {
+    padding-right: 1.5rem
   }
   .single-product__options ul li {
     flex-basis: 4.25rem
@@ -12254,6 +12266,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .faq__spollers .spollers__body {
     font-size: clamp(.8125rem ,.7232142857rem + .4464285714vw ,1rem)
+  }
+  .faq__spollers .spollers__body {
+    padding-left: clamp(.75rem ,.3928571429rem + 1.7857142857vw ,1.5rem)
+  }
+  .faq__spollers .spollers__body {
+    padding-right: clamp(.75rem ,.3928571429rem + 1.7857142857vw ,1.5rem)
   }
   .brief__nav a,
   .brief__nav button {
