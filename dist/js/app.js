@@ -1689,6 +1689,24 @@
                     }
                 });
             }
+            if (document.querySelector(".template3__slider")) {
+                new Swiper(".template3__slider", {
+                    speed: 800,
+                    slidesPerView: 1,
+                    spaceBetween: 12,
+                    watchOverflow: true,
+                    autoHeight: false,
+                    lazy: {
+                        loadPrevNext: false,
+                        loadOnTransitionStart: false
+                    },
+                    preloadImages: false,
+                    scrollbar: {
+                        el: ".template3__slider .swiper-scrollbar",
+                        draggable: true
+                    }
+                });
+            }
             if (document.querySelector(".widget-cases__slider")) new Swiper(".widget-cases__slider", {
                 speed: 800,
                 spaceBetween: 8,
@@ -1851,9 +1869,14 @@
             });
             if (document.querySelector(".logofuse__slider")) new Swiper(".logofuse__slider", {
                 speed: 800,
-                slidesPerView: 1,
-                spaceBetween: 20,
+                spaceBetween: 0,
                 watchOverflow: true,
+                slidesPerView: 2,
+                slidesPerGroup: 4,
+                grid: {
+                    rows: 2,
+                    fill: "row"
+                },
                 lazy: {
                     loadPrevNext: false,
                     loadOnTransitionStart: false
@@ -3787,17 +3810,13 @@ PERFORMANCE OF THIS SOFTWARE.
                     }), 300);
                 }), 2e3);
             }
-            const catalogButton = targetElement.closest(".header-catalog__button");
+            const catalogButton = targetElement.closest(".js-catalog-button");
             document.querySelector(".header-menu__row");
             if (catalogButton && bodyLockStatus) {
                 document.body.classList.toggle("_catalog-show");
-                bodyLock();
                 return;
             }
-            if (!targetElement.closest(".header-catalog") && document.body.classList.contains("_catalog-show")) {
-                bodyUnlock();
-                document.body.classList.remove("_catalog-show");
-            }
+            if (!targetElement.closest(".header-catalog") && document.body.classList.contains("_catalog-show")) document.body.classList.remove("_catalog-show");
             if (targetElement.closest(".header-catalog__close") && document.body.classList.contains("_catalog-show")) {
                 document.body.classList.remove("_catalog-show");
                 const activeItem = document.querySelector(".header-catalog__item._active");
@@ -3818,20 +3837,12 @@ PERFORMANCE OF THIS SOFTWARE.
                     isCatalogArrowCoolDown = false;
                 }), 300);
                 const parentItem = catalogArrow.closest(".header-catalog__item_has-children");
-                const activeItems = document.querySelectorAll(".header-catalog__item_has-children._active");
-                const isSameItemActive = parentItem.classList.contains("_active");
+                const activeItems = document.querySelectorAll(".header-catalog__item_has-children._list-show");
+                const isSameItemActive = parentItem.classList.contains("_list-show");
                 activeItems.forEach((item => {
-                    item.classList.remove("_active");
-                    if (window.innerWidth <= 991.98) _slideUp(item.querySelector(".header-catalog__sub-list"), 300);
+                    item.classList.remove("_list-show");
                 }));
-                if (!isSameItemActive) {
-                    parentItem.classList.add("_active");
-                    if (window.innerWidth <= 991.98) _slideDown(parentItem.querySelector(".header-catalog__sub-list"), 300);
-                }
-            }
-            if (targetElement.classList.contains("js-category-button") || targetElement.closest(".js-category-button")) {
-                const parent = targetElement.closest(".widget-category");
-                parent.classList.toggle("_active");
+                if (!isSameItemActive) parentItem.classList.add("_list-show");
             }
             if (targetElement.classList.contains("js-card-add") || targetElement.closest(".js-card-add")) {
                 const parent = targetElement.closest(".product-card");
@@ -3871,28 +3882,44 @@ PERFORMANCE OF THIS SOFTWARE.
                 }
             }));
         }
-        function initMobileCatalog() {
-            if (window.innerWidth > 991.98) return;
-            const catalogSubLists = document.querySelectorAll(".header-catalog__sub-list");
-            if (catalogSubLists.length) catalogSubLists.forEach((list => {
-                _slideUp(list);
-                const parentItem = list.closest(".header-catalog__item_has-children");
-                if (parentItem) {
-                    const toggleBtn = parentItem.querySelector(".header-catalog__arrow");
-                    if (toggleBtn) toggleBtn.addEventListener("click", (e => {
-                        e.preventDefault();
-                        _slideToggle(list, 500);
-                    }));
+        function initCatalogMenu() {
+            const menuContainers = document.querySelectorAll("[data-catalog-container]");
+            menuContainers.forEach((container => {
+                const list = container.querySelector("[data-catalog-list]");
+                const toggleBtn = container.querySelector("[data-catalog-button]");
+                const breakpointSettings = container.getAttribute("data-catalog-container");
+                if (!list || !toggleBtn || !breakpointSettings) return;
+                const [breakpointValue, breakpointType] = breakpointSettings.split(",").map((item => item.trim()));
+                const breakpoint = parseInt(breakpointValue);
+                const isActiveMode = breakpointType === "max" && window.innerWidth <= breakpoint || breakpointType !== "max" && window.innerWidth >= breakpoint;
+                toggleBtn.removeEventListener("click", handleToggle);
+                if (!isActiveMode) {
+                    _slideDown(list, 0);
+                    container.classList.remove("_active");
+                    return;
                 }
+                _slideUp(list, 0);
+                container.classList.remove("_active");
+                function handleToggle(e) {
+                    e.preventDefault();
+                    document.querySelectorAll("[data-catalog-container]._active").forEach((openContainer => {
+                        if (openContainer !== container) {
+                            const openList = openContainer.querySelector("[data-catalog-list]");
+                            openContainer.classList.remove("_active");
+                            _slideUp(openList, 300);
+                        }
+                    }));
+                    container.classList.toggle("_active");
+                    _slideToggle(list, 300);
+                }
+                toggleBtn.addEventListener("click", handleToggle);
             }));
         }
-        document.addEventListener("DOMContentLoaded", initMobileCatalog);
+        document.addEventListener("DOMContentLoaded", initCatalogMenu);
         let resizeTimer;
         window.addEventListener("resize", (() => {
             clearTimeout(resizeTimer);
-            resizeTimer = setTimeout((() => {
-                if (window.innerWidth <= 991.98) initMobileCatalog();
-            }), 100);
+            resizeTimer = setTimeout(initCatalogMenu, 100);
         }));
         function setupFloatingMenuObserver() {
             const floatingMenu = document.querySelector(".floating-menu");
@@ -4154,8 +4181,6 @@ PERFORMANCE OF THIS SOFTWARE.
             const maxAllowedHeight = viewportHeight - headerHeight - 8;
             stickyItems.forEach((item => {
                 const itemHeight = item.offsetHeight;
-                console.log(itemHeight);
-                console.log(maxAllowedHeight);
                 if (itemHeight < maxAllowedHeight) item.classList.add("_sticky-item_stick"); else item.classList.remove("_sticky-item_stick");
             }));
         }
@@ -4168,7 +4193,40 @@ PERFORMANCE OF THIS SOFTWARE.
             clearTimeout(stickyResizeTimeout);
             stickyResizeTimeout = setTimeout(checkStickyItems, 100);
         }));
-        window["FLS"] = true;
+        document.addEventListener("DOMContentLoaded", (function() {
+            const rows = document.querySelectorAll("[data-title]");
+            function isMobile() {
+                return window.innerWidth < 992;
+            }
+            function handleRows() {
+                if (isMobile()) rows.forEach((row => {
+                    row.style.height = "48px";
+                    row.style.overflow = "hidden";
+                    row.style.transition = "height 0.3s ease";
+                    row.style.cursor = "pointer";
+                    row.addEventListener("click", (function() {
+                        if (this.classList.contains("_active")) {
+                            this.classList.remove("_active");
+                            this.style.height = "48px";
+                        } else {
+                            rows.forEach((r => {
+                                r.classList.remove("_active");
+                                r.style.height = "48px";
+                            }));
+                            this.classList.add("_active");
+                            this.style.height = this.scrollHeight + "px";
+                        }
+                    }));
+                })); else rows.forEach((row => {
+                    row.style.height = "auto";
+                    row.style.overflow = "visible";
+                    row.classList.remove("_active");
+                }));
+            }
+            handleRows();
+            window.addEventListener("resize", handleRows);
+        }));
+        window["FLS"] = false;
         menuInit();
         spollers();
         tabs();
