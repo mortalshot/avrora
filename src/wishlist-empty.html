@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Вишлист пуст"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+      <div class="breadcrumbs">
+        <div class="breadcrumbs__container">
+          <div class="breadcrumbs__wrapper">
+            <div class="breadcrumbs__nav site-breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <span class="site-breadcrumbs__link link-hover" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a href="" itemprop="item">
+                  <span itemprop="name">Главная</span>
+                </a>
+              </span>
+              <span class="site-breadcrumbs__separator">
+                <svg class="icon">
+                  <use xlink:href="@img/icons/icons.svg#link-arrow"></use>
+                </svg>
+              </span>
+              <span class="site-breadcrumbs__title">Вишлист</span>
+            </div>
+
+            <div class="breadcrumbs__search search">
+              <form action="#" class="search__form">
+                <input autocomplete="off" type="text" name="form[]" placeholder="Название товара или артикул" class="search__input">
+
+                <button class="search__submit">
+                  <svg class="icon">
+                    <use xlink:href="img/icons/icons.svg#search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="wishlist">
+        <div class="wishlist__container">
+          <div class="wishlist-empty">
+            <h1 class="wishlist-empty__title">Вишлист пуст</h1>
+            <div class="wishlist-empty__subtitle">Добавьте товары из&nbsp;ассортимента каталога и&nbsp;возвращайтесь, они вас будут ожидать на&nbsp;этой странице</div>
+            <div class="wishlist-empty__button">
+              <a href="" class="btn btn_bg-accent btn_big">Перейти в каталог</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      @@include('html/sections/faq.htm',{})
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+.checkbox {
+	position: relative;
+	&:not(:last-child) {
+		margin-bottom: em(5);
+	}
+	// .checkbox__input
+	&__input {
+		position: absolute;
+		width: 0;
+		height: 0;
+		opacity: 0;
+
+		&:focus + .checkbox__label {
+			&:before {
+				border-color: $Accent;
+			}
+		}
+		&:checked + .checkbox__label {
+			&:before {
+				background-color: $Accent;
+			}
+			&::after {
+				opacity: 1;
+			}
+		}
+	}
+	// .checkbox__label
+	&__label {
+		cursor: pointer;
+		display: inline-flex;
+		position: relative;
+		@include adaptiveValue("padding-left", 40, 28, 0, 1650, 992);
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		&:before {
+			content: "";
+			flex: 0 0 toRem(24);
+			background-color: #dfdfdf;
+			border-radius: toRem(4);
+			overflow: hidden;
+			left: 0;
+			transition:
+				$transition ease background-color,
+				$transition border-color 0s;
+			border: toRem(1) solid transparent;
+			@include adaptiveValue("flex-basis", 24, 20, 0, 1650, 992);
+			@include adaptiveValue("width", 24, 20, 0, 1650, 992);
+			@include adaptiveValue("height", 24, 20, 0, 1650, 992);
+		}
+		&::after {
+			content: "";
+			flex: 0 0 toRem(14);
+			left: toRem(5);
+			background: url(../img/icons/check.svg) no-repeat center/contain;
+			opacity: 0;
+			transition: $transition ease opacity 0s;
+			@include adaptiveValue("left", 5, 3.5, 0, 1650, 992);
+			@include adaptiveValue("flex-basis", 14, 12, 0, 1650, 992);
+			@include adaptiveValue("width", 14, 12, 0, 1650, 992);
+			@include adaptiveValue("height", 14, 12, 0, 1650, 992);
+		}
+	}
+	// .checkbox__text
+	&__text {
+		align-self: center;
+		@include adaptiveValue("font-size", 16, 13, 0, 1650, 992);
+	}
+}

@@ -1,0 +1,119 @@
+// Базовые стили спойлеров
+// Сниппет (HTML): spoller
+
+// Блок со спойлерами
+.spollers {
+	display: grid;
+	gap: 15px;
+}
+// Спойлер
+.spollers__item {
+}
+// Заголовок спойлера
+.spollers__title {
+	width: 100%;
+	cursor: default;
+	text-align: left;
+	position: relative;
+	list-style: none;
+
+	&::marker,
+	&::-webkit-details-marker {
+		display: none;
+	}
+	._spoller-init & {
+		cursor: pointer;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			background-color: #000;
+			height: 2px;
+			width: 15px;
+			transition: transform 0.5s ease 0s;
+		}
+		&::before {
+			transform: translate(-75%, -50%) rotate(40deg);
+		}
+		&::after {
+			transform: translate(0, -50%) rotate(-40deg);
+		}
+		&._spoller-active {
+			&::before {
+				transform: translateX(-75%) rotate(-40deg);
+			}
+			&::after {
+				transform: rotate(40deg);
+			}
+		}
+	}
+}
+// Контент спойлера
+.spollers__body {
+}
+
+.spoller-heading {
+	@media (min-width: $mobile) {
+		padding: toRem(48) toRem(32);
+	}
+
+	&._spoller-init {
+		padding: toRem(16);
+	}
+
+	// .spoller-heading__item
+	&__item {
+	}
+
+	// .spoller-heading__title
+	&__title {
+		width: 100%;
+		cursor: default;
+		text-align: left;
+		position: relative;
+		list-style: none;
+		outline: 0;
+
+		&::marker,
+		&::-webkit-details-marker {
+			display: none;
+		}
+
+		._spoller-init & {
+			cursor: pointer;
+			padding-right: toRem(15);
+
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				right: 0;
+				top: 50%;
+				background-color: $Accent;
+				height: 2px;
+				width: toRem(8);
+				transition: transform 0.5s ease 0s;
+			}
+			&::before {
+				transform: translate(-75%, -50%) rotate(40deg);
+			}
+			&::after {
+				transform: translate(0, -50%) rotate(-40deg);
+			}
+			&._spoller-active {
+				&::before {
+					transform: translateX(-75%) rotate(-40deg);
+				}
+				&::after {
+					transform: rotate(40deg);
+				}
+			}
+		}
+	}
+
+	// .spoller-heading__body
+	&__body {
+	}
+}

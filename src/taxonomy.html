@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Футболки"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+      <div class="breadcrumbs">
+        <div class="breadcrumbs__container">
+          <div class="breadcrumbs__wrapper">
+            <div class="breadcrumbs__nav site-breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <span class="site-breadcrumbs__link link-hover" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a href="" itemprop="item">
+                  <span itemprop="name">Главная</span>
+                </a>
+              </span>
+              <span class="site-breadcrumbs__separator">
+                <svg class="icon">
+                  <use xlink:href="@img/icons/icons.svg#link-arrow"></use>
+                </svg>
+              </span>
+              <span class="site-breadcrumbs__link link-hover" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a href="" itemprop="item">
+                  <span itemprop="name">Каталог</span>
+                </a>
+              </span>
+              <span class="site-breadcrumbs__separator">
+                <svg class="icon">
+                  <use xlink:href="@img/icons/icons.svg#link-arrow"></use>
+                </svg>
+              </span>
+              <span class="site-breadcrumbs__title">Футболки</span>
+            </div>
+
+            <div class="breadcrumbs__search search">
+              <form action="#" class="search__form">
+                <input autocomplete="off" type="text" name="form[]" placeholder="Название товара или артикул" class="search__input">
+
+                <button class="search__submit">
+                  <svg class="icon">
+                    <use xlink:href="img/icons/icons.svg#search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      @@include('html/sections/homebanner.htm',{})
+
+      @@include('html/sections/cases.htm',{
+        "title":"Реализованные кейсы"
+      })
+
+      @@include('html/sections/widget-cases.htm',{})
+
+      <section class="promosphere">
+        <div class="promosphere__container">
+          <div class="promosphere__body">
+            <div class="promosphere__caption">21&nbsp;год в&nbsp;мерче</div>
+            <div class="promosphere__grid">
+              <div class="promosphere__mission _content">
+                <p><b>Наша миссия</b></p>
+                <p>Развиваем и&nbsp;популяризируем рынок промопродукции и&nbsp;мерча. <br>
+                  Мы&nbsp;создаем продукты и&nbsp;услуги, развивающие эффективные маркетинговые коммуникации, через вовлеченность и&nbsp;яркие эмоциональные впечатления потребителя!</p>
+              </div>
+              <div class="promosphere__achivements">Более <br> 1500 <br> заказов <br> в&nbsp;год</div>
+            </div>
+          </div>
+
+          <div class="promosphere__steps">
+            <div class="promosphere__step promosphere-step _card">
+              <div class="promosphere-step__step">01.</div>
+              <div class="promosphere-step__caption">ЗАДАЧА</div>
+            </div>
+            <div class="promosphere__step promosphere-step _card">
+              <div class="promosphere-step__step">02.</div>
+              <div class="promosphere-step__caption">ИДЕЯ</div>
+            </div>
+            <div class="promosphere__step promosphere-step _card">
+              <div class="promosphere-step__step">03.</div>
+              <div class="promosphere-step__caption">РЕАЛИЗАЦИЯ</div>
+            </div>
+            <div class="promosphere__step promosphere-step _card">
+              <div class="promosphere-step__step">04.</div>
+              <div class="promosphere-step__caption">ДОСТАВКА</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <div class="catalog__container">
+          <div class="catalog__wrapper _card">
+            <aside class="catalog__sidebar">
+              <img src="@img/catalog-filter.jpg" alt="">
+            </aside>
+
+            <div class="catalog__main">
+              <div class="catalog__heading">
+                <h2 class="catalog__title">Футболки</h2>
+
+                <div class="catalog__top">
+                  <button type="button" class="catalog__filter-button">
+                    <span>Фильтры</span>
+                    <svg class="icon">
+                      <use xlink:href="@img/icons/icons.svg#select"></use>
+                    </svg>
+                  </button>
+
+                  <div class="catalog__selected-filters">
+                    <div class="selected-filter">
+                      <div class="selected-filter__wrapper">
+                        <span>800-1200</span>
+
+                        <button type="button" class="selected-filter__remove">
+                          <svg class="icon">
+                            <use xlink:href="@img/icons/icons.svg#close"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="selected-filter">
+                      <div class="selected-filter__wrapper">
+                        <span>Белый</span>
+
+                        <button type="button" class="selected-filter__remove">
+                          <svg class="icon">
+                            <use xlink:href="@img/icons/icons.svg#close"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="selected-filter">
+                      <div class="selected-filter__wrapper">
+                        <span>S/M/L</span>
+
+                        <button type="button" class="selected-filter__remove">
+                          <svg class="icon">
+                            <use xlink:href="@img/icons/icons.svg#close"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="selected-filter selected-filter_clean">
+                      <button type="button" class="selected-filter__wrapper">
+                        <span>Очистить</span>
+
+                        <div class="selected-filter__remove">
+                          <svg class="icon">
+                            <use xlink:href="@img/icons/icons.svg#close"></use>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="catalog__sorting">
+                    <select name="form[]" class="form">
+                      <option value="Сначала популярные" selected>Сначала популярные</option>
+                      <option value="Новинки">Новинки</option>
+                      <option value="Скидки">Скидки</option>
+                      <option value="По возрастанию цены">По возрастанию цены</option>
+                      <option value="По убыванию цены">По убыванию цены</option>
+                      <option value="По увеличению остатков">По увеличению остатков</option>
+                      <option value="По уменьшению остатков">По уменьшению остатков</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog__items">
+                <div class="catalog__item product-card">
+                  <a href="single-product.html" class="product-card__preview _bg">
+                    <img src="@img/products/product1-preview.jpg" alt="">
+                    <div class="product-card__labels">
+                      <div class="product-card__label product-card__label_hit">ХИТ</div>
+                      <div class="product-card__label product-card__label_day">ТОВАР ДНЯ</div>
+                      <div class="product-card__label product-card__label_sale">СКИДКА</div>
+                    </div>
+                    <div class="product-card__chestnyiznak"></div>
+                  </a>
+
+                  <div class="product-card__body">
+                    <div class="product-card__main">
+                      <div class="product-card__price price">
+                        <span>1000 <span class="font-fourth">₽</span></span>
+                        <span class="price__old">1600 <span class="font-fourth">₽</span></span>
+                      </div>
+
+                      <a href="single-product.html" class="product-card__title">Рубашка поло мужская с&nbsp;контрастной отделкой PRACTICE 270 чёрная</a>
+
+                      <div class="product-card__details">
+                        <div class="product-card__art">Артикул: E-20345.17.07</div>
+                        <div class="product-card__sizes">Остатки: XS, S, M, L, XL, 2XL, 3XL, 4XL, 5XL</div>
+                      </div>
+
+                      <div class="product-card__options-wrapper">
+                        <div class="product-card__options">
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__footer">
+                      <div class="product-card__add">
+                        <button type="button" class="js-card-add btn btn_bg-accent">Добавить в вишлист</button>
+                      </div>
+                      <div class="product-card__more">
+                        <a href="single-product.html" class="btn btn_bg-accent">Подробнее</a>
+                      </div>
+                      <div class="product-card__popup">
+                        <form action="#" class="product-card__form">
+                          <div class="form-item">
+                            <div class="product-card__size">S</div>
+                            <div class="product-card__quantity">5</div>
+                            <div data-quantity class="quantity">
+                              <button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+                              <div class="quantity__input">
+                                <input data-quantity-value data-quantity-min=0 data-quantity-max=5 type="text" name="product1-val1" value="0">
+                              </div>
+                              <button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+                            </div>
+                          </div>
+                          <div class="form-item">
+                            <div class="product-card__size">M</div>
+                            <div class="product-card__quantity">9999</div>
+                            <div data-quantity class="quantity">
+                              <button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+                              <div class="quantity__input">
+                                <input data-quantity-value data-quantity-min=0 data-quantity-max=9999 type="text" name="product1-val2" value="0">
+                              </div>
+                              <button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+                            </div>
+                          </div>
+                          <div class="form-item">
+                            <div class="product-card__size">L</div>
+                            <div class="product-card__quantity">9999</div>
+                            <div data-quantity class="quantity">
+                              <button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+                              <div class="quantity__input">
+                                <input data-quantity-value data-quantity-min=0 data-quantity-max=9999 type="text" name="product1-val3" value="0">
+                              </div>
+                              <button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+                            </div>
+                          </div>
+                          <div class="form-item">
+                            <div class="product-card__size">XL</div>
+                            <div class="product-card__quantity">9999</div>
+                            <div data-quantity class="quantity">
+                              <button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+                              <div class="quantity__input">
+                                <input data-quantity-value data-quantity-min=0 data-quantity-max=9999 type="text" name="product1-val4" value="0">
+                              </div>
+                              <button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+                            </div>
+                          </div>
+                          <div class="form-submit">
+                            <button type="submit" class="btn btn_bg-accent">Добавить</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <a href="single-product.html" class="product-card__preview _bg">
+                    <img src="@img/products/product2-preview.jpg" alt="">
+                    <div class="product-card__labels">
+                      <div class="product-card__label product-card__label_day">ТОВАР ДНЯ</div>
+                    </div>
+                  </a>
+
+                  <div class="product-card__body">
+                    <div class="product-card__main">
+                      <div class="product-card__price price">
+                        <span>1000 <span class="font-fourth">₽</span></span>
+                        <span class="price__old">1600 <span class="font-fourth">₽</span></span>
+                      </div>
+
+                      <a href="single-product.html" class="product-card__title">Футболка мужская с&nbsp;отделкой</a>
+                      <div class="product-card__details">
+                        <div class="product-card__art">Артикул: E-20345.17.07</div>
+                        <div class="product-card__sizes">Остатки: XS, S, M, L, XL, 2XL, 3XL, 4XL, 5XL</div>
+                      </div>
+
+                      <div class="product-card__options-wrapper">
+                        <div class="product-card__options">
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__footer">
+                      <div class="product-card__add">
+                        <a href="#" class="btn btn_border-accent">В вишлист</a>
+                      </div>
+                      <div class="product-card__more">
+                        <a href="single-product.html" class="btn btn_bg-accent">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <a href="single-product.html" class="product-card__preview _bg">
+                    <img src="@img/products/product2-preview.jpg" alt="">
+                    <div class="product-card__labels">
+                      <div class="product-card__label product-card__label_day">ТОВАР ДНЯ</div>
+                    </div>
+                  </a>
+
+                  <div class="product-card__body">
+                    <div class="product-card__main">
+                      <div class="product-card__price price">
+                        <span>1000 <span class="font-fourth">₽</span></span>
+                        <span class="price__old">1600 <span class="font-fourth">₽</span></span>
+                      </div>
+
+                      <a href="single-product.html" class="product-card__title">Футболка мужская с&nbsp;отделкой</a>
+                      <div class="product-card__details">
+                        <div class="product-card__art">Артикул: E-20345.17.07</div>
+                        <div class="product-card__sizes">Остатки: XS, S, M, L, XL, 2XL, 3XL, 4XL, 5XL</div>
+                      </div>
+
+                      <div class="product-card__options-wrapper">
+                        <div class="product-card__options">
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__footer">
+                      <div class="product-card__add">
+                        <a href="#" class="btn btn_border-accent">В вишлист</a>
+                      </div>
+                      <div class="product-card__more">
+                        <a href="single-product.html" class="btn btn_bg-accent">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <a href="single-product.html" class="product-card__preview _bg">
+                    <img src="@img/products/product2-preview.jpg" alt="">
+                    <div class="product-card__labels">
+                      <div class="product-card__label product-card__label_day">ТОВАР ДНЯ</div>
+                    </div>
+                  </a>
+
+                  <div class="product-card__body">
+                    <div class="product-card__main">
+                      <div class="product-card__price price">
+                        <span>1000 <span class="font-fourth">₽</span></span>
+                        <span class="price__old">1600 <span class="font-fourth">₽</span></span>
+                      </div>
+
+                      <a href="single-product.html" class="product-card__title">Футболка мужская с&nbsp;отделкой</a>
+                      <div class="product-card__details">
+                        <div class="product-card__art">Артикул: E-20345.17.07</div>
+                        <div class="product-card__sizes">Остатки: XS, S, M, L, XL, 2XL, 3XL, 4XL, 5XL</div>
+                      </div>
+
+                      <div class="product-card__options-wrapper">
+                        <div class="product-card__options">
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__footer">
+                      <div class="product-card__add">
+                        <a href="#" class="btn btn_border-accent">В вишлист</a>
+                      </div>
+                      <div class="product-card__more">
+                        <a href="single-product.html" class="btn btn_bg-accent">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <a href="single-product.html" class="product-card__preview _bg">
+                    <img src="@img/products/product2-preview.jpg" alt="">
+                    <div class="product-card__labels">
+                      <div class="product-card__label product-card__label_day">ТОВАР ДНЯ</div>
+                    </div>
+                  </a>
+
+                  <div class="product-card__body">
+                    <div class="product-card__main">
+                      <div class="product-card__price price">
+                        <span>1000 <span class="font-fourth">₽</span></span>
+                        <span class="price__old">1600 <span class="font-fourth">₽</span></span>
+                      </div>
+
+                      <a href="single-product.html" class="product-card__title">Футболка мужская с&nbsp;отделкой</a>
+                      <div class="product-card__details">
+                        <div class="product-card__art">Артикул: E-20345.17.07</div>
+                        <div class="product-card__sizes">Остатки: XS, S, M, L, XL, 2XL, 3XL, 4XL, 5XL</div>
+                      </div>
+
+                      <div class="product-card__options-wrapper">
+                        <div class="product-card__options">
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__footer">
+                      <div class="product-card__add">
+                        <a href="#" class="btn btn_border-accent">В вишлист</a>
+                      </div>
+                      <div class="product-card__more">
+                        <a href="single-product.html" class="btn btn_bg-accent">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <a href="single-product.html" class="product-card__preview _bg">
+                    <img src="@img/products/product2-preview.jpg" alt="">
+                    <div class="product-card__labels">
+                      <div class="product-card__label product-card__label_day">ТОВАР ДНЯ</div>
+                    </div>
+                  </a>
+
+                  <div class="product-card__body">
+                    <div class="product-card__main">
+                      <div class="product-card__price price">
+                        <span>1000 <span class="font-fourth">₽</span></span>
+                        <span class="price__old">1600 <span class="font-fourth">₽</span></span>
+                      </div>
+
+                      <a href="single-product.html" class="product-card__title">Футболка мужская с&nbsp;отделкой</a>
+                      <div class="product-card__details">
+                        <div class="product-card__art">Артикул: E-20345.17.07</div>
+                        <div class="product-card__sizes">Остатки: XS, S, M, L, XL, 2XL, 3XL, 4XL, 5XL</div>
+                      </div>
+
+                      <div class="product-card__options-wrapper">
+                        <div class="product-card__options">
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__footer">
+                      <div class="product-card__add">
+                        <a href="#" class="btn btn_border-accent">В вишлист</a>
+                      </div>
+                      <div class="product-card__more">
+                        <a href="single-product.html" class="btn btn_bg-accent">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <a href="single-product.html" class="product-card__preview _bg">
+                    <img src="@img/products/product2-preview.jpg" alt="">
+                    <div class="product-card__labels">
+                      <div class="product-card__label product-card__label_day">ТОВАР ДНЯ</div>
+                    </div>
+                  </a>
+
+                  <div class="product-card__body">
+                    <div class="product-card__main">
+                      <div class="product-card__price price">
+                        <span>1000 <span class="font-fourth">₽</span></span>
+                        <span class="price__old">1600 <span class="font-fourth">₽</span></span>
+                      </div>
+
+                      <a href="single-product.html" class="product-card__title">Футболка мужская с&nbsp;отделкой</a>
+                      <div class="product-card__details">
+                        <div class="product-card__art">Артикул: E-20345.17.07</div>
+                        <div class="product-card__sizes">Остатки: XS, S, M, L, XL, 2XL, 3XL, 4XL, 5XL</div>
+                      </div>
+
+                      <div class="product-card__options-wrapper">
+                        <div class="product-card__options">
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__footer">
+                      <div class="product-card__add">
+                        <a href="#" class="btn btn_border-accent">В вишлист</a>
+                      </div>
+                      <div class="product-card__more">
+                        <a href="single-product.html" class="btn btn_bg-accent">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <a href="single-product.html" class="product-card__preview _bg">
+                    <img src="@img/products/product2-preview.jpg" alt="">
+                    <div class="product-card__labels">
+                      <div class="product-card__label product-card__label_day">ТОВАР ДНЯ</div>
+                    </div>
+                  </a>
+
+                  <div class="product-card__body">
+                    <div class="product-card__main">
+                      <div class="product-card__price price">
+                        <span>1000 <span class="font-fourth">₽</span></span>
+                        <span class="price__old">1600 <span class="font-fourth">₽</span></span>
+                      </div>
+
+                      <a href="single-product.html" class="product-card__title">Футболка мужская с&nbsp;отделкой</a>
+                      <div class="product-card__details">
+                        <div class="product-card__art">Артикул: E-20345.17.07</div>
+                        <div class="product-card__sizes">Остатки: XS, S, M, L, XL, 2XL, 3XL, 4XL, 5XL</div>
+                      </div>
+
+                      <div class="product-card__options-wrapper">
+                        <div class="product-card__options">
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__footer">
+                      <div class="product-card__add">
+                        <a href="#" class="btn btn_border-accent">В вишлист</a>
+                      </div>
+                      <div class="product-card__more">
+                        <a href="single-product.html" class="btn btn_bg-accent">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <a href="single-product.html" class="product-card__preview _bg">
+                    <img src="@img/products/product2-preview.jpg" alt="">
+                    <div class="product-card__labels">
+                      <div class="product-card__label product-card__label_day">ТОВАР ДНЯ</div>
+                    </div>
+                  </a>
+
+                  <div class="product-card__body">
+                    <div class="product-card__main">
+                      <div class="product-card__price price">
+                        <span>1000 <span class="font-fourth">₽</span></span>
+                        <span class="price__old">1600 <span class="font-fourth">₽</span></span>
+                      </div>
+
+                      <a href="single-product.html" class="product-card__title">Футболка мужская с&nbsp;отделкой</a>
+                      <div class="product-card__details">
+                        <div class="product-card__art">Артикул: E-20345.17.07</div>
+                        <div class="product-card__sizes">Остатки: XS, S, M, L, XL, 2XL, 3XL, 4XL, 5XL</div>
+                      </div>
+
+                      <div class="product-card__options-wrapper">
+                        <div class="product-card__options">
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__footer">
+                      <div class="product-card__add">
+                        <a href="#" class="btn btn_border-accent">В вишлист</a>
+                      </div>
+                      <div class="product-card__more">
+                        <a href="single-product.html" class="btn btn_bg-accent">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <a href="single-product.html" class="product-card__preview _bg">
+                    <img src="@img/products/product2-preview.jpg" alt="">
+                    <div class="product-card__labels">
+                      <div class="product-card__label product-card__label_day">ТОВАР ДНЯ</div>
+                    </div>
+                  </a>
+
+                  <div class="product-card__body">
+                    <div class="product-card__main">
+                      <div class="product-card__price price">
+                        <span>1000 <span class="font-fourth">₽</span></span>
+                        <span class="price__old">1600 <span class="font-fourth">₽</span></span>
+                      </div>
+
+                      <a href="single-product.html" class="product-card__title">Футболка мужская с&nbsp;отделкой</a>
+                      <div class="product-card__details">
+                        <div class="product-card__art">Артикул: E-20345.17.07</div>
+                        <div class="product-card__sizes">Остатки: XS, S, M, L, XL, 2XL, 3XL, 4XL, 5XL</div>
+                      </div>
+
+                      <div class="product-card__options-wrapper">
+                        <div class="product-card__options">
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__footer">
+                      <div class="product-card__add">
+                        <a href="#" class="btn btn_border-accent">В вишлист</a>
+                      </div>
+                      <div class="product-card__more">
+                        <a href="single-product.html" class="btn btn_bg-accent">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <a href="single-product.html" class="product-card__preview _bg">
+                    <img src="@img/products/product2-preview.jpg" alt="">
+                    <div class="product-card__labels">
+                      <div class="product-card__label product-card__label_day">ТОВАР ДНЯ</div>
+                    </div>
+                  </a>
+
+                  <div class="product-card__body">
+                    <div class="product-card__main">
+                      <div class="product-card__price price">
+                        <span>1000 <span class="font-fourth">₽</span></span>
+                        <span class="price__old">1600 <span class="font-fourth">₽</span></span>
+                      </div>
+
+                      <a href="single-product.html" class="product-card__title">Футболка мужская с&nbsp;отделкой</a>
+                      <div class="product-card__details">
+                        <div class="product-card__art">Артикул: E-20345.17.07</div>
+                        <div class="product-card__sizes">Остатки: XS, S, M, L, XL, 2XL, 3XL, 4XL, 5XL</div>
+                      </div>
+
+                      <div class="product-card__options-wrapper">
+                        <div class="product-card__options">
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__footer">
+                      <div class="product-card__add">
+                        <a href="#" class="btn btn_border-accent">В вишлист</a>
+                      </div>
+                      <div class="product-card__more">
+                        <a href="single-product.html" class="btn btn_bg-accent">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <a href="single-product.html" class="product-card__preview _bg">
+                    <img src="@img/products/product2-preview.jpg" alt="">
+                    <div class="product-card__labels">
+                      <div class="product-card__label product-card__label_day">ТОВАР ДНЯ</div>
+                    </div>
+                  </a>
+
+                  <div class="product-card__body">
+                    <div class="product-card__main">
+                      <div class="product-card__price price">
+                        <span>1000 <span class="font-fourth">₽</span></span>
+                        <span class="price__old">1600 <span class="font-fourth">₽</span></span>
+                      </div>
+
+                      <a href="single-product.html" class="product-card__title">Футболка мужская с&nbsp;отделкой</a>
+                      <div class="product-card__details">
+                        <div class="product-card__art">Артикул: E-20345.17.07</div>
+                        <div class="product-card__sizes">Остатки: XS, S, M, L, XL, 2XL, 3XL, 4XL, 5XL</div>
+                      </div>
+
+                      <div class="product-card__options-wrapper">
+                        <div class="product-card__options">
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__footer">
+                      <div class="product-card__add">
+                        <a href="#" class="btn btn_border-accent">В вишлист</a>
+                      </div>
+                      <div class="product-card__more">
+                        <a href="single-product.html" class="btn btn_bg-accent">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <a href="single-product.html" class="product-card__preview _bg">
+                    <img src="@img/products/product2-preview.jpg" alt="">
+                    <div class="product-card__labels">
+                      <div class="product-card__label product-card__label_day">ТОВАР ДНЯ</div>
+                    </div>
+                  </a>
+
+                  <div class="product-card__body">
+                    <div class="product-card__main">
+                      <div class="product-card__price price">
+                        <span>1000 <span class="font-fourth">₽</span></span>
+                        <span class="price__old">1600 <span class="font-fourth">₽</span></span>
+                      </div>
+
+                      <a href="single-product.html" class="product-card__title">Футболка мужская с&nbsp;отделкой</a>
+                      <div class="product-card__details">
+                        <div class="product-card__art">Артикул: E-20345.17.07</div>
+                        <div class="product-card__sizes">Остатки: XS, S, M, L, XL, 2XL, 3XL, 4XL, 5XL</div>
+                      </div>
+
+                      <div class="product-card__options-wrapper">
+                        <div class="product-card__options">
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__footer">
+                      <div class="product-card__add">
+                        <a href="#" class="btn btn_border-accent">В вишлист</a>
+                      </div>
+                      <div class="product-card__more">
+                        <a href="single-product.html" class="btn btn_bg-accent">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item product-card">
+                  <a href="single-product.html" class="product-card__preview _bg">
+                    <img src="@img/products/product2-preview.jpg" alt="">
+                    <div class="product-card__labels">
+                      <div class="product-card__label product-card__label_day">ТОВАР ДНЯ</div>
+                    </div>
+                  </a>
+
+                  <div class="product-card__body">
+                    <div class="product-card__main">
+                      <div class="product-card__price price">
+                        <span>1000 <span class="font-fourth">₽</span></span>
+                        <span class="price__old">1600 <span class="font-fourth">₽</span></span>
+                      </div>
+
+                      <a href="single-product.html" class="product-card__title">Футболка мужская с&nbsp;отделкой</a>
+                      <div class="product-card__details">
+                        <div class="product-card__art">Артикул: E-20345.17.07</div>
+                        <div class="product-card__sizes">Остатки: XS, S, M, L, XL, 2XL, 3XL, 4XL, 5XL</div>
+                      </div>
+
+                      <div class="product-card__options-wrapper">
+                        <div class="product-card__options">
+                          <a class="product-card__opt _bg" href="#"><img src="@img/products/product1-opt1.jpg" alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__footer">
+                      <div class="product-card__add">
+                        <a href="#" class="btn btn_border-accent">В вишлист</a>
+                      </div>
+                      <div class="product-card__more">
+                        <a href="single-product.html" class="btn btn_bg-accent">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item catalog-request">
+                  <div class="catalog-request__wrapper">
+                    <div class="catalog-request__heading">
+                      <div class="catalog-request__title">Доверьтесь Авроре! <br> Обсудим проект?</div>
+                      <div class="catalog-request__subtitle">У&nbsp;нас очень много продукции. <br> Мы&nbsp;помогаем клиентам на&nbsp;каждом этапе</div>
+                    </div>
+                    <form action="#" class="catalog-request__form">
+                      <div class="form-item">
+                        <input id="catalog-phone" type="text" name="catalog-phone" placeholder="Телефон" class="input input_bg-white input_phone" data-required="" data-validate="" required="">
+                      </div>
+                      <div class="form-item">
+                        <input id="catalog-email" type="email" name="catalog-email" placeholder="Email" class="input input_bg-white">
+                      </div>
+                      <div class="form-submit">
+                        <button type="submit" class="btn btn_bg-accent">Оставить заявку</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="items-navigation">
+                <div class="items-navigation__button">
+                  <a href="" class="btn btn_big btn_bg-white btn_color-accent">Смотреть ещё</a>
+                </div>
+
+                <nav class="pagination" aria-label="Posts">
+                  <a class="page-numbers page-prev" href="">
+                    <svg class="icon">
+                      <use xlink:href="@img/icons/icons.svg#swiper-arrow"></use>
+                    </svg>
+                  </a>
+
+                  <div class="nav-links">
+                    <a class="page-numbers" href="">1</a>
+                    <span aria-current="page" class="page-numbers current">2</span>
+                    <a class="page-numbers" href="">3</a>
+                    <span class="page-numbers dots">…</span>
+                    <a class="page-numbers" href="">11</a>
+                  </div>
+
+                  <a class="page-numbers page-next" href="">
+                    <svg class="icon">
+                      <use xlink:href="@img/icons/icons.svg#swiper-arrow"></use>
+                    </svg>
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      @@include('html/sections/packsolutions.htm',{})
+
+      @@include('html/sections/request.htm',{})
+
+      @@include('html/sections/seo.htm',{})
+
+      @@include('html/sections/faq.htm',{})
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

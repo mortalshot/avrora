@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Страница продукта"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+      <div class="breadcrumbs">
+        <div class="breadcrumbs__container">
+          <div class="breadcrumbs__wrapper">
+            <div class="breadcrumbs__nav site-breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <span class="site-breadcrumbs__link link-hover" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a href="" itemprop="item">
+                  <span itemprop="name">Главная</span>
+                </a>
+              </span>
+              <span class="site-breadcrumbs__separator">
+                <svg class="icon">
+                  <use xlink:href="@img/icons/icons.svg#link-arrow"></use>
+                </svg>
+              </span>
+              <span class="site-breadcrumbs__link link-hover" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a href="" itemprop="item">
+                  <span itemprop="name">Каталог</span>
+                </a>
+              </span>
+              <span class="site-breadcrumbs__separator">
+                <svg class="icon">
+                  <use xlink:href="@img/icons/icons.svg#link-arrow"></use>
+                </svg>
+              </span>
+              <span class="site-breadcrumbs__link link-hover" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a href="" itemprop="item">
+                  <span itemprop="name">Футболки с логотипом</span>
+                </a>
+              </span>
+              <span class="site-breadcrumbs__separator">
+                <svg class="icon">
+                  <use xlink:href="@img/icons/icons.svg#link-arrow"></use>
+                </svg>
+              </span>
+              <span class="site-breadcrumbs__title">Футболка оверсайз RUST</span>
+            </div>
+
+            <div class="breadcrumbs__search search">
+              <form action="#" class="search__form">
+                <input autocomplete="off" type="text" name="form[]" placeholder="Название товара или артикул" class="search__input">
+
+                <button class="search__submit">
+                  <svg class="icon">
+                    <use xlink:href="img/icons/icons.svg#search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="single-product">
+        <div class="single-product__container">
+          <div class="single-product__top">
+            <div class="single-product__gallery">
+              <div class="product-gallery">
+                <div class="product-gallery__main swiper">
+                  <div class="product-gallery__wrapper swiper-wrapper" data-gallery="">
+                    <div data-src="https://avrorastore.ru/upload/resize_cache/iblock/254/635_635_1/emjhu6961xq1dta4sjm48hiu3ee1p5f7.jpg" class="product-gallery__image _bg swiper-slide">
+                      <img src="https://avrorastore.ru/upload/resize_cache/iblock/254/635_635_1/emjhu6961xq1dta4sjm48hiu3ee1p5f7.jpg" alt="" loading="lazy">
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div data-src="https://avrorastore.ru/upload/iblock/da8/rh4nh1i489hbbuqbsvhdl70f5s2tsx9e.jpg" class="product-gallery__image _bg swiper-slide">
+                      <img src="https://avrorastore.ru/upload/iblock/da8/rh4nh1i489hbbuqbsvhdl70f5s2tsx9e.jpg" alt="" loading="lazy">
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div data-src="https://avrorastore.ru/upload/resize_cache/iblock/b9b/635_635_1/kmbyfa593ehltpi63lo8gp3utda635nm.jpg" class="product-gallery__image _bg swiper-slide">
+                      <img src="https://avrorastore.ru/upload/resize_cache/iblock/b9b/635_635_1/kmbyfa593ehltpi63lo8gp3utda635nm.jpg" alt="" loading="lazy">
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div data-src="https://avrorastore.ru/upload/resize_cache/iblock/927/635_635_1/cuh4pg1wnq0idmf1yn712atzll0v4zt4.jpg" class="product-gallery__image _bg swiper-slide">
+                      <img src="https://avrorastore.ru/upload/resize_cache/iblock/927/635_635_1/cuh4pg1wnq0idmf1yn712atzll0v4zt4.jpg" alt="" loading="lazy">
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div data-src="https://avrorastore.ru/upload/resize_cache/iblock/ab0/635_635_1/yrkfbtwu2nkom7ko44u7tefn8lwcz3tu.jpg" class="product-gallery__image _bg swiper-slide">
+                      <img src="https://avrorastore.ru/upload/resize_cache/iblock/ab0/635_635_1/yrkfbtwu2nkom7ko44u7tefn8lwcz3tu.jpg" alt="" loading="lazy">
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div data-src="https://avrorastore.ru/upload/resize_cache/iblock/6f9/635_635_1/q1t6nr5esg961hd8rybpn5ighmoc8e5h.jpg" class="product-gallery__image _bg swiper-slide">
+                      <img src="https://avrorastore.ru/upload/resize_cache/iblock/6f9/635_635_1/q1t6nr5esg961hd8rybpn5ighmoc8e5h.jpg" alt="" loading="lazy">
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div data-src="https://avrorastore.ru/upload/resize_cache/iblock/e93/635_635_1/cdvy1pqg2634kxl4fzgt8wotcl4nb2pb.jpg" class="product-gallery__image _bg swiper-slide">
+                      <img src="https://avrorastore.ru/upload/resize_cache/iblock/e93/635_635_1/cdvy1pqg2634kxl4fzgt8wotcl4nb2pb.jpg" alt="" loading="lazy">
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <div data-src="https://avrorastore.ru/upload/resize_cache/iblock/254/635_635_1/emjhu6961xq1dta4sjm48hiu3ee1p5f7.jpg" class="product-gallery__image _bg swiper-slide">
+                      <img src="https://avrorastore.ru/upload/resize_cache/iblock/254/635_635_1/emjhu6961xq1dta4sjm48hiu3ee1p5f7.jpg" alt="" loading="lazy">
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                  </div>
+
+                  <div class="product-card__labels">
+                    <div class="product-card__label product-card__label_sale">СКИДКА</div>
+                  </div>
+                  <div class="product-gallery__chestnyiznak"></div>
+                </div>
+
+                <div class="product-gallery__thumbs">
+                  <div class="swiper-arrow swiper-arrow_prev">
+                    <svg class="icon">
+                      <use xlink:href="@img/icons/icons.svg#swiper-arrow"></use>
+                    </svg>
+                  </div>
+
+                  <div class="swiper">
+                    <div class="product-gallery__wrapper swiper-wrapper">
+                      <div class="product-gallery__thumb _bg swiper-slide">
+                        <img src="https://avrorastore.ru/upload/resize_cache/iblock/254/635_635_1/emjhu6961xq1dta4sjm48hiu3ee1p5f7.jpg" alt="" loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                      </div>
+                      <div class="product-gallery__thumb _bg swiper-slide">
+                        <img src="https://avrorastore.ru/upload/iblock/da8/rh4nh1i489hbbuqbsvhdl70f5s2tsx9e.jpg" alt="" loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                      </div>
+                      <div class="product-gallery__thumb _bg swiper-slide">
+                        <img src="https://avrorastore.ru/upload/resize_cache/iblock/b9b/635_635_1/kmbyfa593ehltpi63lo8gp3utda635nm.jpg" alt="" loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                      </div>
+                      <div class="product-gallery__thumb _bg swiper-slide">
+                        <img src="https://avrorastore.ru/upload/resize_cache/iblock/927/635_635_1/cuh4pg1wnq0idmf1yn712atzll0v4zt4.jpg" alt="" loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                      </div>
+                      <div class="product-gallery__thumb _bg swiper-slide">
+                        <img src="https://avrorastore.ru/upload/resize_cache/iblock/ab0/635_635_1/yrkfbtwu2nkom7ko44u7tefn8lwcz3tu.jpg" alt="" loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                      </div>
+                      <div class="product-gallery__thumb _bg swiper-slide">
+                        <img src="https://avrorastore.ru/upload/resize_cache/iblock/6f9/635_635_1/q1t6nr5esg961hd8rybpn5ighmoc8e5h.jpg" alt="" loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                      </div>
+                      <div class="product-gallery__thumb _bg swiper-slide">
+                        <img src="https://avrorastore.ru/upload/resize_cache/iblock/e93/635_635_1/cdvy1pqg2634kxl4fzgt8wotcl4nb2pb.jpg" alt="" loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                      </div>
+                      <div class="product-gallery__thumb _bg swiper-slide">
+                        <img src="https://avrorastore.ru/upload/resize_cache/iblock/254/635_635_1/emjhu6961xq1dta4sjm48hiu3ee1p5f7.jpg" alt="" loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-arrow swiper-arrow_next">
+                    <svg class="icon">
+                      <use xlink:href="@img/icons/icons.svg#swiper-arrow"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="single-product__main">
+              <h1 class="single-product__title" data-da=".single-product__top, 991.98, 0">Рубашка поло мужская с&nbsp;контрастной отделкой PRACTICE 270 чёрная</h1>
+
+              <div class="single-product__art copy-item">
+                <button type="button" class="copy-item__button js-copy-button" title="Скопировать артикул в буфер обмена" data-text="">
+                  <span class="copy-item__text">E-23051.04.100</span>
+                  <svg class="icon">
+                    <use xlink:href="img/icons/icons.svg#copy"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="single-product__options">
+                <div class="single-product__caption">Варианты товара:</div>
+
+                <ul>
+                  <li> <a href="#" class="_bg"> <img src="@img/products/product1-opt1.jpg" alt=""> </a> </li>
+                  <li> <a href="#" class="_bg"> <img src="@img/products/product1-opt1.jpg" alt=""> </a> </li>
+                  <li> <a href="#" class="_bg"> <img src="@img/products/product1-opt1.jpg" alt=""> </a> </li>
+                  <li> <a href="#" class="_bg"> <img src="@img/products/product1-opt1.jpg" alt=""> </a> </li>
+                  <li> <a href="#" class="_bg"> <img src="@img/products/product1-opt1.jpg" alt=""> </a> </li>
+                  <li> <a href="#" class="_bg"> <img src="@img/products/product1-opt1.jpg" alt=""> </a> </li>
+                  <li> <a href="#" class="_bg"> <img src="@img/products/product1-opt1.jpg" alt=""> </a> </li>
+                  <li> <a href="#" class="_bg"> <img src="@img/products/product1-opt1.jpg" alt=""> </a> </li>
+                  <li> <a href="#" class="_bg"> <img src="@img/products/product1-opt1.jpg" alt=""> </a> </li>
+                  <li> <a href="#" class="_bg"> <img src="@img/products/product1-opt1.jpg" alt=""> </a> </li>
+                  <li> <a href="#" class="_bg"> <img src="@img/products/product1-opt1.jpg" alt=""> </a> </li>
+                  <li> <a href="#" class="_bg"> <img src="@img/products/product1-opt1.jpg" alt=""> </a> </li>
+                  <li> <a href="#" class="_bg"> <img src="@img/products/product1-opt1.jpg" alt=""> </a> </li>
+                  <li> <a href="#" class="_bg"> <img src="@img/products/product1-opt1.jpg" alt=""> </a> </li>
+                  <li> <a href="#" class="_bg"> <img src="@img/products/product1-opt1.jpg" alt=""> </a> </li>
+                  <li> <a href="#" class="_bg"> <img src="@img/products/product1-opt1.jpg" alt=""> </a> </li>
+                  <li> <a href="#" class="_bg"> <img src="@img/products/product1-opt1.jpg" alt=""> </a> </li>
+                  <li> <a href="#" class="_bg"> <img src="@img/products/product1-opt1.jpg" alt=""> </a> </li>
+                  <li> <a href="#" class="_bg"> <img src="@img/products/product1-opt1.jpg" alt=""> </a> </li>
+                  <li> <a href="#" class="_bg"> <img src="@img/products/product1-opt1.jpg" alt=""> </a> </li>
+                </ul>
+              </div>
+
+              <div class="single-product__empty product-empty">
+                <div class="product-empty__wrapper">
+                  <div class="product-empty__text">
+                    <span>Данный товар больше не&nbsp;поставляется. Оставьте заявку и&nbsp;мы&nbsp;подберём вам аналогичный товар</span>
+                    <img src="@img/icons/sad.svg" alt="">
+                  </div>
+                  <div class="product-empty__button">
+                    <button type="button" class="btn btn_big btn_bg-accent" data-popup="#popup-request">Оставить заявку</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="single-product__bottom">
+            <div data-tabs class="tabs">
+              <nav data-tabs-titles class="tabs__navigation">
+                <button type="submit" class="tabs__title _card _tab-active">О товаре</button>
+                <button type="submit" class="tabs__title _card">Доставка</button>
+                <button type="submit" class="tabs__title _card">Оплата</button>
+              </nav>
+              <div data-tabs-body class="tabs__content">
+                <div class="tabs__body">
+                  <div class="single-product__about product-about">
+                    <div class="product-about__table _card _content">
+                      <div class="table">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Бренд</td>
+                              <td>Portobello Трикотаж</td>
+                            </tr>
+                            <tr>
+                              <td>Артикул</td>
+                              <td>
+                                <div class="copy-item">
+                                  <button type="button" class="copy-item__button js-copy-button" title="Скопировать артикул в буфер обмена" data-text="">
+                                    <span class="copy-item__text">E-23051.04.100</span>
+                                    <svg class="icon">
+                                      <use xlink:href="img/icons/icons.svg#copy"></use>
+                                    </svg>
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Размер</td>
+                              <td>250/20/300</td>
+                            </tr>
+                            <tr>
+                              <td>Цвет</td>
+                              <td>БЕЛЫЙ</td>
+                            </tr>
+                            <tr>
+                              <td>Коллекция</td>
+                              <td>RUST</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <div class="single-product__text _card _content">
+                      <p>Стильная футболка oversize свободного силуэта из&nbsp;плотной хлопковой ткани, которая приятна к&nbsp;телу и&nbsp;легка в&nbsp;уходе, не&nbsp;растягивается, не&nbsp;выцветает и&nbsp;не&nbsp;деформируется после стирки. Базовая вещь для повседневного стиля. Комфорт в&nbsp;каждом движении. Благодаря правильным пропорциям, футболка хорошо садится на&nbsp;разные типы фигур.</p>
+                      <p>В&nbsp;кибермаркете AvroraSTORE вы&nbsp;можете заказать &laquo;Футболка оверсайз RUST, белый, размер&nbsp;L&raquo; с&nbsp;нанесением логотипа вашей компании по&nbsp;цене от&nbsp;1&nbsp;535&nbsp;<span class="font-fourth">₽</span> с&nbsp;доставкой по&nbsp;Москве.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__body">
+                  <div class="single-product__text _card _content">
+                    <p>В&nbsp;Москве и&nbsp;Санкт-Петербурге мы&nbsp;выполняем доставку заказов и&nbsp;образцов силами собственной Службы доставки.</p>
+                    <p>Если вы&nbsp;находитесь в&nbsp;другом регионе, вы&nbsp;можете воспользоваться услугами наших партнеров.</p>
+                    <p><b>В&nbsp;Москве</b> в&nbsp;пределах МКАД доставка бесплатная, в&nbsp;случае если сумма заказа более 25&nbsp;000&nbsp;руб. Стоимость доставки в&nbsp;прочих случаях&nbsp;&mdash; 950&nbsp;руб. За&nbsp;пределами МКАД стоимость доставки рассчитывается индивидуально;</p>
+                    <p><b>В&nbsp;Санкт-Петербурге </b> в&nbsp;пределах КАД доставка бесплатная, в&nbsp;случае если сумма заказа более 25&nbsp;000&nbsp;руб. Стоимость доставки в&nbsp;прочих случаях&nbsp;&mdash; 950&nbsp;руб. За&nbsp;пределами КАД стоимость доставки рассчитывается индивидуально;</p>
+                    <p><b>Для регионов</b> доставка бесплатная до&nbsp;транспортной компании в&nbsp;пределах КАД или МКАД, в&nbsp;случае если сумма заказа более 20&nbsp;000&nbsp;руб. Стоимость доставки в&nbsp;прочих случаях&nbsp;&mdash; 950&nbsp;руб.</p>
+                    <p>Стильная футболка oversize свободного силуэта из&nbsp;плотной хлопковой ткани, которая приятна к&nbsp;телу и&nbsp;легка в&nbsp;уходе, не&nbsp;растягивается, не&nbsp;выцветает и&nbsp;не&nbsp;деформируется после стирки. Базовая вещь для повседневного стиля. Комфорт в&nbsp;каждом движении. Благодаря правильным пропорциям, футболка хорошо садится на&nbsp;разные типы фигур.</p>
+                    <p>В&nbsp;кибермаркете AvroraSTORE вы&nbsp;можете заказать &laquo;Футболка оверсайз RUST, белый, размер&nbsp;L&raquo; с&nbsp;нанесением логотипа вашей компании по&nbsp;цене от&nbsp;1&nbsp;535&nbsp;<span class="font-fourth">₽</span> с&nbsp;доставкой по&nbsp;Москве.</p>
+                  </div>
+                </div>
+                <div class="tabs__body">
+                  <div class="single-product__text _card _content">
+                    <p>Способы оплаты:</p>
+                    <p>Безналичный расчет по&nbsp;реквизитам, указанным на&nbsp;нашем сайте в&nbsp;разделе <a href="/company/requisites/" target="_blank"><span>Реквизиты</span></a> (укажите в&nbsp;назначении платежа платежного поручения номер и&nbsp;дату вашего заказа). Данный способ оплаты рекомендуется при отсутствии в&nbsp;вашем заказе услуги по&nbsp;персонализации продукции;</p>
+                    <p>Безналичный расчет на&nbsp;основании выставленного счета и&nbsp;оформленного договора на&nbsp;поставку товара и&nbsp;услуги по&nbsp;персонализации продукции.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="single-product__detail">
+              <button type="button" class="btn btn_big btn_bg-accent">Запросить коммерческое предложение</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      @@include('html/sections/cases.htm',{
+      "title":"примеры товаров с&nbsp;нанесением"
+      })
+
+      @@include('html/sections/widget-cases.htm',{})
+
+      @@include('html/sections/request.htm',{})
+
+      @@include('html/sections/seo.htm',{})
+
+      @@include('html/sections/faq.htm',{})
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

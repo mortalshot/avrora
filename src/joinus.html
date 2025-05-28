@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Заявка на работу в Аврора"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+      <div class="breadcrumbs">
+        <div class="breadcrumbs__container">
+          <div class="breadcrumbs__wrapper">
+            <div class="breadcrumbs__nav site-breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <span class="site-breadcrumbs__link link-hover" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a href="" itemprop="item">
+                  <span itemprop="name">Главная</span>
+                </a>
+              </span>
+              <span class="site-breadcrumbs__separator">
+                <svg class="icon">
+                  <use xlink:href="@img/icons/icons.svg#link-arrow"></use>
+                </svg>
+              </span>
+              <span class="site-breadcrumbs__title">Заявка на работу в Аврора</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="joinus">
+        <div class="joinus__container">
+          <div class="joinus__heading _heading">
+            <h1 class="joinus__title">Заявка на работу в Аврора</h1>
+            <div class="joinus__subtitle">Выберите специальность на которой вы хотели бы работать и заполните поля</div>
+          </div>
+
+          <form action="#" class="joinus__form form">
+            <div class="form-row">
+              <div class="col-12 form-item">
+                <div class="form-label">Список вакантных специальностей</div>
+
+                <div class="form-tags">
+                  <div class="form-tags__select">
+                    <select name="form[]" class="form" multiple data-tags=".form-tags__output">
+                      <option value="" selected>Список вакансий</option>
+                      <option value="Аккаунт-менеджер">Аккаунт-менеджер</option>
+                      <option value="Дизайнер">Дизайнер</option>
+                      <option value="Закройщик">Закройщик</option>
+                      <option value="Конструктор">Конструктор</option>
+                      <option value="Маркетолог">Маркетолог</option>
+                      <option value="Оператор склада">Оператор склада</option>
+                      <option value="Печатник">Печатник</option>
+                      <option value="Финансист">Финансист</option>
+                      <option value="Швея">Швея</option>
+                      <option value="SMM-менеджер">SMM-менеджер</option>
+                    </select>
+                  </div>
+
+                  <div class="form-tags__output"></div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-label">Контакты</div>
+
+                <div class="form-row">
+                  <div class="col-12 col-lg-6 form-item">
+                    <input type="text" name="joinus-name" placeholder="Ваши фамилия и имя" class="input">
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3 form-item">
+                    <input type="text" name="joinus-phone" placeholder="Телефон" class="input input_phone" data-required="" data-validate="" required="">
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3 form-item">
+                    <input type="email" name="joinus-mail" placeholder="E-mail" class="input">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-4 col-xl-3 form-item">
+                <div class="form-label">Телеграм</div>
+
+                <input type="text" name="joinus-telegram" placeholder="t.me/@nickname" class="input">
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-4 col-xl-3 form-item">
+                <div class="form-label">Ссылка на своё резюме(портфолио)</div>
+
+                <input type="text" name="joinus-portfolio" placeholder="resume.ru/myresume" class="input">
+              </div>
+
+              <div class="col-12 col-xl-6 form-item">
+                <div class="form-label">Расскажите почему вам интересна работа в Авроре?</div>
+
+                <input type="text" name="joinus-text" placeholder="Я хочу работать в Авроре потому, что..." class="input">
+              </div>
+            </div>
+
+            <div class="form-submit">
+              <button class="btn btn_bg-accent btn_big">Отправить</button>
+              <div class="form-privacy">Нажимая кнопку, вы соглашаетесь на обработку <a href="">персональных данных</a> </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      @@include('html/sections/team-widget.htm',{})
+
+      @@include('html/sections/request2.htm',{})
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

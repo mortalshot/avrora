@@ -1,0 +1,1037 @@
+//.header     ====================================================================================================
+.socials {
+	display: flex;
+	align-items: center;
+	gap: toRem(8);
+
+	// .socials__item
+	&__item {
+		flex: 0 0 toRem(40);
+		width: toRem(40);
+		height: toRem(40);
+		border-radius: 50%;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		outline: 0;
+
+		svg {
+			font-size: toRem(26);
+		}
+	}
+}
+
+.logo {
+	// .logo__icon
+	&__icon {
+		// .logo__icon_desk
+		&_desk {
+			@media (max-width: $tablet) {
+				display: none;
+			}
+		}
+		// .logo__icon_mobile
+		&_mobile {
+			@media (min-width: $tablet) {
+				display: none;
+			}
+		}
+	}
+}
+
+.header {
+	position: sticky;
+	top: 0;
+	z-index: 11;
+
+	&:not(:last-child) {
+		margin-bottom: toRem(5);
+	}
+
+	@media (min-width: $tablet) {
+		transition: $transition ease box-shadow 0s;
+		background-color: $BGcolor;
+	}
+	@media (max-width: $tablet) {
+		top: toRem(8);
+		@include adaptiveValue("margin-top", 32, 16, 0, 992, 768);
+	}
+
+	&._header-scroll {
+		@media (min-width: $tablet) {
+			box-shadow: $shadow;
+		}
+	}
+
+	// .header__container
+	&__container {
+	}
+
+	// .header__row
+	&__row {
+		display: flex;
+		align-items: center;
+		padding-top: toRem(8);
+		padding-bottom: toRem(8);
+		min-height: toRem(40);
+
+		@media (min-width: $tablet) {
+			@include adaptiveValue("min-height", 100, 80, 0, 1650, 992);
+			@include adaptiveValue("column-gap", 31, 20, 0, 1650, 992);
+		}
+		@media (min-width: toEm(1650)) {
+			gap: toRem(8);
+		}
+		@media (max-width: $tablet) {
+			padding-left: toRem(24);
+			padding-right: toRem(24);
+			border-radius: toRem(32);
+			background-color: $LGray;
+			box-shadow: $shadow;
+		}
+	}
+
+	// .header__left
+	&__left {
+		flex: 1;
+		display: flex;
+		align-items: center;
+
+		@media (min-width: $tablet) {
+			@include adaptiveValue("column-gap", 30, 12, 0, 1650, 992);
+		}
+		@media (min-width: toEm(1650)) {
+			flex: 0 1 85%;
+		}
+		@media (max-width: $tablet) {
+			gap: toRem(20);
+			justify-content: space-between;
+		}
+	}
+
+	// .header__menu
+	&__menu {
+		@media (min-width: $tablet) {
+			display: none;
+		}
+		@media (max-width: $tablet) {
+			.menu__icon {
+				padding: toRem(16);
+				margin: toRem(-16);
+			}
+
+			.menu__body {
+				position: fixed;
+				z-index: 4;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: $LGray;
+				overflow-y: auto;
+				overflow-x: hidden;
+				opacity: 0;
+				visibility: hidden;
+				pointer-events: none;
+				transition:
+					0.5s ease opacity,
+					0.5s visibility 0s;
+				@include adaptiveValue("padding-top", 90, 64, 0, 992, 320);
+				@include adaptiveValue("padding-left", 40, 16, 0, 992, 320);
+				@include adaptiveValue("padding-right", 40, 16, 0, 992, 320);
+				padding-bottom: toRem(20);
+
+				&::before {
+					content: "";
+					position: fixed;
+					left: 0;
+					right: 0;
+					top: 0;
+					background-color: $LGray;
+					opacity: 0;
+					visibility: hidden;
+					pointer-events: none;
+					z-index: 7;
+					transition: 0.5s ease all 0s;
+
+					@include adaptiveValue("height", 81, 56, 0, 992, 320);
+				}
+
+				.menu-open & {
+					opacity: 1 !important;
+					visibility: visible;
+					pointer-events: all;
+
+					&::before {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+		}
+	}
+
+	// .header__search
+	&__search {
+		@media (max-width: $tablet) {
+			&:not(:last-child) {
+				margin-bottom: toRem(15);
+			}
+		}
+
+		.search__input {
+			padding: toRem(4) toRem(16);
+			padding-right: toRem(40);
+			@include adaptiveValue("font-size", 14, 12, 0, 992, 768);
+			@include adaptiveValue("min-height", 52, 38, 0, 992, 768);
+			@include adaptiveValue("padding-left", 24, 16, 0, 992, 768);
+		}
+
+		.search__submit {
+			background-color: $Accent;
+			flex: 0 0 toRem(32);
+			right: toRem(4);
+			@include adaptiveValue("flex-basis", 44, 32, 0, 992, 768);
+			@include adaptiveValue("width", 44, 32, 0, 992, 768);
+			@include adaptiveValue("height", 44, 32, 0, 992, 768);
+
+			svg {
+				flex: 0 0 toRem(16);
+				fill: $White;
+				@include adaptiveValue("flex-basis", 22, 16, 0, 992, 768);
+				@include adaptiveValue("width", 22, 16, 0, 992, 768);
+				@include adaptiveValue("height", 22, 16, 0, 992, 768);
+			}
+		}
+	}
+
+	// .header__logo
+	&__logo {
+		display: flex;
+		align-items: center;
+		position: relative;
+		z-index: 5;
+
+		@media (max-width: $tablet) {
+			@include adaptiveValue("max-width", 210, 97, 0, 992, 768);
+
+			._catalog-show & {
+				opacity: 0;
+				pointer-events: none;
+			}
+		}
+
+		svg {
+			flex: 0 0 toRem(314);
+			width: toRem(314);
+			height: toRem(50);
+			transition: $transition ease fill 0s;
+
+			@media (min-width: $tablet) {
+				@include adaptiveValue("flex-basis", 314, 180, 0, 1650, 992);
+				@include adaptiveValue("width", 314, 180, 0, 1650, 992);
+				@include adaptiveValue("height", 50, 30, 0, 1650, 992);
+			}
+			@media (max-width: $tablet) {
+				@include adaptiveValue("flex-basis", 210, 97, 0, 992, 768);
+				@include adaptiveValue("width", 210, 97, 0, 992, 768);
+				@include adaptiveValue("height", 33, 15, 0, 992, 768);
+			}
+		}
+
+		a {
+			@media (any-hover: hover) {
+				&:hover {
+					svg {
+						fill: $Accent;
+					}
+				}
+			}
+		}
+	}
+
+	// .header__note
+	&__note {
+		@media (min-width: $tablet) {
+			color: rgba($color: $mainColor, $alpha: 0.6);
+			letter-spacing: 0.02em;
+			@include adaptiveValue("font-size", 13, 11, 0, 1650, 992);
+
+			span {
+				@include adaptiveValue("font-size", 16, 12, 0, 1650, 992);
+			}
+		}
+		@media (max-width: $tablet) {
+			display: none;
+		}
+	}
+
+	// .header__mobile
+	&__mobile {
+		@media (min-width: $tablet) {
+			display: none;
+		}
+		@media (max-width: $tablet) {
+			position: relative;
+			z-index: 5;
+			padding: toRem(16);
+			margin: toRem(-16);
+
+			._catalog-show & {
+				opacity: 0;
+				pointer-events: none;
+			}
+
+			svg {
+				flex: 0 0 toRem(24);
+				width: toRem(24);
+				height: toRem(24);
+				fill: $mainColor;
+				transform: rotate(90deg);
+			}
+		}
+	}
+
+	// .header__center
+	&__center {
+		@media (min-width: toEm(1650)) {
+			flex: 1 0 15%;
+		}
+		@media (max-width: $tablet) {
+			display: none;
+		}
+	}
+
+	// .header__wishlist
+	&__wishlist {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+
+		.btn {
+			width: 100%;
+			position: relative;
+			max-width: toRem(220);
+			@include adaptiveValue("font-size", 20, 16, 0, 1650, 992);
+
+			@media (any-hover: hover) {
+				&:hover {
+					min-height: toRem(50);
+
+					.wishlist-count {
+						background-color: $White;
+						color: $Accent;
+					}
+				}
+			}
+		}
+
+		// .header__wishlist_filled
+		&_filled {
+			.btn {
+				@include adaptiveValue("padding-right", 50, 40, 0, 1650, 992);
+
+				@media (min-width: toEm(1650)) {
+					padding-left: toRem(50);
+				}
+			}
+		}
+
+		.wishlist-count {
+			display: block;
+			padding: toRem(4.5) toRem(8);
+			font-weight: 400;
+			line-height: 1;
+			color: $White;
+			position: absolute;
+			right: toRem(10);
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: $Accent;
+			border-radius: toRem(100);
+			transition:
+				$transition ease background-color,
+				$transition color 0s;
+
+			@include adaptiveValue("padding-left", 8, 6, 0, 1650, 992);
+			@include adaptiveValue("padding-right", 8, 6, 0, 1650, 992);
+			@include adaptiveValue("font-size", 16, 10, 0, 1650, 992);
+		}
+	}
+
+	// .header__right
+	&__right {
+		@media (min-width: $tablet) {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			@include adaptiveValue("column-gap", 31, 16, 0, 1650, 992);
+		}
+		@media (min-width: toEm(1650)) {
+			flex: 0 1 85%;
+			@include adaptiveValue("column-gap", 64, 31, 0, 1920, 1650);
+		}
+		@media (max-width: $tablet) {
+			display: flex;
+			flex-direction: column-reverse;
+			row-gap: toRem(20);
+		}
+	}
+
+	// .header__socials
+	&__socials {
+		.socials__item {
+			background-color: $LGray;
+			box-shadow: $shadow;
+			transition:
+				$transition ease background-color,
+				$transition transform 0s;
+
+			@media (min-width: $tablet) {
+				@include adaptiveValue("width", 40, 30, 0, 1650, 992);
+				@include adaptiveValue("flex-basis", 40, 30, 0, 1650, 992);
+				@include adaptiveValue("height", 40, 30, 0, 1650, 992);
+			}
+			@media (max-width: $tablet) {
+				flex: 0 0 toRem(40);
+				width: toRem(40);
+				height: toRem(40);
+				background-color: $Accent;
+			}
+
+			svg {
+				transition: $transition ease fill 0s;
+
+				@media (min-width: $tablet) {
+					fill: $Accent;
+					@include adaptiveValue("width", 24, 20, 0, 1650, 992);
+					@include adaptiveValue("flex-basis", 24, 20, 0, 1650, 992);
+					@include adaptiveValue("height", 24, 20, 0, 1650, 992);
+				}
+				@media (max-width: $tablet) {
+					fill: $White;
+				}
+			}
+
+			@media (any-hover: hover) {
+				&:hover {
+					transform: scale(1.25);
+					background-color: $Accent;
+
+					svg {
+						fill: $White;
+					}
+				}
+			}
+		}
+	}
+
+	// .header__contacts
+	&__contacts {
+		@media (min-width: $tablet) {
+			display: flex;
+			align-items: flex-start;
+			@include adaptiveValue("column-gap", 31, 8, 0, 1650, 992);
+		}
+		@media (min-width: toEm(1650)) {
+			@include adaptiveValue("column-gap", 37, 31, 0, 1920, 1650);
+		}
+		@media (max-width: $tablet) {
+			display: grid;
+			align-content: flex-start;
+			row-gap: toRem(12);
+		}
+	}
+
+	// .header__contact
+	&__contact {
+	}
+}
+
+.header-contact {
+	display: grid;
+	align-content: flex-start;
+	row-gap: toRem(6);
+
+	@media (min-width: $tablet) {
+		text-align: center;
+	}
+	@media (min-width: toEm(1650)) {
+		text-align: left;
+	}
+
+	// .header-contact__caption
+	&__caption {
+		@media (min-width: $tablet) {
+			@include adaptiveValue("font-size", 20, 14, 0, 1650, 992);
+		}
+		@media (max-width: $tablet) {
+			font-size: toRem(16);
+			color: $Accent;
+
+			.copy-item__button {
+				display: none;
+			}
+		}
+
+		a {
+			@media (any-hover: hover) {
+				transition: $transition ease color 0s;
+				&:hover {
+					color: $Accent;
+				}
+			}
+		}
+	}
+
+	// .header-contact__description
+	&__description {
+		@media (min-width: $tablet) {
+			font-size: toRem(13);
+			color: rgba($color: $mainColor, $alpha: 0.6);
+		}
+		@media (max-width: $tablet) {
+			display: none;
+		}
+	}
+}
+
+.copy-item {
+	display: inline-flex;
+	align-items: center;
+	gap: toRem(8);
+	position: relative;
+
+	// .copy-item__text
+	&__text {
+	}
+
+	// .copy-item__button
+	&__button {
+		display: inline-flex;
+		align-items: center;
+		gap: toRem(8);
+
+		svg {
+			flex: 0 0 toRem(13);
+			width: toRem(13);
+			height: toRem(13);
+			fill: $mainColor;
+			transition: $transition ease fill 0s;
+		}
+
+		@media (any-hover: hover) {
+			transition: $transition ease color 0s;
+
+			&:hover {
+				color: $Accent;
+
+				svg {
+					fill: $Accent;
+				}
+			}
+		}
+	}
+
+	// .copy-item__tooltip
+	&__tooltip {
+		background-color: rgba($color: #000000, $alpha: 0.6);
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translate(-50%, 100%);
+		font-size: toRem(13);
+		color: $White;
+		text-align: center;
+		width: 100%;
+		max-width: toRem(200);
+		border-radius: toRem(4);
+		padding: toRem(4) toRem(8);
+		pointer-events: none;
+	}
+}
+
+//.header-menu     ====================================================================================================
+.header-menu {
+	@media (max-width: $tablet) {
+		display: none;
+	}
+
+	// .header-menu__container
+	&__container {
+	}
+
+	// .header-menu__row
+	&__row {
+		@media (min-width: $tablet) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background-color: $LGray;
+			box-shadow: $shadow;
+			padding: toRem(20) toRem(40);
+			border-radius: toRem(32);
+			min-height: toRem(62);
+			position: relative;
+			z-index: 10;
+			transition: $transition ease border-radius 0s;
+			@include adaptiveValue("min-height", 62, 50, 0, 1650, 992);
+			@include adaptiveValue("border-radius", 32, 16, 0, 1650, 992);
+			@include adaptiveValue("padding-left", 40, 20, 0, 1650, 992);
+			@include adaptiveValue("padding-right", 40, 20, 0, 1650, 992);
+			@include adaptiveValue("column-gap", 30, 16, 0, 1650, 992);
+		}
+		@media (max-width: $tablet) {
+			display: grid;
+			align-content: flex-start;
+
+			&:not(:last-child) {
+				margin-bottom: toRem(40);
+			}
+		}
+
+		._catalog-show & {
+			@media (min-width: $tablet) {
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+		}
+	}
+
+	// .header-menu__left
+	&__left {
+		@media (min-width: $tablet) {
+			display: flex;
+			align-items: center;
+			@include adaptiveValue("column-gap", 30, 16, 0, 1650, 992);
+		}
+		@media (max-width: $tablet) {
+			display: grid;
+			align-content: flex-start;
+		}
+	}
+
+	// .header-menu__catalog
+	&__catalog {
+	}
+
+	// .header-menu__nav
+	&__nav {
+		ul {
+			@media (min-width: $tablet) {
+				display: flex;
+				align-items: center;
+				@include adaptiveValue("column-gap", 30, 16, 0, 1650, 992);
+			}
+			@media (max-width: $tablet) {
+				display: grid;
+				align-content: flex-start;
+			}
+		}
+
+		a {
+			letter-spacing: 0.01em;
+
+			@media (min-width: $tablet) {
+				@include adaptiveValue("font-size", 16, 14, 0, 1650, 992);
+			}
+			@media (max-width: $tablet) {
+				display: block;
+				padding-top: toRem(10);
+				padding-bottom: toRem(10);
+			}
+
+			@media (any-hover: hover) {
+				transition: $transition ease color 0s;
+
+				&:hover {
+					color: $Accent;
+				}
+			}
+		}
+	}
+
+	// .header-menu__right
+	&__right {
+	}
+}
+
+.header-catalog {
+	position: relative;
+
+	@media (max-width: $tablet) {
+		._catalog-show & {
+			position: relative;
+			z-index: 11;
+		}
+	}
+
+	// .header-catalog__button
+	&__button {
+		letter-spacing: 0.01em;
+		position: relative;
+		z-index: 1;
+		transition: $transition ease color 0s;
+
+		@media (min-width: $tablet) {
+			@include adaptiveValue("font-size", 16, 14, 0, 1650, 992);
+		}
+		@media (max-width: $tablet) {
+			width: 100%;
+			text-align: left;
+			padding: toRem(10) 0;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: $Accent;
+			}
+		}
+
+		._catalog-show & {
+			color: $Accent;
+		}
+	}
+
+	// .header-catalog__wrapper
+	&__wrapper {
+		position: fixed;
+		width: 100%;
+		z-index: 1;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition:
+			$transition ease opacity,
+			$transition visibility 0s;
+		overflow-y: auto;
+		overflow-x: hidden;
+		scrollbar-width: none;
+		scrollbar-color: transparent transparent;
+		scrollbar-gutter: stable;
+
+		@media (min-width: $tablet) {
+			max-width: toRem(309);
+			background-color: $White;
+			left: var(--distance-to-left);
+			top: calc(var(--distance-to-top) + var(--row-height));
+			height: calc(100vh - (var(--distance-to-top) + var(--row-height) + toRem(20)));
+			// @include adaptiveValue("border-bottom-left-radius", 32, 16, 0, 1650, 992);
+			// @include adaptiveValue("border-bottom-right-radius", 32, 16, 0, 1650, 992);
+			@include adaptiveValue("padding-top", 32, 20, 0, 1650, 992);
+			@include adaptiveValue("padding-bottom", 32, 20, 0, 1650, 992);
+		}
+		@media (max-width: $tablet) {
+			background-color: $BGcolor;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding-top: toRem(20);
+			padding-bottom: toRem(20);
+			@include adaptiveValue("padding-left", 40, 16, 0, 992, 320);
+			@include adaptiveValue("padding-right", 40, 16, 0, 992, 320);
+		}
+
+		&::-webkit-scrollbar {
+			width: 0;
+			height: 0;
+		}
+
+		._catalog-show & {
+			opacity: 1 !important;
+			visibility: visible;
+			pointer-events: all;
+		}
+	}
+
+	// .header-catalog__heading
+	&__heading {
+		@media (min-width: $tablet) {
+			@include adaptiveValue("padding-left", 40, 20, 0, 1650, 992);
+			@include adaptiveValue("padding-right", 40, 20, 0, 1650, 992);
+		}
+
+		@media (max-width: $tablet) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: toRem(20);
+		}
+
+		&:not(:last-child) {
+			margin-bottom: toRem(16);
+
+			@media (min-width: $tablet) {
+				margin-bottom: toRem(8);
+			}
+		}
+	}
+
+	// .header-catalog__caption
+	&__caption {
+		font-weight: 500;
+		font-size: toRem(16);
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+	}
+
+	// .header-catalog__close
+	&__close {
+		@media (min-width: $tablet) {
+			display: none;
+		}
+		@media (max-width: $tablet) {
+			svg {
+				fill: $Accent;
+				flex: 0 0 toRem(20);
+				width: toRem(20);
+				height: toRem(20);
+			}
+		}
+	}
+
+	// .header-catalog__menu
+	&__menu {
+	}
+
+	// .header-catalog__item
+	&__item {
+		@media (min-width: $tablet) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: toRem(8);
+			@include adaptiveValue("padding-left", 40, 20, 0, 1650, 992);
+			@include adaptiveValue("padding-right", 40, 20, 0, 1650, 992);
+		}
+		@media (max-width: $tablet) {
+			border-radius: toRem(16);
+			overflow: hidden;
+		}
+
+		// .header-catalog__item_has-children
+		&_has-children {
+			position: relative;
+
+			&._list-show {
+				.header-catalog__sub-list {
+					opacity: 1;
+					visibility: visible;
+					pointer-events: all;
+				}
+
+				.header-catalog__arrow svg {
+					transform: rotate(-180deg);
+					fill: $Accent;
+
+					@media (min-width: $tablet) {
+						transform: rotate(-90deg);
+					}
+				}
+			}
+
+			&._active {
+				@media (max-width: $tablet) {
+					background-color: $White;
+				}
+
+				.header-catalog__arrow svg {
+					transform: rotate(-180deg);
+					fill: $Accent;
+
+					@media (min-width: $tablet) {
+						transform: rotate(-90deg);
+					}
+				}
+			}
+		}
+
+		& > a {
+			flex: 1;
+			display: flex;
+			align-items: center;
+			gap: toRem(12);
+			padding: toRem(16);
+
+			@media (min-width: $tablet) {
+				padding: toRem(10) toRem(40);
+				padding-right: toRem(55);
+				@include adaptiveValue("padding-left", 40, 20, 0, 1650, 992);
+				@include adaptiveValue("padding-right", 55, 40, 0, 1650, 992);
+				@include adaptiveValue("margin-left", -40, -20, 0, 1650, 992);
+				@include adaptiveValue("margin-right", -40, -20, 0, 1650, 992);
+			}
+			@media (max-width: $tablet) {
+				padding-right: toRem(30);
+			}
+
+			img {
+				max-width: toRem(24);
+			}
+
+			@media (any-hover: hover) {
+				transition: $transition ease background-color 0s;
+
+				&:hover {
+					background-color: $BGcolor;
+				}
+			}
+		}
+	}
+
+	// .header-catalog__arrow
+	&__arrow {
+		padding: toRem(12);
+		position: absolute;
+
+		@media (min-width: $tablet) {
+			top: 50%;
+			transform: translateY(-50%);
+			right: toRem(8);
+		}
+		@media (max-width: $tablet) {
+			right: toRem(-4);
+			top: toRem(10);
+		}
+
+		svg {
+			flex: 0 0 toRem(16);
+			fill: $mainColor;
+			transition:
+				$transition ease transform,
+				$transition fill 0s;
+			@include adaptiveValue("flex-basis", 16, 12, 0, 992, 320);
+			@include adaptiveValue("width", 16, 12, 0, 992, 320);
+			@include adaptiveValue("height", 16, 12, 0, 992, 320);
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				svg {
+					fill: $Accent;
+				}
+			}
+		}
+	}
+
+	// .header-catalog__sub-list
+	&__sub-list {
+		width: 100%;
+
+		@media (min-width: $tablet) {
+			display: grid;
+			align-content: flex-start;
+			row-gap: toRem(8);
+			box-shadow: $shadow;
+			background-color: $BGcolor;
+			position: fixed;
+			left: calc(var(--distance-to-left) + toRem(309));
+			top: calc(var(--distance-to-top) + var(--row-height));
+			padding: toRem(28) toRem(40);
+			max-width: toRem(297);
+			max-height: calc(100vh - (var(--distance-to-top) + var(--row-height) + toRem(20)));
+			overflow-y: auto;
+			overflow-x: hidden;
+			scrollbar-width: none;
+			scrollbar-color: transparent transparent;
+			scrollbar-gutter: stable;
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
+			transition:
+				$transition ease opacity,
+				$transition visibility 0s;
+			@include adaptiveValue("row-gap", 8, 4, 0, 1650, 992);
+			@include adaptiveValue("font-size", 16, 14, 0, 1650, 992);
+			@include adaptiveValue("padding-left", 40, 24, 0, 1650, 992);
+			@include adaptiveValue("padding-right", 40, 24, 0, 1650, 992);
+
+			&::-webkit-scrollbar {
+				width: 0;
+				height: 0;
+			}
+		}
+		@media (max-width: $tablet) {
+			padding: toRem(16);
+			border-top: toRem(1) solid rgba($color: #000000, $alpha: 0.2);
+		}
+
+		li {
+			@media (max-width: $tablet) {
+				&:not(:last-child) {
+					margin-bottom: toRem(8);
+				}
+			}
+		}
+
+		a {
+			display: block;
+			padding-top: toRem(8);
+			padding-bottom: toRem(8);
+
+			@media (any-hover: hover) {
+				transition: $transition ease color 0s;
+				&:hover {
+					color: $Accent;
+				}
+			}
+		}
+	}
+}
+//====================================================================================================
+
+//Burger
+.icon-menu {
+	@media (max-width: $tablet) {
+		display: block;
+		position: relative;
+		cursor: pointer;
+		z-index: 5;
+		@include adaptiveValue("width", 24, 16, 0, 992, 768);
+		@include adaptiveValue("height", 15, 10, 0, 992, 768);
+
+		._catalog-show & {
+			opacity: 0;
+			pointer-events: none;
+		}
+
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: toRem(2);
+			border-radius: toRem(8);
+			background-color: $mainColor;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: calc(50% - toRem(1));
+		}
+		.menu-open & {
+			span {
+				width: 0;
+			}
+			&::before,
+			&::after {
+			}
+			&::before {
+				top: calc(50% - toRem(1));
+				transform: rotate(-45deg);
+			}
+			&::after {
+				bottom: calc(50% - toRem(1));
+				transform: rotate(45deg);
+			}
+		}
+	}
+}

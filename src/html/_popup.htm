@@ -1,0 +1,58 @@
+<div class="modals">
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Popup content
+			</div>
+		</div>
+	</div>
+</div> -->
+
+	<div id="popup-request" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content _card">
+				<button data-close type="button" class="popup__close">
+					<svg class="icon">
+						<use xlink:href="@img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+				<div class="popup__text">
+					<div class="popup__title">Оставьте контакты&nbsp;&mdash; мы&nbsp;напишем вам в&nbsp;течение 1&nbsp;часа, чтобы обсудить детали</div>
+					<form action="#" class="popup__form">
+						<div class="form-item">
+							<input type="text" name="popup-request-name" placeholder="Имя" class="input">
+						</div>
+						<div class="form-item">
+							<input type="email" name="popup-request-email" placeholder="Email" class="input" data-required data-validate required>
+						</div>
+						<div class="form-item">
+							<input type="text" name="popup-request-teleg" placeholder="Telegram" class="input">
+						</div>
+						<div class="form-submit">
+							<button type="button" class="btn btn_big btn_bg-accent" data-popup="#popup-thanks">Оставить заявку</button>
+							<div class="form-privacy">Нажимая кнопку &laquo;оставить заявку&raquo;, вы&nbsp;соглашаетесь на&nbsp;<a href="">обработку персональных данных</a></div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-thanks" aria-hidden="true" class="popup popup_thanks">
+		<div class="popup__wrapper">
+			<div class="popup__content _card">
+				<div class="popup__text">
+					<div class="thanks">
+						<div class="thanks__title">Успех!</div>
+						<div class="thanks__subtitle">Ваша заявка отправлена. Скоро свяжемся с&nbsp;вами для обсуждения деталей.</div>
+						<div class="thanks__button">
+							<button type="button" class="btn btn_big btn_bg-accent" data-close>Закрыть</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

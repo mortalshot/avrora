@@ -1,0 +1,111 @@
+.file-item {
+  &.dragover {
+    .file-item__wrapper {
+      border-color: rgba($color: $Accent, $alpha: 0.6);
+    }
+  }
+
+  // .file-item__wrapper
+  &__wrapper {
+    position: relative;
+    border: toRem(2) dashed $Accent;
+    transition: $transition ease border-color 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include adaptiveValue("padding", 40, 16, 0, 1650, 320);
+    @include adaptiveValue("border-radius", 32, 16, 0, 1650, 992);
+  }
+
+  // .file-item__input
+  &__input {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+  }
+
+  // .file-item__body
+  &__body {
+    display: grid;
+    align-content: flex-start;
+    row-gap: toRem(12);
+    text-align: center;
+  }
+
+  // .file-item__caption
+  &__caption {
+    font-weight: 500;
+  }
+
+  // .file-item__note
+  &__note {
+    font-weight: 300;
+    font-size: toRem(14);
+    color: #5d5a80;
+  }
+
+  // .file-item__button
+  &__button {
+  }
+
+  // .file-item__link
+  &__link {
+    font-size: toRem(14);
+    color: $Accent;
+  }
+}
+
+.file-list {
+  margin-top: toRem(16);
+
+  // .file-list__title
+  &__title {
+    font-weight: 500;
+    margin-bottom: toRem(12);
+  }
+
+  // .file-list__items
+  &__items {
+  }
+
+  // .file-list__item
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: toRem(16);
+
+    &:not(:last-child) {
+      margin-bottom: toRem(16);
+    }
+  }
+
+  // .file-list__info
+  &__info {
+  }
+
+  // .file-list__name
+  &__name {
+  }
+
+  // .file-list__size
+  &__size {
+  }
+
+  // .file-list__delete
+  &__delete {
+    flex: 0 0 toRem(24);
+    width: toRem(24);
+    height: toRem(24);
+    border: toRem(1) solid $mainColor;
+    border-radius: 50%;
+
+    @media (any-hover: hover) {
+      transition: $transition ease transform 0s;
+      &:hover {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

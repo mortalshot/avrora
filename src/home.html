@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная страница"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			@@include('html/sections/homebanner.htm',{})
+
+			<section class="ecosystem">
+				<div class="ecosystem__container">
+					<div data-spollers="767.98, max" class="ecosystem__heading spoller-heading _card _heading">
+						<details class="spoller-heading__item">
+							<summary class="spoller-heading__title ecosystem__title">
+								<h2>Экосистема Avrora Store</h2>
+							</summary>
+							<div class="spoller-heading__body ecosystem__body">
+								<div class="ecosystem__subtitle">Доверьтесь нашим экспертам в&nbsp;дизайне и&nbsp;кастомизации мерча! Мы&nbsp;разработаем уникальные концепции с&nbsp;нуля и&nbsp;быстро реализуем ваши идеи без лишних хлопот. Прозрачные условия сотрудничества и&nbsp;понятные цены&nbsp;&mdash; гарантируем, что любой проект будет выполнен в&nbsp;сжатые сроки.</div>
+							</div>
+						</details>
+					</div>
+
+					<div class="ecosystem__cards">
+						<a href="#" class="ecosystem__card _card ecosystem-card">
+							<div class="ecosystem-card__title">Дизайн и&nbsp;концепции</div>
+							<div class="ecosystem-card__subtitle">Разрабатываем дизайн проекты для компаний и&nbsp;корпораций</div>
+						</a>
+						<a href="#" class="ecosystem__card _card ecosystem-card">
+							<div class="ecosystem-card__title">Мерч со&nbsp;склада РФ&nbsp;и&nbsp;ЕС</div>
+							<div class="ecosystem-card__subtitle">Широкий выбор продукции их&nbsp;России, Европы и&nbsp;Азиии. Доставка подарков точно в&nbsp;срок по&nbsp;всей России и&nbsp;СНГ.</div>
+						</a>
+						<a href="#" class="ecosystem__card _card ecosystem-card">
+							<div class="ecosystem-card__title">Принт и&nbsp;кастомизация</div>
+							<div class="ecosystem-card__subtitle">3D-шелкография и&nbsp;уникальные технологии печати для реализации WOW-идей в&nbsp;брендировании промо-одежды и&nbsp;сувенирной продукции</div>
+						</a>
+						<a href="#" class="ecosystem__card _card ecosystem-card">
+							<div class="ecosystem-card__title">Avrora <br> Fashion</div>
+							<div class="ecosystem-card__subtitle">Ваши заказы находятся под контролем персонального менеджера и&nbsp;реализуются командой профессионалов</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			@@include('html/sections/packsolutions.htm',{})
+
+			@@include('html/sections/cases.htm',{
+			"title":"Реализованные кейсы"
+			})
+
+			@@include('html/sections/widget-cases.htm',{})
+
+			@@include('html/sections/request.htm',{})
+
+			@@include('html/sections/widget-category.htm',{
+			"class":""
+			})
+
+			@@include('html/sections/steps.htm',{})
+
+			@@include('html/sections/request2.htm',{})
+
+			@@include('html/sections/seo.htm',{})
+
+			@@include('html/sections/faq.htm',{})
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

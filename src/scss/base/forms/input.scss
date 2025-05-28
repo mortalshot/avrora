@@ -1,0 +1,63 @@
+//<INPUT>
+// Сниппет (HTML): inp
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.input {
+	width: 100%;
+	display: block;
+	caret-color: inherit;
+	border-radius: toRem(20);
+	background-color: #ececec;
+	min-height: toRem(44);
+	padding: toRem(4) toRem(16);
+	outline: 0;
+	border: toRem(1) solid transparent;
+	font-size: toRem(13);
+	transition: $transition ease border-color 0s;
+
+	&:focus {
+		border-color: $Accent;
+	}
+	&::placeholder {
+		color: #909090;
+	}
+
+	&._form-focus {
+	}
+	&._form-error {
+		border-color: #f10c0c;
+	}
+
+	// .input_bg-white
+	&_bg-white {
+		background-color: $White;
+	}
+}
+input[placeholder]:not([data-placeholder-nohiden]) {
+	&::placeholder {
+		transition: opacity 0.3s;
+	}
+	&:focus::placeholder {
+		opacity: 0;
+	}
+}
+
+textarea.input {
+	resize: none;
+}
+
+.label {
+	padding-left: toRem(16);
+	margin-bottom: toRem(12);
+	@include adaptiveValue("font-size", 16, 13, 0, 1650, 992);
+
+	&[for]:not([for=""]) {
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,140 @@
+body::after {
+	content: "";
+	background-color: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.8s ease 0s;
+	pointer-events: none;
+	z-index: 149;
+}
+
+.popup-show body::after {
+	opacity: 1;
+}
+
+.popup_show .popup__content {
+	visibility: visible;
+	transform: scale(1);
+}
+
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 30px 10px;
+	transition: visibility 0.8s ease 0s;
+	visibility: hidden;
+	pointer-events: none;
+
+	&.popup_show {
+		z-index: 150;
+		visibility: visible;
+		overflow: auto;
+		pointer-events: auto;
+	}
+
+	// .popup__wrapper
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-height: 100%;
+		flex: 1 1 auto;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	// .popup__content
+	&__content {
+		visibility: hidden;
+		overflow: initial !important;
+		transform: scale(0);
+		transition: transform 0.3s ease 0s;
+		background-color: #fff;
+		box-shadow: $shadow;
+		padding: toRem(24);
+		width: 100%;
+		max-width: toRem(422);
+		@include adaptiveValue("padding-top", 24, 16, 0, 1650, 320);
+		@include adaptiveValue("padding-bottom", 24, 16, 0, 1650, 320);
+		@include adaptiveValue("padding-left", 24, 12, 0, 1650, 320);
+		@include adaptiveValue("padding-right", 24, 12, 0, 1650, 320);
+
+		.lock & {
+			visibility: visible;
+		}
+	}
+
+	// .popup__close
+	&__close {
+		position: absolute;
+		right: 0;
+		top: 0;
+		transform: translate(0, -100%);
+		padding: toRem(8);
+		outline: 0;
+
+		@media (any-hover: hover) {
+			transition: $transition ease transform 0s;
+			&:hover {
+				transform: translate(0, -100%) rotate(180deg);
+			}
+		}
+
+		svg {
+			flex: 0 0 toRem(16);
+			width: toRem(16);
+			height: toRem(16);
+			fill: $White;
+		}
+	}
+
+	// .popup__text
+	&__text {
+	}
+
+	// .popup__title
+	&__title {
+		font-size: toRem(16);
+		line-height: 1.3;
+		text-align: center;
+		margin-bottom: toRem(20);
+	}
+
+	// .popup__form
+	&__form {
+		.form-item {
+			margin-bottom: toRem(10);
+		}
+
+		.form-submit {
+			margin-top: toRem(20);
+
+			.btn {
+				width: 100%;
+			}
+		}
+
+		.form-privacy {
+			line-height: 1.2;
+			text-align: center;
+		}
+	}
+
+	// .popup_thanks
+	&_thanks {
+		.popup__content {
+			max-width: toRem(568);
+			@include adaptiveValue("padding-top", 40, 28, 0, 1650, 320);
+			@include adaptiveValue("padding-bottom", 40, 28, 0, 1650, 320);
+		}
+	}
+}

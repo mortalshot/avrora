@@ -1,0 +1,544 @@
+// .footer-request     ====================================================================================================
+.footer-request {
+  &:not(:last-child) {
+    @media (max-width: $tablet) {
+      @include adaptiveValue("margin-bottom", 40, 32, 0, 992, 320);
+    }
+  }
+
+  // .footer-request__container
+  &__container {
+  }
+
+  // .footer-request__row
+  &__row {
+    box-shadow: $shadow;
+    padding-left: toRem(12);
+    padding-right: toRem(12);
+    @include adaptiveValue("padding-top", 32, 24, 0, 1650, 768);
+    @include adaptiveValue("padding-bottom", 32, 24, 0, 1650, 768);
+
+    @media (min-width: $tablet) {
+      background-color: $PBlue;
+      max-width: toRem(1800);
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: toRem(32) toRem(32) 0 0;
+      display: flex;
+      align-items: center;
+      gap: toRem(20);
+      @include adaptiveValue("padding-left", 80, 20, 0, 1650, 992);
+      @include adaptiveValue("padding-right", 80, 20, 0, 1650, 992);
+    }
+    @media (max-width: $tablet) {
+      display: grid;
+      align-content: flex-start;
+      row-gap: toRem(12);
+      background-color: $LGray;
+      border-radius: toRem(16);
+    }
+  }
+
+  // .footer-request__left
+  &__left {
+    @media (min-width: $tablet) {
+      flex: 0 1 60%;
+    }
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  // .footer-request__contacts
+  &__contacts {
+  }
+
+  // .footer-request__center
+  &__center {
+    text-align: center;
+    display: grid;
+    align-content: flex-start;
+    @include adaptiveValue("row-gap", 12, 6, 0, 1650, 768);
+
+    @media (min-width: $tablet) {
+      flex: 1 0 40%;
+    }
+  }
+
+  // .footer-request__title
+  &__title {
+    @include adaptiveValue("font-size", 24, 16, 0, 1650, 768);
+
+    @media (min-width: $tablet) {
+      letter-spacing: 0.02em;
+    }
+    @media (max-width: $tablet) {
+      font-weight: 500;
+    }
+  }
+
+  // .footer-request__subtitle
+  &__subtitle {
+    font-size: toRem(13);
+    letter-spacing: 0.02em;
+    line-height: 1.3;
+
+    @media (min-width: $tablet) {
+      font-weight: 300;
+    }
+  }
+
+  // .footer-request__right
+  &__right {
+    display: flex;
+    align-items: center;
+
+    @media (min-width: $tablet) {
+      flex: 0 1 60%;
+      justify-content: flex-end;
+    }
+    @media (max-width: $tablet) {
+      justify-content: center;
+    }
+  }
+
+  // .footer-request__button
+  &__button {
+    width: 100%;
+    max-width: toRem(260);
+
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+.footer-request-contact {
+  display: inline-grid;
+  align-content: flex-start;
+  row-gap: toRem(4);
+  text-align: center;
+
+  // .footer-request-contact__link
+  &__link {
+    @include adaptiveValue("font-size", 24, 16, 0, 1650, 768);
+  }
+
+  // .footer-request-contact__note
+  &__note {
+    font-weight: 300;
+    letter-spacing: 0.02em;
+  }
+}
+
+// .footer     ====================================================================================================
+.footer {
+  line-height: math.div(20, 14);
+  @include adaptiveValue("font-size", 14, 13, 0, 1650, 992);
+
+  @media (max-width: $tablet) {
+    margin-bottom: toRem(60);
+  }
+
+  // .footer__container
+  &__container {
+    @include adaptiveValue("padding-left", 40, 0, 0, 1920, 1880);
+    @include adaptiveValue("padding-right", 40, 0, 0, 1920, 1880);
+  }
+
+  // .footer__inner
+  &__inner {
+    background-color: $White;
+    padding: toRem(60);
+    @include adaptiveValue("padding-top", 60, 32, 0, 1650, 992);
+    @include adaptiveValue("padding-bottom", 60, 32, 0, 1650, 992);
+
+    @media (min-width: $tablet) {
+      border-radius: toRem(32) toRem(32) 0 0;
+      @include adaptiveValue("padding-left", 60, 20, 0, 1650, 992);
+      @include adaptiveValue("padding-right", 60, 20, 0, 1650, 992);
+    }
+    @media (max-width: $tablet) {
+      @include adaptiveValue("padding-left", 32, 16, 0, 768, 320);
+      @include adaptiveValue("padding-right", 32, 16, 0, 768, 320);
+    }
+    @media (max-width: $mobile) {
+      @include adaptiveValue("padding-top", 32, 18, 0, 768, 320);
+      @include adaptiveValue("padding-bottom", 32, 18, 0, 768, 320);
+    }
+  }
+
+  // .footer__grid
+  &__grid {
+    max-width: toRem(1320);
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    align-content: flex-start;
+
+    @media (min-width: $tablet) {
+      @include adaptiveValue("row-gap", 60, 32, 0, 1650, 992);
+    }
+    @media (max-width: $tablet) {
+      @include adaptiveValue("row-gap", 32, 16, 0, 992, 575);
+    }
+  }
+
+  // .footer__top
+  &__top {
+    display: grid;
+    align-content: flex-start;
+    gap: toRem(20);
+
+    @media (min-width: $mobileM) {
+      grid-template-columns: 1fr toRem(288);
+    }
+    @media (min-width: $tablet) {
+      grid-template-columns: percent(164, 872) 1fr percent(330, 1320);
+    }
+    @media (min-width: toEm(1650)) {
+      grid-template-columns: toRem(200) 1fr percent(330, 1320);
+    }
+  }
+
+  // .footer__left
+  &__left {
+  }
+
+  // .footer__caption
+  &__caption {
+    @media (min-width: $tablet) {
+      font-weight: 300;
+      font-size: toRem(20);
+      line-height: math.div(24, 20);
+      @include adaptiveValue("font-size", 20, 16, 0, 1650, 992);
+
+      &:not(:last-child) {
+        margin-bottom: toRem(16);
+      }
+    }
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  // .footer__menu
+  &__menu {
+    ul {
+      display: grid;
+      align-content: flex-start;
+      row-gap: toRem(10);
+    }
+
+    a {
+      font-size: toRem(14);
+    }
+  }
+
+  // .footer__center
+  &__center {
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  // .footer__offices
+  &__offices {
+    @media (min-width: $tablet) {
+      display: grid;
+      align-content: flex-start;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: toRem(20);
+    }
+  }
+
+  // .footer__right
+  &__right {
+    display: grid;
+    align-content: flex-start;
+    row-gap: toRem(32);
+    @include adaptiveValue("row-gap", 32, 24, 0, 1650, 992);
+  }
+
+  // .footer__socials
+  &__socials {
+    @media (max-width: $tablet) {
+      &:not(:last-child) {
+        margin-bottom: toRem(8);
+      }
+    }
+
+    .socials__item {
+      flex: 0 0 toRem(40);
+      width: toRem(40);
+      height: toRem(40);
+
+      @media (min-width: $tablet) {
+        @include adaptiveValue("flex-basis", 40, 35, 0, 1650, 992);
+        @include adaptiveValue("width", 40, 35, 0, 1650, 992);
+        @include adaptiveValue("height", 40, 35, 0, 1650, 992);
+      }
+
+      svg {
+        flex: 0 0 toRem(40);
+        width: toRem(40);
+        height: toRem(40);
+        fill: $Accent;
+
+        @media (min-width: $tablet) {
+          @include adaptiveValue("flex-basis", 40, 35, 0, 1650, 992);
+          @include adaptiveValue("width", 40, 35, 0, 1650, 992);
+          @include adaptiveValue("height", 40, 35, 0, 1650, 992);
+        }
+      }
+    }
+  }
+
+  // .footer__info
+  &__info {
+    @include adaptiveValue("font-size", 14, 13, 0, 1650, 320);
+  }
+
+  // .footer__bottom
+  &__bottom {
+    display: grid;
+    align-content: flex-start;
+    row-gap: toRem(12);
+  }
+
+  // .footer__privacy
+  &__privacy {
+  }
+
+  // .footer__sout
+  &__sout {
+  }
+}
+
+.office {
+  display: flex;
+  flex-direction: column;
+  row-gap: toRem(16);
+  max-width: toRem(324);
+
+  // .office__main
+  &__main {
+    flex: 1;
+    display: grid;
+    align-content: flex-start;
+    row-gap: toRem(16);
+  }
+
+  // .office__name
+  &__name {
+    display: flex;
+    align-items: center;
+    gap: toRem(8);
+
+    svg {
+      fill: $Accent;
+      flex: 0 0 toRem(18);
+      width: toRem(18);
+      height: toRem(18);
+    }
+  }
+
+  // .office__address
+  &__address {
+  }
+
+  // .office__contacts
+  &__contacts {
+    display: grid;
+    align-content: flex-start;
+    row-gap: toRem(4);
+  }
+
+  // .office__contact
+  &__contact {
+  }
+
+  // .office__schedule
+  &__schedule {
+  }
+
+  // .office__text
+  &__text {
+    font-size: toRem(13);
+    line-height: math.div(19, 13);
+  }
+
+  // .office__link
+  &__link {
+  }
+}
+
+// .floating-menu     ====================================================================================================
+.floating-menu {
+  position: fixed;
+  z-index: 9;
+  transition: $transition ease opacity 0s;
+
+  @media (min-width: $tablet) {
+    bottom: toRem(20);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @media (max-width: $tablet) {
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  // .floating-menu__nav
+  &__nav {
+    @media (min-width: $tablet) {
+      padding: toRem(18) toRem(24);
+      background-color: rgba($color: $LGray, $alpha: 0.5);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+      border-radius: toRem(32);
+    }
+    @media (max-width: $tablet) {
+      background-color: $White;
+      padding: toRem(12);
+      min-height: toRem(60);
+      display: flex;
+      align-items: center;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: toRem(30);
+      @include adaptiveValue("column-gap", 30, 0, 0, 992, 768);
+
+      @media (max-width: $tablet) {
+        flex: 1;
+        justify-content: space-between;
+      }
+    }
+
+    li {
+      @media (max-width: $tablet) {
+        flex: 1;
+      }
+    }
+  }
+
+  // .floating-menu__link
+  &__link {
+    text-transform: capitalize;
+    letter-spacing: 0.01em;
+
+    @media (min-width: $mobile) {
+      @include adaptiveValue("font-size", 16, 14, 0, 992, 768);
+    }
+    @media (max-width: $tablet) {
+      display: grid;
+      align-content: flex-start;
+      justify-items: center;
+      text-align: center;
+      row-gap: toRem(4);
+    }
+    @media (max-width: $mobile) {
+      @include adaptiveValue("font-size", 14, 12, 0, 768, 320);
+    }
+
+    &._active {
+      color: $Accent;
+
+      svg {
+        fill: $Accent !important;
+      }
+    }
+  }
+
+  // .floating-menu__icon
+  &__icon {
+    @media (min-width: $tablet) {
+      display: none;
+    }
+    @media (max-width: $tablet) {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        flex: 0 0 toRem(16);
+        fill: $mainColor;
+        @include adaptiveValue("flex-basis", 20, 16, 0, 992, 768);
+        @include adaptiveValue("width", 20, 16, 0, 992, 768);
+        @include adaptiveValue("height", 20, 16, 0, 992, 768);
+      }
+    }
+  }
+
+  // .floating-menu__amount
+  &__amount {
+    @media (min-width: $tablet) {
+      display: none;
+    }
+    @media (max-width: $tablet) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $Accent;
+      border-radius: 50%;
+      color: $White;
+      transform: translate(calc(100% + toRem(2)), -50%);
+      font-size: toRem(11);
+      line-height: 1;
+      padding: toRem(4);
+      @include adaptiveValue("font-size", 12, 11, 0, 992, 768);
+    }
+  }
+
+  // .floating-menu__up
+  &__up {
+    display: inline-block;
+    padding: toRem(16);
+    margin: toRem(-13);
+
+    @media (any-hover: hover) {
+      &:hover {
+        animation: heartbeat 1.5s ease-in-out infinite both;
+      }
+    }
+
+    svg {
+      transform: rotate(-90deg);
+      flex: 0 0 toRem(18);
+      width: toRem(18);
+      height: toRem(18);
+      fill: $Accent;
+    }
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.81);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.88);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.77);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+
+//====================================================================================================

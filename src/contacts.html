@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Контакты"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+      <section class="contacts">
+        <div class="contacts__container">
+          <h1 class="contacts__title">Наши адреса</h1>
+
+          <div data-tabs class="contacts__tabs tabs">
+            <nav data-tabs-titles class="tabs__navigation">
+              <button type="submit" class="tabs__title _card _tab-active">Офис СПб</button>
+              <button type="submit" class="tabs__title _card">Производство СПб</button>
+              <button type="submit" class="tabs__title _card">Офис Москва</button>
+            </nav>
+            <div data-tabs-body class="tabs__content">
+              <div class="tabs__body">
+                <div class="contacts__block contacts__info contacts-info">
+                  <div class="contacts-info__grid">
+                    <div class="contacts-info__request contacts-request d-none d-lg-block">
+                      <div class="contacts-request__wrapper _card">
+                        <div class="contacts-request__heading">
+                          <h3 class="contacts-request__title">Хочу к&nbsp;вам в&nbsp;гости!</h3>
+                          <div class="contacts-request__subtitle">Оставьте заявку&nbsp;&mdash; мы&nbsp;свяжемся с&nbsp;вами в&nbsp;течение 1&nbsp;часа, чтобы обсудить встречу</div>
+                        </div>
+
+                        <form action="#" class="contacts-request__form form">
+                          <div class="form-row">
+                            <div class="col-12">
+                              <input type="text" name="contacts-request-name" placeholder="Имя" class="input">
+                            </div>
+                            <div class="col-12">
+                              <input type="email" name="contacts-request-email" placeholder="Email" class="input">
+                            </div>
+                            <div class="col-12">
+                              <input type="text" name="contacts-request-phone" placeholder="Телефон" class="input input_phone" data-required="" data-validate="" required="">
+                            </div>
+                            <div class="col-6">
+                              <input data-datepicker type="text" name="contacts-request-date" class="input" placeholder="Дата">
+                            </div>
+                            <div class="col-6">
+                              <select name="form[]" class="form">
+                                <option value="" selected>Время</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                              </select>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-submit">
+                                <button class="btn btn_big btn_bg-accent">Оставить заявку</button>
+                              </div>
+
+                              <div class="form-privacy">Нажимая кнопку, вы соглашаетесь на обработку <a href="">персональных данных</a> </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+
+                    <div class="contacts-info__map contacts-map">
+                      <div class="contacts-map__info _content">
+                        <h4>Офис СПб</h4>
+                        <p>196084, Санкт-Петербург, ул. Киевская, д. 6 БЦ Киевская 6, офис 102</p>
+                        <p><a href="tel:+78126400781">+7 (812) 640 07 81</a></p>
+                        <p>Время работы: 10:00 - 18:30, <br> сб, вс - выходной</p>
+                        <p style="color: #626162;">Все заявки принятые в нерабочее время обрабатываются утром в первую очередь. Отвечаем на все обращения</p>
+                        <p><a href="">Как проехать</a></p>
+                      </div>
+
+                      <div class="contacts-map__frame _card _bg">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afa8d65b49798f29f4e750eaf160ed8718d3f6527aa7bd4d98ebaee19f9d4187b&amp;source=constructor" frameborder="0"></iframe>
+
+                        <!-- <div class="contacts-map__logo">
+                          <i></i>
+                          <span>AvroraStore</span>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contacts__block contacts__gallery">
+                  <div class="template4">
+                    <div class="cases__row">
+                      <div class="cases__column col-6 col-md-5">
+                        <div class="cases__card _card _bg" data-gallery="">
+                          <img src="@img/cases/case3-image1.jpg" alt="" data-sub-html="Шоурум <br> Офис СПб">
+                        </div>
+                        <div class="cases__caption">Шоурум <br> Офис СПб</div>
+                      </div>
+
+                      <div class="cases__column col-6 col-md-4">
+                        <div class="cases__card _card _bg" data-gallery="">
+                          <img src="@img/cases/case3-image2.jpg" alt="" data-sub-html="Шоурум <br> Офис СПб">
+                        </div>
+                      </div>
+
+                      <div class="cases__column col-12 col-md-3">
+                        <div class="cases__row">
+                          <div class="cases__column col-8 col-md-12">
+                            <div class="cases__card _card _bg" data-gallery="">
+                              <img src="@img/cases/case3-image3.jpg" alt="" data-sub-html="Шоурум <br> Офис СПб">
+                            </div>
+                          </div>
+                          <div class="cases__column col-4 col-md-12">
+                            <div class="cases__card _card _bg" data-gallery="">
+                              <img src="@img/cases/case3-image4.jpg" alt="" data-sub-html="Шоурум <br> Офис СПб">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contacts__block d-lg-none">
+                  <div class="contacts-request">
+                    <div class="contacts-request__wrapper _card">
+                      <div class="contacts-request__heading">
+                        <h3 class="contacts-request__title">Хочу к&nbsp;вам в&nbsp;гости!</h3>
+                        <div class="contacts-request__subtitle">Оставьте заявку&nbsp;&mdash; мы&nbsp;свяжемся с&nbsp;вами в&nbsp;течение 1&nbsp;часа, чтобы обсудить встречу</div>
+                      </div>
+
+                      <form action="#" class="contacts-request__form form">
+                        <div class="form-row">
+                          <div class="col-12">
+                            <input type="text" name="contacts-request-name" placeholder="Имя" class="input">
+                          </div>
+                          <div class="col-12">
+                            <input type="email" name="contacts-request-email" placeholder="Email" class="input">
+                          </div>
+                          <div class="col-12">
+                            <input type="text" name="contacts-request-phone" placeholder="Телефон" class="input input_phone" data-required="" data-validate="" required="">
+                          </div>
+                          <div class="col-6">
+                            <input data-datepicker type="text" name="contacts-request-date" class="input" placeholder="Дата">
+                          </div>
+                          <div class="col-6">
+                            <select name="form[]" class="form">
+                              <option value="" selected>Время</option>
+                              <option value="10:00">10:00</option>
+                              <option value="11:00">11:00</option>
+                              <option value="12:00">12:00</option>
+                              <option value="13:00">13:00</option>
+                              <option value="14:00">14:00</option>
+                              <option value="15:00">15:00</option>
+                              <option value="16:00">16:00</option>
+                              <option value="17:00">17:00</option>
+                              <option value="18:00">18:00</option>
+                            </select>
+                          </div>
+                          <div class="col-12">
+                            <div class="form-submit">
+                              <button class="btn btn_big btn_bg-accent">Оставить заявку</button>
+                            </div>
+
+                            <div class="form-privacy">Нажимая кнопку, вы соглашаетесь на обработку <a href="">персональных данных</a> </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contacts__block team-widget">
+                  <div class="team-widget__inner _card">
+                    <h2 class="team-widget__title"> Наши звёзды </h2>
+
+                    <div class="team-widget__slider swiper">
+                      <div class="team-widget__wrapper swiper-wrapper">
+                        <div class="team-widget__slide swiper-slide">
+                          <div class="team-card">
+                            <div class="team-card__wrapper">
+                              <div class="team-card__heading">
+                                <div class="team-card__award">Человек Года!</div>
+                                <div class="team-card__image _bg">
+                                  <img src="@img/team/Img-1.jpg" alt="" loading="lazy">
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                              </div>
+                              <div class="team-card__body">
+                                <div class="team-card__name">Арина Звягинцева</div>
+                                <div class="team-card__position">• Директор по&nbsp;внутреннему развитию</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="team-widget__slide swiper-slide">
+                          <div class="team-card">
+                            <div class="team-card__wrapper">
+                              <div class="team-card__heading">
+                                <div class="team-card__award">Sales Machine!</div>
+                                <div class="team-card__image _bg">
+                                  <img src="@img/team/Img-9.jpg" alt="" loading="lazy">
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                              </div>
+                              <div class="team-card__body">
+                                <div class="team-card__name">Александра Яковлева</div>
+                                <div class="team-card__position">• Ведущий менеджер по&nbsp;работе с&nbsp;клиентами</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="team-widget__slide swiper-slide">
+                          <div class="team-card">
+                            <div class="team-card__wrapper">
+                              <div class="team-card__heading">
+                                <div class="team-card__award">Самый отзывчивый!</div>
+                                <div class="team-card__image _bg">
+                                  <img src="@img/team/Img-37.jpg" alt="" loading="lazy">
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                              </div>
+                              <div class="team-card__body">
+                                <div class="team-card__name">Валерия Пиневская</div>
+                                <div class="team-card__position">• Аккаунт-менеджер Avrora Fashion</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="team-widget__slide swiper-slide">
+                          <div class="team-card">
+                            <div class="team-card__wrapper">
+                              <div class="team-card__heading">
+                                <div class="team-card__award">Design Star!</div>
+                                <div class="team-card__image _bg">
+                                  <img src="@img/team/Img-33.jpg" alt="" loading="lazy">
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                              </div>
+                              <div class="team-card__body">
+                                <div class="team-card__name">Алёна Осокина</div>
+                                <div class="team-card__position">• Дизайнер</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="team-widget__slide swiper-slide">
+                          <div class="team-card">
+                            <div class="team-card__wrapper">
+                              <div class="team-card__heading">
+                                <div class="team-card__award">Самый креативный!</div>
+                                <div class="team-card__image _bg">
+                                  <img src="@img/team/Img-26.jpg" alt="" loading="lazy">
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                              </div>
+                              <div class="team-card__body">
+                                <div class="team-card__name">Татьяна Выросткова</div>
+                                <div class="team-card__position">• Дизайнер-модельер Avrora Fashion</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="team-widget__slide swiper-slide">
+                          <div class="team-card">
+                            <div class="team-card__wrapper">
+                              <div class="team-card__heading">
+                                <div class="team-card__award">ПСК Star!</div>
+                                <div class="team-card__image _bg">
+                                  <img src="@img/team/Img.jpg" alt="" loading="lazy">
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                              </div>
+                              <div class="team-card__body">
+                                <div class="team-card__name">Сергей Макруха</div>
+                                <div class="team-card__position">• Управляющий складом</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="team-widget__slide swiper-slide">
+                          <div class="team-card">
+                            <div class="team-card__wrapper">
+                              <div class="team-card__heading">
+                                <div class="team-card__award">Print Star!</div>
+                                <div class="team-card__image _bg">
+                                  <img src="@img/team/Img-4.jpg" alt="" loading="lazy">
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                              </div>
+                              <div class="team-card__body">
+                                <div class="team-card__name">Георгий Балдин</div>
+                                <div class="team-card__position">• Руководитель ПСК</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="team-widget__slide swiper-slide">
+                          <div class="team-card">
+                            <div class="team-card__wrapper">
+                              <div class="team-card__heading">
+                                <div class="team-card__award">Самый быстрый!</div>
+                                <div class="team-card__image _bg">
+                                  <img src="@img/team/Img-18.jpg" alt="" loading="lazy">
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                              </div>
+                              <div class="team-card__body">
+                                <div class="team-card__name">Максим Мигачев</div>
+                                <div class="team-card__position">• Водитель</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="team-widget__slide swiper-slide">
+                          <div class="team-card">
+                            <div class="team-card__wrapper">
+                              <div class="team-card__heading">
+                                <div class="team-card__award">Бэк Star!</div>
+                                <div class="team-card__image _bg">
+                                  <img src="@img/team/Img-16.jpg" alt="" loading="lazy">
+                                  <div class="swiper-lazy-preloader"></div>
+                                </div>
+                              </div>
+                              <div class="team-card__body">
+                                <div class="team-card__name">Евгения Соловьёва</div>
+                                <div class="team-card__position">• Аккаунт-менеджер Avrora Fashion</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="team-widget__button">
+                    <a href="" class="btn btn_big btn_bg-white">Вся команда</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__body">
+                Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Деревни путь взобравшись подзаголовок что курсивных рукопись дороге власти наш переписывается живет, города ведущими последний, родного силуэт! Решила сих, от всех продолжил ее свою маленький послушавшись точках маленькая осталось взобравшись власти подзаголовок, одна правилами себя диких имеет строчка реторический она. Которой?
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      @@include('html/sections/seo.htm',{})
+
+      @@include('html/sections/faq.htm',{})
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

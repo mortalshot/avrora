@@ -1,0 +1,90 @@
+.form-tags {
+  display: flex;
+  align-items: center;
+  row-gap: toRem(4);
+  @include adaptiveValue("column-gap", 16, 8, 0, 1650, 320);
+
+  @media (max-width: $mobile) {
+    flex-wrap: wrap;
+  }
+
+  // .form-tags__select
+  &__select {
+    @media (min-width: $mobile) {
+      flex: 0 0 toRem(200);
+    }
+    @media (max-width: $mobile) {
+      flex: 0 0 100%;
+    }
+
+    .select__option {
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: toRem(8);
+
+      &::before {
+        content: "";
+        display: block;
+        flex: 0 0 toRem(16);
+        width: toRem(16);
+        height: toRem(16);
+        border-radius: 50%;
+        background-color: #dfdfdf;
+        box-shadow: $shadow;
+        border: toRem(4) solid #dfdfdf;
+        transition: $transition ease all 0s;
+      }
+
+      &._select-selected {
+        &::before {
+          background-color: $White;
+          border-color: $Accent;
+        }
+      }
+    }
+  }
+
+  // .form-tags__output
+  &__output {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 toRem(4);
+    @include adaptiveValue("font-size", 16, 14, 0, 1650, 320);
+
+    @media (max-width: $mobile) {
+      flex: 0 0 100%;
+      gap: toRem(0) toRem(16);
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: toRem(8);
+      line-height: 1;
+      color: $Accent;
+      padding: toRem(4) 0;
+
+      @media (min-width: $mobile) {
+        min-height: toRem(40);
+        padding: toRem(10) toRem(16);
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        flex: 0 0 toRem(16);
+        width: toRem(16);
+        height: toRem(16);
+        background: url(../img/icons/close.svg) no-repeat center/contain;
+      }
+
+      @media (any-hover: hover) {
+        transition: $transition ease opacity 0s;
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}

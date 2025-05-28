@@ -1,0 +1,784 @@
+<header class="header" data-scroll="5">
+	<div class="header__container">
+		<div class="header__row">
+			<div class="header__left">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon js-icon-menu">
+						<div class="icon-menu">
+							<span></span>
+						</div>
+					</button>
+					<nav class="menu__body" style="opacity: 0;">
+						<div class="header__search search">
+							<form action="#" class="search__form">
+								<input autocomplete="off" type="text" name="form[]" placeholder="Название товара или артикул" class="search__input">
+
+								<button class="search__submit">
+									<svg class="icon">
+										<use xlink:href="@img/icons/icons.svg#search"></use>
+									</svg>
+								</button>
+							</form>
+						</div>
+					</nav>
+				</div>
+
+				<div class="header__logo logo">
+					<a href="home.html">
+						<svg class="icon logo__icon logo__icon_desk">
+							<use xlink:href="@img/icons/icons.svg#logo_desk"></use>
+						</svg>
+						<svg class="icon logo__icon logo__icon_mobile">
+							<use xlink:href="@img/icons/icons.svg#logo_mobile"></use>
+						</svg>
+					</a>
+				</div>
+
+				<div class="header__note">Минимальная сумма заказа <br> <span class="_nowrap">от 100 000 <span class="font-fourth">₽</span></span></div>
+
+				<a href="" class="header__mobile">
+					<svg class="icon">
+						<use xlink:href="@img/icons/icons.svg#phone"></use>
+					</svg>
+				</a>
+			</div>
+
+			<div class="header__center">
+				<div class="header__wishlist header__wishlist_filled">
+					<a href="" class="btn btn_bg-white">Вишлист <span class="wishlist-count">24</span></a>
+				</div>
+			</div>
+
+			<div class="header__right" data-da=".menu__body, 991.98, 2">
+				<div class="header__socials socials">
+					<a href="#" class="socials__item">
+						<svg class="icon">
+							<use xlink:href="@img/icons/icons.svg#telegram"></use>
+						</svg>
+					</a>
+					<a href="#" class="socials__item">
+						<svg class="icon">
+							<use xlink:href="@img/icons/icons.svg#whatsapp"></use>
+						</svg>
+					</a>
+				</div>
+
+				<div class="header__contacts">
+					<div class="header__contact header-contact">
+						<div class="header-contact__caption copy-item">
+							<a href="mailto:zakaz+705409@avrorastore.ru" class="copy-item__text">zakaz+705409@avrorastore.ru</a>
+							<button type="button" class="copy-item__button js-copy-button" title="Скопировать адрес в буфер обмена" data-text="Адрес электронной почты скопирован в буфер обмена">
+								<svg class="icon">
+									<use xlink:href="@img/icons/icons.svg#copy"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="header-contact__description">Отвечаем на все письма</div>
+					</div>
+					<div class="header__contact header-contact">
+						<div class="header-contact__caption">
+							<a href="tel:+78005507893">+7 (800) 550-78-93</a>
+						</div>
+						<div class="header-contact__description">Отвечаем в первые 7 секунд</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="header-menu">
+	<div class="header-menu__container">
+		<div class="header-menu__row" data-da=".menu__body, 991.98, 1">
+			<div class="header-menu__left">
+				<div class="header-menu__catalog header-catalog">
+					<button type="button" class="header-catalog__button js-catalog-button">Каталог</button>
+					<div class="header-catalog__wrapper" style="opacity: 0;">
+						<div class="header-catalog__heading">
+							<div class="header-catalog__caption">Смотреть все товары</div>
+							<button class="header-catalog__close" type="button">
+								<svg class="icon">
+									<use xlink:href="@img/icons/icons.svg#close"></use>
+								</svg>
+							</button>
+						</div>
+
+						<nav class="header-catalog__menu">
+							<ul>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="#">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Ежедневники и блокноты</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Упаковка</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="#">Подарки на 23 февраля</a></li>
+										<li><a href="#">Подарки на 8 марта</a></li>
+										<li><a href="#">Подарки на 9 мая</a></li>
+										<li><a href="#">Подарки военным</a></li>
+										<li><a href="#">Подарки на День защиты детей</a></li>
+										<li><a href="#">Подарки на День медицинского работника</a></li>
+										<li><a href="#">Подарок коллеге</a></li>
+										<li><a href="#">Подарки ко Дню шахтера</a></li>
+										<li><a href="#">Подарки ко Дню нефтяника</a></li>
+										<li><a href="#">Подарки на День строителя</a></li>
+										<li><a href="#">Подарки на День авиации</a></li>
+										<li><a href="#">Подарки на День железнодорожника</a></li>
+										<li><a href="#">Подарки на День знаний</a></li>
+										<li><a href="#">Подарки ко Дню энергетика</a></li>
+										<li><a href="#">Подарки ко Дню электросвязи</a></li>
+										<li><a href="#">Подарки морякам</a></li>
+										<li><a href="#">Подарки автомобилисту</a></li>
+										<li><a href="#">Подарки банковскому работнику</a></li>
+										<li><a href="#">Подарки для всех</a></li>
+										<li><a href="#">Аврора рекомендует 23/8</a></li>
+										<li><a href="#">Подарки на День металлурга</a></li>
+										<li><a href="#">Подарки на День полиции</a></li>
+										<li><a href="#">Подарки на День России</a></li>
+										<li><a href="#">Подарки на День учителя</a></li>
+										<li><a href="#">Подарки на День химика</a></li>
+										<li><a href="#">Подарки на День юриста</a></li>
+										<li><a href="#">Подарки на юбилей компании</a></li>
+										<li><a href="#">Подарки начальнику</a></li>
+										<li><a href="#">Подарки системным администраторам</a></li>
+										<li><a href="#">Теплые подарки</a></li>
+										<li><a href="#">Интерьерные подарки</a></li>
+										<li><a href="#">Упакуем как надо</a></li>
+									</ul>
+
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Футболки</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Одежда</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Посуда</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Сумки и рюкзаки</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Зонты</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Электроника</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Ручки</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Подарочные наборы</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Товары для дома</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Подарки для отдыха</span>
+									</a>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Корпоративные подарки</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Подарки к праздникам</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Флешки</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Пледы и подушки</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Часы</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Промо сувениры</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Офисные сувениры</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Аксессуары</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Новогодние подарки</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Велкомпаки</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Коллекции ЭКО</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Тубусы</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Блокноты и кубарики</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Календари 2025</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+								<li class="header-catalog__item header-catalog__item_has-children" data-catalog-container="992,max">
+									<a href="">
+										<img src="@img/icons/t-shirt.svg" alt="">
+										<span>Пакеты подарочные</span>
+									</a>
+
+									<button class="header-catalog__arrow" data-catalog-button>
+										<svg class="icon">
+											<use xlink:href="@img/icons/icons.svg#select"></use>
+										</svg>
+									</button>
+
+									<ul class="header-catalog__sub-list" data-catalog-list>
+										<li><a href="">Бизнес-блокноты</a></li>
+										<li><a href="">Блокноты</a></li>
+										<li><a href="">Ежедневники</a></li>
+										<li><a href="">Еженедельники</a></li>
+										<li><a href="">Наборы с ежедневниками</a></li>
+										<li><a href="">Органайзеры</a></li>
+										<li><a href="">Оригинальные ежедневники</a></li>
+										<li><a href="">Планинги</a></li>
+										<li><a href="">Упакова для ежедневников</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+				<div class="header-menu__nav">
+					<ul>
+						<li><a href="">Услуги</a></li>
+						<li><a href="">Портфолио</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="header-menu__right">
+				<div class="header-menu__nav">
+					<ul>
+						<li><a href="">Принт и кастомизация</a></li>
+						<li><a href="">Условия сотрудничества</a></li>
+						<li><a href="">Команда</a></li>
+						<li><a href="">Работа</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

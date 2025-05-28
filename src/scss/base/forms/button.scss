@@ -1,0 +1,201 @@
+//<BUTTONS (a.btn+tab)>
+// Сниппет (HTML): btn
+
+.text-link {
+	color: $Accent;
+	text-decoration: underline transparent from-font;
+	text-underline-offset: 3px;
+	transition: $transition ease text-decoration 0s;
+
+	@media (any-hover: hover) {
+		&:hover {
+			text-decoration: underline from-font;
+		}
+	}
+}
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: toRem(10);
+	padding: toRem(8) toRem(20);
+	min-height: toRem(40);
+	border-radius: toRem(100);
+	font-weight: 500;
+	text-align: center;
+	line-height: 1;
+	outline: 0;
+	@include adaptiveValue("font-size", 20, 16, 0, 1650, 992);
+
+	svg {
+		transition: $transition ease fill 0s;
+	}
+
+	// .btn_big
+	&_big {
+		@include adaptiveValue("min-height", 50, 44, 0, 992, 768);
+	}
+
+	// .btn_large
+	&_large {
+		@include adaptiveValue("font-size", 24, 20, 0, 1650, 992);
+		@include adaptiveValue("min-height", 76, 44, 0, 992, 768);
+
+		@media (min-width: $tablet) {
+			min-height: toRem(76);
+			@include adaptiveValue("font-size", 24, 20, 0, 1650, 992);
+		}
+		@media (max-width: $tablet) {
+			@include adaptiveValue("min-height", 50, 44, 0, 992, 768);
+		}
+	}
+
+	// .btn_bg-white
+	&_bg-white {
+		background-color: $LGray;
+		color: $mainColor;
+		box-shadow: $shadow;
+
+		svg {
+			fill: $mainColor;
+		}
+
+		@media (any-hover: hover) {
+			transition: $transition ease all 0s;
+
+			&:hover {
+				background-color: $Accent;
+				color: $White;
+				box-shadow: none;
+
+				svg {
+					fill: $White;
+				}
+			}
+		}
+	}
+
+	// .btn_bg-accent
+	&_bg-accent {
+		background-color: $Accent;
+		color: $White;
+
+		svg {
+			fill: $White;
+		}
+
+		@media (any-hover: hover) {
+			transition: $transition ease background-color 0s;
+
+			&:hover {
+				background-color: #0049dd;
+			}
+		}
+	}
+
+	// .btn_border-accent
+	&_border-accent {
+		border: toRem(1) solid $Accent;
+		color: $Accent;
+
+		svg {
+			fill: $Accent;
+		}
+
+		@media (any-hover: hover) {
+			transition: $transition ease opacity 0s;
+
+			&:hover {
+				opacity: 0.6;
+			}
+		}
+	}
+
+	// .btn_color-accent
+	&_color-accent {
+		color: $Accent;
+	}
+}
+
+.hover-icon-btn {
+	padding: toRem(8) toRem(12.5);
+	background-color: $BGcolor;
+	overflow: hidden;
+	border-radius: toRem(50);
+	gap: 0;
+	transition: 0.5s ease all 0s;
+
+	// .hover-icon-btn__text
+	&__text {
+		font-weight: 400;
+		color: $White;
+		opacity: 0;
+		width: 0;
+		overflow: hidden;
+		transition: 0.5s ease all 0s;
+		@include adaptiveValue("font-size", 20, 16, 0, 1650, 992);
+	}
+
+	// .hover-icon-btn__icon
+	&__icon {
+		&.icon {
+			width: toRem(15);
+			height: toRem(15);
+			flex-shrink: 0;
+			fill: $Accent;
+		}
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: $Accent;
+
+			.hover-icon-btn__text {
+				padding-left: toRem(20);
+				padding-right: toRem(20);
+				opacity: 1;
+				width: auto;
+			}
+
+			.hover-icon-btn__icon {
+				fill: $White;
+				transform: translateX(toRem(5));
+			}
+		}
+	}
+}
+
+.circle-link {
+	flex: 0 0 toRem(40);
+	border-radius: 50%;
+	background-color: $BGcolor;
+	color: $Accent;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	@include adaptiveValue("flex-basis", 40, 32, 0, 768, 320);
+	@include adaptiveValue("width", 40, 32, 0, 768, 320);
+	@include adaptiveValue("height", 40, 32, 0, 768, 320);
+
+	@media (any-hover: hover) {
+		transition: $transition ease background-color 0s;
+
+		&:hover {
+			background-color: $Accent;
+
+			svg {
+				fill: $White;
+			}
+		}
+	}
+
+	svg {
+		flex: 0 0 toRem(16);
+		fill: $Accent;
+		transition: $transition ease fill 0s;
+		@include adaptiveValue("flex-basis", 16, 13, 0, 768, 320);
+		@include adaptiveValue("width", 16, 13, 0, 768, 320);
+		@include adaptiveValue("height", 16, 13, 0, 768, 320);
+	}
+}

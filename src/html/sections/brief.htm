@@ -1,0 +1,195 @@
+<form action="#" class="brief__form form _card">
+  <div class="brief__scheme">
+    <aside class="brief__sidebar _card">
+      <h2 class="brief__sidebar-title">Бриф</h2>
+
+      <nav class="brief__nav">
+        <ol>
+          <li>
+            <button type="button">
+              <span>Контакты</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span>О вашей компании</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span>Целевая аудитория</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span>Прикрепите файлы</span>
+            </button>
+          </li>
+        </ol>
+      </nav>
+    </aside>
+
+    <div class="brief__info">
+      <div class="brief__step _active">
+        <div class="brief__block">
+          <div class="brief__caption">Персональные данные</div>
+
+          <div class="form-row">
+            <div class="form-item col-12 col-xl-5">
+              <input type="text" name="brief-name" placeholder="Как к вам обращаться?" class="input">
+            </div>
+          </div>
+
+          <br>
+
+          <div class="form-row">
+            <div class="form-item col-12 col-xs-6 col-xl-3">
+              <!-- data-required="" data-validate="" required -->
+              <input type="text" name="brief-phone" placeholder="Телефон" class="input input_phone" data-required="" data-validate="" required>
+            </div>
+
+            <div class="form-item col-12 col-xs-6 col-xl-4">
+              <input type="email" name="brief-mail" placeholder="Email" class="input">
+            </div>
+          </div>
+        </div>
+
+        <div class="brief__block">
+          <div class="brief__caption">Когда вам нужен мерч?</div>
+
+          <div class="form-row">
+            <div class="form-item col-12 col-xl-5">
+              <input type="text" name="brief-date" placeholder="Ко 2му июня" class="input" data-datepicker>
+            </div>
+          </div>
+        </div>
+
+        <div class="brief__block">
+          <div class="brief__caption">Какой у вас ориентировочный бюджет?</div>
+
+          <div class="form-row">
+            <div class="form-item col-12 col-xl-5">
+              <input type="text" name="brief-budget" placeholder="250 000 ₽" class="input">
+            </div>
+          </div>
+        </div>
+
+        <div class="brief__actions">
+          <div class="brief__button brief__button_next">
+            <button type="button" class="js-button-next btn btn_big btn_bg-accent">Далее</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="brief__step">
+        <div class="brief__block">
+          <div class="brief__caption">Несколько слов о вашей компании</div>
+
+          <div class="form-row">
+            <div class="form-item col-12 col-xl-6">
+              <input type="text" name="brief-about" placeholder="Федеральная аптечная сеть" class="input">
+            </div>
+          </div>
+        </div>
+
+        <div class="brief__block">
+          <div class="brief__caption">У вас есть брендбук/фирменный стиль?</div>
+
+          <div class="form-row">
+            <div class="form-item col-12 col-xl-9">
+              <input type="text" name="brief-brandbook" placeholder="Да, фирменный стиль есть, ознакомиться можете по ссылке: www.link.com. Брендбук прикрепили к сообщению" class="input">
+            </div>
+          </div>
+        </div>
+
+        <div class="brief__block">
+          <div class="brief__caption">Для какого повода нужна брендированная продукция?</div>
+
+          <div class="form-row">
+            <div class="form-item col-12 col-xl-9">
+              <input type="text" name="brief-reason" placeholder="Наша компания празднует юбилей - 10 лет" class="input">
+            </div>
+          </div>
+        </div>
+
+        <div class="brief__actions">
+          <div class="brief__button brief__button_prev">
+            <button type="button" class="js-button-prev btn btn_big btn_border-accent">Назад</button>
+          </div>
+          <div class="brief__button brief__button_next">
+            <button type="button" class="js-button-next btn btn_big btn_bg-accent">Далее</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="brief__step">
+        <div class="brief__block">
+          <div class="brief__caption">Для кого нужны подарки?</div>
+
+          <div class="form-row">
+            <div class="form-item col-12">
+              <input type="text" name="brief-for" placeholder="Нужно 80 подарков для наших сотрудников, а также отдельные наборы подарков для нащих постоянных клиентов." class="input">
+            </div>
+          </div>
+        </div>
+
+        <div class="brief__block">
+          <div class="brief__caption">Комментарии и пожелания по продукции и дизайну</div>
+
+          <div class="form-row">
+            <div class="form-item col-12 col-xl-6">
+              <input type="text" name="brief-comments" placeholder="Хотим приурочить юбилей к началу лета и сделать летние наборы" class="input">
+            </div>
+          </div>
+        </div>
+
+        <div class="brief__actions">
+          <div class="brief__button brief__button_prev">
+            <button type="button" class="js-button-prev btn btn_big btn_border-accent">Назад</button>
+          </div>
+          <div class="brief__button brief__button_next">
+            <button type="button" class="js-button-next btn btn_big btn_bg-accent">Далее</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="brief__step">
+        <div class="brief__block">
+          <div class="brief__caption">Загрузите ваш брендбук и логотип, если они у вас имеются</div>
+
+          <div class="form-row">
+            <div class="col-12 form-item">
+              <div class="file-item">
+                <div class="file-item__wrapper">
+                  <input type="file" multiple="multiple" name="brief-files" class="file-item__input">
+
+                  <div class="file-item__body">
+                    <div class="file-item__caption">Перетащите сюда файлы, или нажмите «прикрепить файлы»</div>
+                    <div class="file-item__note">максимум 10 файлов по 10Mb каждый</div>
+                    <div class="file-item__button">
+                      <a href="" class="js-file-button btn btn_border-accent btn_big">
+                        <svg class="icon">
+                          <use xlink:href="@img/icons/icons.svg#file"></use>
+                        </svg>
+
+                        <span>Прикрепить файл</span>
+                      </a>
+                    </div>
+                    <div class="file-item__link">
+                      <a href="" class="link-hover">Требования к макетам</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn_bg-accent btn_big">Отправить</button>
+            <div class="form-privacy">Нажимая кнопку, вы соглашаетесь на обработку <a href="">персональных данных</a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
