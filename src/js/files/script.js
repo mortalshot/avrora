@@ -701,16 +701,37 @@ document.addEventListener('DOMContentLoaded', function () {
   if (hoverSpollers.length) {
     hoverSpollers.forEach(spollerBlock => {
       const items = spollerBlock.querySelectorAll('details');
+      const spollerSpeed = 300; // Или берём из data-атрибута
+
       items.forEach(item => {
         const title = item.querySelector('summary');
         const content = title.nextElementSibling;
+        let closeTimeout = null;
 
+        // Открытие
         title.addEventListener('mouseenter', () => {
+          clearTimeout(closeTimeout); // Отменяем предыдущее закрытие
+
           if (!item.open) {
             item.open = true;
             title.classList.add('_spoller-active');
-            _slideDown(content);
+            _slideDown(content, spollerSpeed);
           }
+        });
+
+        // Закрытие
+        item.addEventListener('mouseleave', () => {
+          closeTimeout = setTimeout(() => {
+            if (item.open) {
+              title.classList.remove('_spoller-active');
+              _slideUp(content, spollerSpeed);
+
+              // Гарантированное закрытие после анимации
+              setTimeout(() => {
+                item.open = false;
+              }, spollerSpeed + 10); // +10 мс на всякий случай
+            }
+          }, 300); // Задержка перед началом закрытия
         });
       });
     });

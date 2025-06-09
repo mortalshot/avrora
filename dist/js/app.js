@@ -4228,15 +4228,29 @@ PERFORMANCE OF THIS SOFTWARE.
             const hoverSpollers = document.querySelectorAll(".stages__spollers");
             if (hoverSpollers.length) hoverSpollers.forEach((spollerBlock => {
                 const items = spollerBlock.querySelectorAll("details");
+                const spollerSpeed = 300;
                 items.forEach((item => {
                     const title = item.querySelector("summary");
                     const content = title.nextElementSibling;
+                    let closeTimeout = null;
                     title.addEventListener("mouseenter", (() => {
+                        clearTimeout(closeTimeout);
                         if (!item.open) {
                             item.open = true;
                             title.classList.add("_spoller-active");
-                            _slideDown(content);
+                            _slideDown(content, spollerSpeed);
                         }
+                    }));
+                    item.addEventListener("mouseleave", (() => {
+                        closeTimeout = setTimeout((() => {
+                            if (item.open) {
+                                title.classList.remove("_spoller-active");
+                                _slideUp(content, spollerSpeed);
+                                setTimeout((() => {
+                                    item.open = false;
+                                }), spollerSpeed + 10);
+                            }
+                        }), 300);
                     }));
                 }));
             }));
