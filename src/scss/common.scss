@@ -374,6 +374,10 @@ section {
 
   @media (min-width: $mobile) {
     &-md {
+      &-inblock {
+        display: inline-block !important;
+      }
+
       &-block {
         display: block !important;
       }

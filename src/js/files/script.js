@@ -645,9 +645,9 @@ window.addEventListener('resize', () => {
   stickyResizeTimeout = setTimeout(checkStickyItems, 100);
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const rows = document.querySelectorAll('[data-title]');
-  
+
   // Функция для проверки ширины экрана
   function isMobile() {
     return window.innerWidth < 992;
@@ -662,9 +662,9 @@ document.addEventListener('DOMContentLoaded', function() {
         row.style.overflow = 'hidden';
         row.style.transition = 'height 0.3s ease';
         row.style.cursor = 'pointer';
-        
+
         // Обработчик клика
-        row.addEventListener('click', function() {
+        row.addEventListener('click', function () {
           // Если строка уже активна — закрываем
           if (this.classList.contains('_active')) {
             this.classList.remove('_active');
@@ -696,4 +696,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Обновляем при изменении размера окна
   window.addEventListener('resize', handleRows);
+
+  const hoverSpollers = document.querySelectorAll('.stages__spollers');
+  if (hoverSpollers.length) {
+    hoverSpollers.forEach(spollerBlock => {
+      const items = spollerBlock.querySelectorAll('details');
+      items.forEach(item => {
+        const title = item.querySelector('summary');
+        const content = title.nextElementSibling;
+
+        title.addEventListener('mouseenter', () => {
+          if (!item.open) {
+            item.open = true;
+            title.classList.add('_spoller-active');
+            _slideDown(content);
+          }
+        });
+      });
+    });
+  }
 });

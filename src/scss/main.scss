@@ -153,7 +153,7 @@
     min-height: initial !important;
 
     @media (min-width: toEm(1440)) {
-      grid-template-columns: percent(1102, 1570) 1fr;
+      grid-template-columns: 60% 1fr;
     }
 
     .banner-slide__body {
@@ -1256,6 +1256,11 @@ a.cases__card {
       @media (max-width: $tablet) {
         display: none;
       }
+    }
+
+    .form-submit {
+      display: flex;
+      justify-content: flex-end;
     }
 
     .btn {
@@ -2625,6 +2630,9 @@ a.cases__card {
 
       .product-card__body {
         max-height: toRem(1000);
+        box-shadow:
+          2px 4px 9px 0 rgba(0, 0, 0, 0.06),
+          7px 16px 17px 0 rgba(0, 0, 0, 0.06);
       }
 
       .product-card__title {
@@ -2768,6 +2776,7 @@ a.cases__card {
     padding-top: toRem(8);
     padding-left: toRem(12);
     padding-right: toRem(12);
+    transition: $transition ease box-shadow 0s;
   }
 
   // .product-card__main
@@ -3369,6 +3378,8 @@ a.cases__card {
       padding-top: toRem(16);
       padding-bottom: toRem(16);
       background-color: $White;
+      border-bottom-left-radius: toRem(16);
+      border-bottom-right-radius: toRem(16);
     }
 
     .table {
@@ -3381,11 +3392,21 @@ a.cases__card {
         @include adaptiveValue("font-size", 18, 15, 0, 1650, 320);
       }
 
+      td {
+        border-color: transparent;
+      }
+
       tbody {
         tr {
           &:nth-child(2n-1) {
             td {
               background-color: $LGray2;
+            }
+          }
+
+          &:last-child {
+            td {
+              border-color: transparent;
             }
           }
         }
@@ -5131,7 +5152,6 @@ a.brandify__caption {
     background-color: transparent;
     @include adaptiveValue("margin-left", -8, -4, 0, 1920, 320);
     @include adaptiveValue("margin-right", -8, -4, 0, 1920, 320);
-
 
     @media (min-width: $tablet) {
       height: 100%;
